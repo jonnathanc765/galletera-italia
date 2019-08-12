@@ -63,8 +63,8 @@
                         </div>
                         <div class="form-group">
                             <label for="status">Status</label>
-                            <select name="status" id="status" class="form-control">
-                                <option value="" disabled selected>Seleccione</option>
+
+                            <select name="status[]" id="status" class="form-control bootstrap-select" multiple>
                                 <optgroup label="Estados">
                                     <option value="Contactar DM" {{ old('status') == 'Contactar DM' ? 'selected': '' }}>Por contactar DM</option>
                                     <option value="Datos DM" {{ old('status') == 'Datos DM' ? 'selected': '' }}>Datos solicitados por DM</option>

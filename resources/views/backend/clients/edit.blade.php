@@ -63,8 +63,35 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="status">Status</label>
-                            <select name="status" id="status" class="form-control">
+                            <label for="status">Status <span class="badge badge-primary">Actual | {{ $client->status }}</span></label>
+                            <select name="status[]" id="status" class="form-control bootstrap-select" multiple>
+
+                                <optgroup label="Estados">
+                                    <option value="Contactar DM" {{ old('status'. $client->status) == 'Contactar DM' ? 'selected': '' }}>Por contactar DM</option>
+                                    <option value="Datos DM" {{ old('status'. $client->status) == 'Datos DM' ? 'selected': '' }}>Datos solicitados por DM</option>
+                                    <option value="Contactar WhatsApp" {{ old('status'. $client->status) == 'Contactar WhatsApp' ? 'selected': '' }}>Por contactar WhatsApp</option>
+                                    <option value="Datos WhatsApp" {{ old('status'. $client->status) == 'Datos WhatsApp' ? 'selected': '' }}>Datos solicitados por WhatsApp</option>
+                                    <option value="Enviar Correo" {{ old('status'. $client->status) == 'Enviar Correo' ? 'selected': '' }}>Por enviar email</option>
+                                    <option value="Por Llamar" {{ old('status'. $client->status) == 'Por Llamar' ? 'selected': '' }}>Por llamar</option>
+                                    <option value="Llamado Interesado" {{ old('status'. $client->status) == 'Llamado Interesado' ? 'selected': '' }}>Llamado interesado</option>
+                                    <option value="Llamado desinteresado" {{ old('status'. $client->status) == 'Llamado desinteresado' ? 'selected': '' }}>Llamado no interesado</option>
+                                </optgroup>
+                                <optgroup label="Atención al cliente">
+                                    <option value="ATC: Abandona chat / Luego de informacion" {{ old('status'. $client->status) == 'ATC: Abandona chat / Luego de informacion' ? 'selected': '' }}>Abandona chat / Luego de información</option>
+                                    <option value="ATC: Acepta 4 megas" {{ old('status'. $client->status) == 'ATC: Acepta 4 megas' ? 'selected': '' }}>Acepta 4 megas</option>
+                                    <option value="ATC: Caso en seguimiento / Interesado" {{ old('status'. $client->status) == 'ATC: Caso en seguimiento / Interesado' ? 'selected': '' }}>Caso en seguimiento / Interesado</option>
+                                    <option value="ATC: Evaluara Propuesta" {{ old('status'. $client->status) == 'ATC: Evaluara Propuesta' ? 'selected': '' }}>Evaluará Propuesta</option>
+                                    <option value="ATC: Fuera de Huella" {{ old('status'. $client->status) == 'ATC: Fuera de Huella' ? 'selected': '' }}>Fuera de Huella</option>
+                                    <option value="ATC: Huella no Disponible" {{ old('status'. $client->status) == 'ATC: Huella no Disponible' ? 'selected': '' }}>Huella no disponible</option>
+                                    <option value="ATC: Interesado en residencial" {{ old('status'. $client->status) == 'ATC: Interesado en residencial' ? 'selected': '' }}>Interesado en residencial</option>
+                                    <option value="ATC: No acepta planes" {{ old('status'. $client->status) == 'ATC: No acepta planes' ? 'selected': '' }}>No acepta planes</option>
+                                    <option value="ATC: No se logra comunicacion" {{ old('status'. $client->status) == 'ATC: No se logra comunicacion' ? 'selected': '' }}>No se logra comunicación</option>
+                                    <option value="ATC: Sin disponibilidad economica" {{ old('status'. $client->status) == 'ATC: Sin disponibilidad economica' ? 'selected': '' }}>Sin disponibilidad económica</option>
+                                    <option value="ATC: Sin respuesta en instagram" {{ old('status'. $client->status) == 'ATC: Sin respuesta en instagram' ? 'selected': '' }}>Sin respuesta en instagram</option>
+                                </optgroup>
+
+                            </select>
+                            {{-- <select name="status" id="status" class="form-control">
                                 <option value="" disabled selected>Seleccione</option>
                                 <option value="Contactar DM" {{ old('status', $client->status) == 'Contactar DM' ? 'selected': '' }}>Por contactar DM</option>
                                 <option value="Datos DM" {{ old('status', $client->status) == 'Datos DM' ? 'selected': '' }}>Datos solicitados por DM</option>
@@ -74,7 +101,7 @@
                                 <option value="Por Llamar" {{ old('status', $client->status) == 'Por Llamar' ? 'selected': '' }}>Por llamar</option>
                                 <option value="Llamado Interesado" {{ old('status', $client->status) == 'Llamado Interesado' ? 'selected': '' }}>Llamado interesado</option>
                                 <option value="Llamado desinteresado" {{ old('status', $client->status) == 'Llamado desinteresado' ? 'selected': '' }}>Llamado no interesado</option>
-                            </select>
+                            </select> --}}
                         </div>
                         <div class="form-group">
                             <label for="comment">Comentarios</label>

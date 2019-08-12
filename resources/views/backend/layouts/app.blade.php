@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <meta name="theme-color" content="#f15c22">
     <link rel="shortcut icon" href="{{ asset('images/logo2.png') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-select.min.css') }}">
 
     @yield('head')
 
@@ -22,7 +23,20 @@
     
 
     <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/popper.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap-select.min.js') }}"></script>
+    
+
+    <script>
+        $(document).ready(function() {
+
+            $('.bootstrap-select').selectpicker();        
+
+        });
+
+    </script>
+
     @yield('scripts')
     
 </body>

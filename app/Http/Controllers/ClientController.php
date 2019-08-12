@@ -45,10 +45,11 @@ class ClientController extends Controller
             'city'          => '',
             'email'         => '',
             'lead'          => '',
-            'status'        => '',
+            'status'        => 'array',
             'comment'       => ''
          ]);
-
+        
+        $data['status'] = implode(', ', $data['status']);
         
         Client::create($data);
 
@@ -94,11 +95,12 @@ class ClientController extends Controller
             'city'          => '',
             'email'         => '',
             'lead'          => '',
-            'status'        => '',
+            'status'        => 'array',
             'comment'       => ''
          ]);
-
         
+        $data['status'] = implode(', ', $data['status']);
+
         $client->update($data);
 
         return redirect()->route('clients.index')->withSuccess('Registrado Exitosamente');
