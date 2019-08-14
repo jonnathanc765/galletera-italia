@@ -24,7 +24,7 @@
 
     <!-- Global site tag (gtag.js) - Google Ads: 816719081 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-816719081"></script>
-        <script>
+    <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
