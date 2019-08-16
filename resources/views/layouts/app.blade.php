@@ -12,19 +12,21 @@
     </script>
     <!-- End Google Tag Manager -->
  
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102427097-1"></script>
+    {{-- <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145131526-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'UA-102427097-1');
-    </script>
+        gtag('config', 'UA-145131526-1');
+    </script> --}}
 
+    
     <!-- Global site tag (gtag.js) - Google Ads: 816719081 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-845716916">
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-816719081"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145131526-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -32,6 +34,7 @@
 
         @yield('Global Tag')
 
+        gtag('config', 'UA-145131526-1');
         gtag('config', 'AW-816719081');
         
     </script>
