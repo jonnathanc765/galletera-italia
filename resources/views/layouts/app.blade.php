@@ -23,13 +23,17 @@
     </script>
 
     <!-- Global site tag (gtag.js) - Google Ads: 816719081 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-845716916">
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-816719081"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
+        @yield('Global Tag')
+
         gtag('config', 'AW-816719081');
+        
     </script>
 
 

@@ -2,6 +2,10 @@
 
 @section('title', 'Exitoso')
 
+@section('Global Tag')
+    gtag('config', 'AW-845716916');
+@endsection
+
 <style>
 .person-layer {
     position: absolute;
