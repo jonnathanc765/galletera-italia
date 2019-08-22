@@ -280,13 +280,21 @@ footer .container-fluid .contact .social-links a .fa {
     box-shadow: 0px 0px 2px #f15c22;
     /* padding: 0.5em 0.6em; */
 }
-/* 
-@media (max-width: 1172px) {
-    footer .container .contact .social-links {
-        display: block;
+
+@media (max-width: 474px) {
+    header .number-button {
+        font-size: 38px;
     }
-    footer .container .contact .social-links a {
-        display: inline-block;
-        width: 45%;
+    header .border-dialog .fa {
+        right: 295px;
     }
-} */
+}
+
+@media (max-width: 370px) {
+    header .number-button {
+        font-size: 31px;
+    }
+    header .border-dialog .fa {
+        right: 249px;
+    }
+}
