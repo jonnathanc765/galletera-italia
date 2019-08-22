@@ -240,7 +240,7 @@
 
 
 <footer>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
 
             <div class="col-md-2 col-12 logo">
@@ -253,27 +253,40 @@
                         <h2>SIGUENOS EN REDES</h2>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-md-12 social-links">
+                        <div class="container-fluid">
+                            <div class="row">
+
+                                <div class="col-12 col-lg-3 my-2 col-md-6">
+                                    <a href="https://www.facebook.com/Tconectave-2354821491228249/?modal=admin_todo_tour" target="_blank">
+                                        <i class="fa fa-facebook" aria-hidden="true" style="padding: 0.28em 0.5em;"></i>
+                                        @TCONECTAVE
+                                    </a>
+                                </div>
+                                <div class="col-12 col-lg-3 my-2 col-md-6">
+                                    <a href="https://www.instagram.com/tconectave/" target="_blank"> 
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                        @TCONECTAVE
+                                    </a>
+                                </div>
+                                <div class="col-12 col-lg-3 my-2 col-md-6">
+                                    <a href="bit.ly/2OaVYqO" target="_blank"> 
+                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                        04123038070
+                                    </a>
+                                </div>
+                                <div class="col-12 col-lg-3 my-2 col-md-6">
+                                    <a href="bit.ly/2OaVYqO" target="_blank"> 
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        contacto@tconectave.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                         
-                        <a href="https://www.facebook.com/Tconectave-2354821491228249/?modal=admin_todo_tour" target="_blank">
-                            <i class="fa fa-facebook" aria-hidden="true" style="padding: 0.28em 0.5em;"></i>
-                            @TCONECTAVE
-                        </a>
-                        <a href="https://www.instagram.com/tconectave/" target="_blank"> 
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            @TCONECTAVE
-                        </a>
-                        <a href="bit.ly/2OaVYqO" target="_blank"> 
-                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                            04123038070
-                        </a>
-                        <a href="bit.ly/2OaVYqO" target="_blank"> 
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            contacto@tconectave.com
-                        </a>
                     </div>
-                    
                 </div>
             </div>
 

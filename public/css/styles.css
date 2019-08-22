@@ -40,6 +40,9 @@ header {
     background-position: center;
     background-size: cover;
 }
+header img {
+    width: 80%;
+}
 
 header .primary-row {
     padding: 50px 70px;
@@ -149,48 +152,48 @@ section.main .container .title-information p {
 footer {
     background-color: #15103E;
 }
-footer .container {
+footer .container-fluid {
     color: #fff;    
 }
-footer .container .title {
+footer .container-fluid .title {
     border-bottom: 2px solid #f15c22;
     text-align: center;
     text-transform: uppercase;
 }
-footer .container .title h2 {
+footer .container-fluid .title h2 {
     font-size: 28px;
     margin-bottom: 15px;
 }
 
-footer .container .logo {
+footer .container-fluid .logo {
     display: flex;
     justify-content: center;
     align-items: center;
 
     padding: 30px 30px;
 }
-footer .container .contact {
+footer .container-fluid .contact {
     padding: 35px 30px;
 }
-footer .container .contact .social-links {
+footer .container-fluid .contact .social-links {
     margin: 10px 0;
     display: flex;
     justify-content: space-between;
 }
-footer .container .contact .social-links a {
+footer .container-fluid .contact .social-links a {
     font-size: 17px;
     margin: 5px;
     font-weight: 700;
     color: #fff;
     transition: all .3s ease;
 }
-footer .container .contact .social-links a:hover {
+footer .container-fluid .contact .social-links a:hover {
     text-decoration: none;
     color: #f15c22;
 
 }
 
-footer .container .contact .social-links a .fa {
+footer .container-fluid .contact .social-links a .fa {
     font-weight: bold;
     padding: 8px;
     color: #15103E;
@@ -201,4 +204,13 @@ footer .container .contact .social-links a .fa {
     box-shadow: 0px 0px 2px #f15c22;
     /* padding: 0.5em 0.6em; */
 }
-
+/* 
+@media (max-width: 1172px) {
+    footer .container .contact .social-links {
+        display: block;
+    }
+    footer .container .contact .social-links a {
+        display: inline-block;
+        width: 45%;
+    }
+} */
