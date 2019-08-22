@@ -59,7 +59,9 @@
                 <img src="{{ asset('images/COSTO.png') }}" alt="">
             </div>
             <div class="col-md-6 d-flex justify-content-center align-items-center mt-3">
-                <img src="{{ asset('images/CONTACTO.png') }}" alt="">
+                <a href="https://bit.ly/2OaVYqO" target="_blank" class="text-center" style="width: 90%;">
+                    <img src="{{ asset('images/CONTACTO.png') }}" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -272,7 +274,7 @@
                                     </a>
                                 </div>
                                 <div class="col-12 col-lg-3 my-2 col-md-6">
-                                    <a href="bit.ly/2OaVYqO" target="_blank"> 
+                                    <a href="https://bit.ly/2OaVYqO" target="_blank"> 
                                         <i class="fa fa-whatsapp" aria-hidden="true"></i>
                                         04123038070
                                     </a>
