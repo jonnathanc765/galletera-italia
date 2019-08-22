@@ -262,25 +262,27 @@
                             <div class="row">
 
                                 <div class="col-12 col-lg-3 my-2 col-md-6">
-                                    <a href="https://www.facebook.com/Tconectave-2354821491228249/?modal=admin_todo_tour" target="_blank">
+                                    <a href="https://www.facebook.com/Tconectave-2354821491228249/?modal=admin_todo_tour" target="_blank" class="d-flex flex-column align-items-center justify-content-center">
                                         <i class="fa fa-facebook" aria-hidden="true" style="padding: 0.28em 0.5em;"></i>
-                                        @TCONECTAVE
+                                        <span>
+                                            @TCONECTAVE
+                                        </span>
                                     </a>
                                 </div>
                                 <div class="col-12 col-lg-3 my-2 col-md-6">
-                                    <a href="https://www.instagram.com/tconectave/" target="_blank"> 
+                                    <a href="https://www.instagram.com/tconectave/" target="_blank" class="d-flex flex-column align-items-center justify-content-center"> 
                                         <i class="fa fa-instagram" aria-hidden="true"></i>
                                         @TCONECTAVE
                                     </a>
                                 </div>
                                 <div class="col-12 col-lg-3 my-2 col-md-6">
-                                    <a href="https://bit.ly/2OaVYqO" target="_blank"> 
+                                    <a href="https://bit.ly/2OaVYqO" target="_blank" class="d-flex flex-column align-items-center justify-content-center"> 
                                         <i class="fa fa-whatsapp" aria-hidden="true"></i>
                                         04123038070
                                     </a>
                                 </div>
                                 <div class="col-12 col-lg-3 my-2 col-md-6">
-                                    <a href="bit.ly/2OaVYqO" target="_blank"> 
+                                    <a href="bit.ly/2OaVYqO" target="_blank" class="d-flex flex-column align-items-center justify-content-center"> 
                                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                         contacto@tconectave.com
                                     </a>
