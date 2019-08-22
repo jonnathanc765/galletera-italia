@@ -49,7 +49,7 @@
         <div class="row primary-row">
 
             <div class="col-md-12">
-                <img src="{{ asset('images/arribita.png') }}" alt="Logo tconecta">
+                <img src="{{ asset('images/Arribita.png') }}" alt="Logo tconecta">
             </div>
 
         </div>
@@ -59,18 +59,18 @@
                 <img src="{{ asset('images/COSTO.png') }}" alt="costos planes ilimitados 1 megas, 2 megas, 4 megas, 10 megas, 20 megas">
             </div>
             <div class="col-md-6 d-flex justify-content-center align-items-center mt-3">
-                <a href="https://bit.ly/2OaVYqO" target="_blank" class="d-flex flex-column justify-content-center align-items-center right-button">
+                <span class="d-flex flex-column justify-content-center align-items-center right-button">
                     
-                        <span class="message-dialog">CONTÁCTANOS AL WHATSAPP</span>
-                        <span class="number-button">
-                            <span class="border-dialog">
-                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                                0412-3038070
-                            </span>
-                        </span>
-                        <span class="message-dialog-2">contacto@tconectave.com</span>
+                    <span class="message-dialog">CONTÁCTANOS AL WHATSAPP</span>
+                    <span class="number-button">
+                        <a href="https://bit.ly/2OaVYqO" target="_blank" class="border-dialog">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            0412-3038070
+                        </a>
+                    </span>
+                    <a href="mailto:contacto@tconectave.com" class="message-dialog-2">contacto@tconectave.com</a>
                     
-                </a>
+                </span>
             </div>
         </div>
     </div>
@@ -291,7 +291,7 @@
                                     </a>
                                 </div>
                                 <div class="col-12 col-lg-3 my-2 col-md-6">
-                                    <a href="bit.ly/2OaVYqO" target="_blank" class="d-flex flex-column align-items-center justify-content-center"> 
+                                    <a href="mailto:contacto@tconectave.com" class="d-flex flex-column align-items-center justify-content-center"> 
                                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                         contacto@tconectave.com
                                     </a>

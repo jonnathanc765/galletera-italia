@@ -67,9 +67,6 @@ header .message-dialog {
     top: 5px;
     border-radius: 5px;
 }
-header .number-button:hover { 
-    /* color: #15103E; */
-}
 header .number-button {
     transition: all .3s ease;
     background-color: #15103E;
@@ -81,9 +78,15 @@ header .number-button {
     letter-spacing: 2px;
     font-weight: 600;
     border-radius: 10px;
+    cursor: pointer;
+}
+header .border-dialog:hover {
+    text-decoration: none;
+    color: #fff;
 }
 header .border-dialog {
     border: 1px solid #fff;
+    color: #fff;
     padding: 8px 25px;
 }
 header .right-button:hover {
@@ -107,6 +110,10 @@ header .message-dialog-2 {
     margin-top: 3px;
     font-size: 20px;
     padding: 4px 0;
+    cursor: pointer;
+}
+header .message-dialog-2:hover {
+    text-decoration: none;
 }
 header .border-dialog .fa {
     right: 386px;
