@@ -102,13 +102,8 @@
     @yield('content')
     
 
-    <script src="{{ asset('vendor/axios/axios.min.js') }}"></script>
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/main.js') }}"></script>
-    <script>
-        AOS.init();
-    </script>
 
     @yield('scripts')
     
