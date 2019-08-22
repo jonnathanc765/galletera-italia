@@ -43,6 +43,12 @@ header {
 header img {
     width: 80%;
 }
+header .img-contact {
+    transition: all .3s ease;
+}
+header .img-contact:hover {
+    transform: scale(1.05);
+}
 
 header .primary-row {
     padding: 50px 70px;
@@ -51,6 +57,69 @@ header .primary-row img {
     width: 100%;
     max-width: 390px;
 }
+header .message-dialog {
+    background-color: #fff;
+    color: #15103E;
+    padding: 4px 12px;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+    border-radius: 5px;
+}
+header .number-button:hover { 
+    /* color: #15103E; */
+}
+header .number-button {
+    transition: all .3s ease;
+    background-color: #15103E;
+    color: #ffF;
+    padding: 20px 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 52px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+header .border-dialog {
+    border: 1px solid #fff;
+    padding: 8px 25px;
+}
+header .right-button:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+}
+header .right-button {
+    width: 100%;
+    transition: all .3s ease;
+    max-width: 430px;
+
+}
+
+header .message-dialog-2 {
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    color: #15103E;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 3px;
+    font-size: 20px;
+    padding: 4px 0;
+}
+header .border-dialog .fa {
+    right: 386px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    background: #f15c22;
+    top: 5px;
+}
+header .border-dialog {
+    position: relative;
+}
+
 
 /* Main Content  */
 section.main .container .img-title img {

@@ -82,7 +82,7 @@
     
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <meta name="theme-color" content="#f15c22">
-    <link rel="shortcut icon" href="{{ asset('images/logo2.png') }}">
+    <link rel="shortcut icon" href="{{ asset('images/icons/logo.png') }}">
 
 
     @yield('head')
