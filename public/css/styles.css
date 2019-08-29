@@ -80,6 +80,7 @@ header .number-button {
     border-radius: 10px;
     cursor: pointer;
 }
+
 header .border-dialog:hover {
     text-decoration: none;
     color: #fff;
@@ -120,8 +121,13 @@ header .border-dialog .fa {
     position: absolute;
     border-radius: 50%;
     padding: 10px;
-    background: #f15c22;
+    background: #10d23c;
     top: 5px;
+    transition: all .3s ease;
+}
+header .border-dialog .fa:hover {
+    background: #f15c22;
+
 }
 header .border-dialog {
     position: relative;
