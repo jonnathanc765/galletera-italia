@@ -56,7 +56,7 @@
 
         <div class="row secundary-row">
             <div class="col-md-6 text-center">
-                <img src="{{ asset('images/COSTO.png') }}" alt="costos planes ilimitados 1 megas, 2 megas, 4 megas, 10 megas, 20 megas">
+                <img src="{{ asset('images/COSTO.png') }}" alt="costos planes ilimitados , 2 megas, 4 megas, 6 megas 10 megas, 20 megas">
             </div>
             <div class="col-md-6 d-flex justify-content-center align-items-center mt-3">
                 <span class="d-flex flex-column justify-content-center align-items-center right-button">
