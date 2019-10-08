@@ -231,7 +231,7 @@
                             </div>
                         </div>
                         <div class="button-container">
-                            <button type="button" id="send-button" class="d-flex align-items-center">
+                            <button type="submit" id="send-button" class="d-flex align-items-center">
                                 <span class="text-right text">
                                     Quiero que me llamen
                                 </span> 
@@ -316,11 +316,15 @@
 
 @section('scripts')
 
+<script src="{{ asset('js/jquery.min.js') }}"></script>
+
     <script type="text/javascript">
-        document.getElementById('send-button').addEventListener('click', function() {
+        $('#send-button').click(function(e) {
+            e.preventDefault();
+            $("#send-button").attr('disabled', true);
             fbq('track', 'Contact');
-            document.getElementById('form').submit();
-        }, false);
+            $('#form').submit();
+        });
     </script>
     
     @if ($errors->any())
