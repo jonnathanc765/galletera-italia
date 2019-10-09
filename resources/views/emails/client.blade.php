@@ -20,7 +20,7 @@
                                 <div align="center"
                                     style="border-style:solid;border-width:thin;border-color:#dadce0;border-radius:8px; background-color: #fff;">
                                     <div style="padding: 25px; background-color: #f15c22; justify-content: center; align-items: center; margin-bottom: 20px;">
-                                        <img src="{{ asset('images/logo.png') }}" style="width:20% ;margin-bottom:16px;"/>
+                                        <img src="{{ asset('images/logo.png') }}" alt="Logo de tconecta" style="width:20% ;margin-bottom:16px;"/>
                                     </div>
                                     <div
                                         style="font-family:'Google Sans',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:rgba(0,0,0,0.87);line-height:32px;padding-bottom:5px;text-align:center;word-break:break-word">

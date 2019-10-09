@@ -287,7 +287,22 @@ footer .container-fluid .contact .social-links a .fa {
     /* padding: 0.5em 0.6em; */
 }
 
-@media (max-width: 474px) {
+@media(max-width: 913px) {
+    header .number-button {
+        font-size: 40px
+    }
+    header .border-dialog .fa {
+        right: 320px;
+    }
+}
+
+@media(max-width: 768px) {
+    header .number-button {
+        font-size: 40px
+    }
+}
+
+@media(max-width: 474px) {
     header .number-button {
         font-size: 38px;
     }
@@ -302,5 +317,11 @@ footer .container-fluid .contact .social-links a .fa {
     }
     header .border-dialog .fa {
         right: 249px;
+    }
+}
+
+@media (max-width: 323px) {
+    header .number-button {
+        font-size: 30px;
     }
 }

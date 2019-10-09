@@ -33,39 +33,40 @@ class ContactController extends Controller
         $to_email   = $data['email'];
         $emailData  = $data;
 
-        try {
-            Mail::to($to_email)->send(new ClientMail($data));
-        } catch (\Throwable $th) {
-            return view('contacts.failure');
-        }
         
-        // Correo para mily
+        Mail::to($to_email)->send(new ClientMail($data));
+        // try {
+        // } catch (\Throwable $th) {
+        //     dd($th);
+        // }
         
-        $to_name    = $data['name'];
-        $to_email   = 'mili.paris@inter.com.ve';
-        $emailData  = $data;
+        // // Correo para mily
         
-        try {
-            Mail::to($to_email)->send(new ProviderMail($data));
-        } catch (\Throwable $th) {
-            return view('contacts.failure');
-        }
+        // $to_name    = $data['name'];
+        // $to_email   = 'mili.paris@inter.com.ve';
+        // $emailData  = $data;
+        
+        // try {
+        //     Mail::to($to_email)->send(new ProviderMail($data));
+        // } catch (\Throwable $th) {
+        //     return view('contacts.failure');
+        // }
 
-        // Correo para tconecta
+        // // Correo para tconecta
         
-        $to_name    = $data['name'];
-        $to_email   = 'Tconectainalambrico@gmail.com';
-        $emailData  = $data;
+        // $to_name    = $data['name'];
+        // $to_email   = 'Tconectainalambrico@gmail.com';
+        // $emailData  = $data;
         
-        try {
-            Mail::to($to_email)->send(new ProviderMail($data));
-        } catch (\Throwable $th) {
-            return view('contacts.failure');
-        }
+        // try {
+        //     Mail::to($to_email)->send(new ProviderMail($data));
+        // } catch (\Throwable $th) {
+        //     return view('contacts.failure');
+        // }
 
         // Finalmente, si no surje ningun error, se guarda todo en la base de datos
-        Contact::create($data);
+        // Contact::create($data);
     
-        return view('contacts.success');
+        // return view('contacts.success');
     }
 }
