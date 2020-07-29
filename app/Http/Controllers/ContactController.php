@@ -21,52 +21,27 @@ class ContactController extends Controller
         // Se validan los datos que envia el cliente
 
         $data = $request->validate([
-            'name'      => 'required|string',
-            'email'     => 'required|email|string|unique:contacts,email',
-            'phone'     => 'required|min:5',
-            'city'      => 'required|min:5'
+            'name'      => 'required|string|min:1|max:255',
+            'company'      => 'required|min:5|max:255',
+            'email'     => 'required|email|string|unique:contacts,email|max:255',
+            'phone'     => 'required|min:5|max:255'
         ]);
 
         // Correo para el cliente
 
-        $to_name    = $data['name'];
         $to_email   = $data['email'];
-        $emailData  = $data;
 
-        
         Mail::to($to_email)->send(new ClientMail($data));
-        // try {
-        // } catch (\Throwable $th) {
-        //     dd($th);
-        // }
-        
-        // // Correo para mily
-        
-        // $to_name    = $data['name'];
-        // $to_email   = 'mili.paris@inter.com.ve';
-        // $emailData  = $data;
-        
-        // try {
-        //     Mail::to($to_email)->send(new ProviderMail($data));
-        // } catch (\Throwable $th) {
-        //     return view('contacts.failure');
-        // }
 
-        // // Correo para tconecta
-        
-        // $to_name    = $data['name'];
-        // $to_email   = 'Tconectainalambrico@gmail.com';
-        // $emailData  = $data;
-        
-        // try {
-        //     Mail::to($to_email)->send(new ProviderMail($data));
-        // } catch (\Throwable $th) {
-        //     return view('contacts.failure');
-        // }
+        try {
+            Mail::to(env('PROVIDER_EMAIL'))->send(new ProviderMail($data));
+        } catch (\Throwable $th) {
+            return view('contacts.failure');
+        }
 
         // Finalmente, si no surje ningun error, se guarda todo en la base de datos
-        // Contact::create($data);
-    
-        // return view('contacts.success');
+        Contact::create($data);
+
+        return view('contacts.success');
     }
 }

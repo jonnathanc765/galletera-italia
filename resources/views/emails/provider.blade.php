@@ -38,14 +38,14 @@
                                         <p style="text-align: center">
                                         </p>
                                         <p>
-                                            Ciudad: {{ $data['city'] }} <br>
+                                            Compañia: {{ $data['company'] }} <br>
                                             Teléfono: {{ $data['phone'] }} <br>
-                                            Correo: {{ $data['email'] }} <br>  
+                                            Correo: {{ $data['email'] }} <br>
                                         </p>
 
                                         <div
                                             style="margin: auto; word-break: break-all; overflow-wrap: break-word; word-wrap: break-word; width: 75%;">
-                                            
+
                                         </div>
                                     </div>
                                 </div>

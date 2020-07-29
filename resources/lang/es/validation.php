@@ -1,4 +1,4 @@
-    
+
 <?php
 return [
     /*
@@ -173,6 +173,7 @@ return [
         'subject'               => 'asunto',
         'message'               => 'mensaje',
         'user'                  => 'usuario',
-        'lead'                  => 'contactado desde'
+        'lead'                  => 'contactado desde',
+        'company'               => 'negocio'
     ],
 ];
