@@ -22,6 +22,11 @@
                         <img src="{{ asset('images/social-media/facebook-logo.png') }}" alt="">
                     </a>
                 </li>
+                <li>
+                    <a href="#">
+                        <img src="{{ asset('images/social-media/facebook-logo.png') }}" alt="">
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

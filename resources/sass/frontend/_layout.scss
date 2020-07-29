@@ -7,5 +7,27 @@ header {
 }
 
 footer {
-    color: #fff;
+    color: #000;
+    font-weight: 300;
+    padding: 25px 0;
+    font-size: 17px;
+    p {
+        a {
+            color: $dark-primary;
+            font-weight: 500;
+        }
+        margin-bottom: 0;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            padding: 0 5px;
+            img {
+                width: 30px;
+            }
+        }
+    }
 }

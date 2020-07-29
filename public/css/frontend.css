@@ -17,7 +17,34 @@ header img {
 }
 
 footer {
-  color: #fff;
+  color: #000;
+  font-weight: 300;
+  padding: 25px 0;
+  font-size: 17px;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer p a {
+  color: #2e31a6;
+  font-weight: 500;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer ul li {
+  padding: 0 5px;
+}
+
+footer ul li img {
+  width: 30px;
 }
 
 main {
