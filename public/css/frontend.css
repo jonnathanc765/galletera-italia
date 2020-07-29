@@ -157,10 +157,16 @@ main .form form h3#send-button {
   box-shadow: 12px 12px 8px -10px rgba(0, 0, 0, 0.45);
   background: #ff931e;
   background: linear-gradient(180deg, #ff931e 0%, #b84e12 100%);
+  transition: all 0.3s ease;
 }
 
 main .form form h3#send-button a {
   color: #fff;
+  text-decoration: none;
+}
+
+main .form form h3#send-button:hover {
+  transform: scale(1.05);
 }
 
 main .form form p {

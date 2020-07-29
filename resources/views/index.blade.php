@@ -136,4 +136,12 @@
     </script>
     @endif
 
+    @if (session()->has('error'))
+    <script src="{{ asset('js/sweetalert2@8.js') }}"></script>
+    <script>
+        Swal.fire('Tenemos un problema...', "{{ session('error') }}",
+            'error');
+    </script>
+    @endif
+
 @endsection

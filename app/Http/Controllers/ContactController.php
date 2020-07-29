@@ -23,7 +23,7 @@ class ContactController extends Controller
         $data = $request->validate([
             'name'      => 'required|string|min:1|max:255',
             'company'      => 'required|min:5|max:255',
-            'email'     => 'required|email|string|unique:contacts,email|max:255',
+            'email'     => 'required|email|string|max:255',
             'phone'     => 'required|min:5|max:255'
         ]);
 
@@ -34,12 +34,18 @@ class ContactController extends Controller
         try {
             Mail::to($to_email)->send(new ClientMail($data));
         } catch (\Throwable $th) {
-            return redirect()->route('contact.failure');
+            return back()->withError('Ha ocurrido un error al enviar procesar tu registro, por favor intentalo de nuevo')->withInput($request->input());
         }
 
         try {
             Mail::to(env('PROVIDER_EMAIL'))->send(new ProviderMail($data));
         } catch (\Throwable $th) {
+            return back()->withError('Ha ocurrido un error al enviar procesar tu registro, por favor intentalo de nuevo')->withInput($request->input());
+        }
+
+        $contact = Contact::whereEmail($data)->first();
+
+        if ($contact) {
             return redirect()->route('contact.failure');
         }
 
