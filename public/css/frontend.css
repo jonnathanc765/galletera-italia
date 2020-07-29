@@ -48,20 +48,20 @@ footer ul li img {
 }
 
 main {
-  background-color: #1056d6;
-  padding: 30px 0;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-color: #3c6aea;
+  background: linear-gradient(90deg, #3c6aea 0%, #3234a1 100%);
 }
 
-main.index {
-  background-image: url(/images/wallpaper-1.png?c01712580226ddeb10b59812da7c7a34);
+main .container-fluid {
+  max-width: 1300px;
 }
 
 main .card {
   border-radius: 20px;
   bottom: 50px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 757px) {
@@ -103,6 +103,12 @@ main .promise-value ul li img {
 
 main .form {
   position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+main .form .card {
+  max-width: 420px;
 }
 
 main .form .form-title h2 {
@@ -166,14 +172,6 @@ main .form form p {
 main .form form p a {
   color: #2e31a6;
   text-decoration: none;
-}
-
-main.message.success {
-  background-image: url(/images/wallpaper-2.png?fd00ee285443fe16adc6f0eb1839f03b);
-}
-
-main.message.failure {
-  background-image: url(/images/wallpaper-3.png?5631fcddc12a4aeeb5b413180ea21c4a);
 }
 
 main.message .text {

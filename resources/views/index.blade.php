@@ -48,7 +48,7 @@
                 </ul>
             </div>
             {{-- Formulario  --}}
-            <div class="col-md-4 form">
+            <div class="col-md-4 col-sm-12 form">
                 <div class="card">
                     <div class="card-body">
                         <div class="form-title d-flex justify-content-center flex-column align-items-center">

@@ -1,13 +1,17 @@
 main {
+    .container-fluid {
+        max-width: 1300px;
+    }
 
     &.index {
-        background-image: url('./../images/wallpaper-1.png');
+        // background-image: url('./../images/wallpaper-1.png');
     }
-    background-color: $primary;
-    padding: 30px 0;
+
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+
+    background-color: rgb(60,106,234);
+    background: linear-gradient(90deg, rgba(60,106,234,1) 0%, rgba(50,52,161,1) 100%);
 
     .card {
         border-radius: 20px;
@@ -15,6 +19,7 @@ main {
         @media screen and (max-width: 757px) {
             bottom: 0;
         }
+        margin-bottom: 20px;
     }
 
     .promise-value {
@@ -46,7 +51,15 @@ main {
         }
     }
     .form {
+
         position: relative;
+        display: flex;
+        justify-content: center;
+
+        .card {
+            max-width: 420px;
+        }
+
         .form-title {
             h2 {
                 color: $dark-primary;
