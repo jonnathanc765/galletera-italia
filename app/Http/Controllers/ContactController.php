@@ -43,7 +43,7 @@ class ContactController extends Controller
             return back()->withError('Ha ocurrido un error al enviar procesar tu registro, por favor intentalo de nuevo')->withInput($request->input());
         }
 
-        $contact = Contact::whereEmail($data)->first();
+        $contact = Contact::whereEmail($data['email'])->first();
 
         if ($contact) {
             return redirect()->route('contact.failure');
