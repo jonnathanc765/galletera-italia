@@ -4,11 +4,12 @@
 
 
 @section('content')
+<main>
     <div class="container">
         <div class="row">
 
             <div class="col-md-5">
-                <img class="w-100" src="{{ asset('images/incorrect-logo-png') }}" alt="">
+                <img class="w-100" src="{{ asset('images/incorrect-logo.png') }}" alt="">
             </div>
             <div class="col-md-7">
 
@@ -23,4 +24,5 @@
 
         </div>
     </div>
+</main>
 @endsection

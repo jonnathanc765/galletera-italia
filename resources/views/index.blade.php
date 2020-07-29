@@ -12,42 +12,43 @@
 
 @section('content')
 
-
-<section class="main">
+<main class="index">
     <div class="container-fluid">
         <div class="row">
             {{-- Imagen  --}}
-            <div class="col-md-4">
+            <div class="col-md-4 main-image d-flex justify-content-center align-items-center">
                 <img src="{{ asset('images/main-image.png') }}" class="w-100" alt="">
             </div>
             {{-- Información adicional --}}
-            <div class="col-md-4">
-                <p>CONVIERTE TU <strong>NEGOCIO</strong> EN <strong>AGENTE AUTORIZADO</strong> DE SERVICIOS DE <strong>TELEVISIÓN, INTERNET Y TELEFONÍA</strong></p>
+            <div class="col-md-4 promise-value">
+                <p class="promise-text">
+                    CONVIERTE TU <strong>NEGOCIO</strong> EN <strong>AGENTE AUTORIZADO</strong> DE SERVICIOS DE <strong>TELEVISIÓN, INTERNET Y TELEFONÍA</strong>
+                </p>
                 <ul>
                     <li>
                         <img src="{{ asset('images/logos/wifi-logo.png') }}" alt="">
-                        <h3>Servicios y productos de <strong>alta demanda</strong> en todo el país.</h3>
+                        <p>Servicios y productos de <strong>alta demanda</strong> en todo el país.</p>
                     </li>
                     <li>
-                        <img src="{{ asset('images/logos/wifi-logo.png') }}" alt="">
-                        <h3>Inversión a <strong>bajo costo</strong>, con amplios márgenes de ganancia y <strong>precios competitivos.</strong></h3>
+                        <img src="{{ asset('images/logos/bars-logo.png') }}" alt="">
+                        <p>Inversión a <strong>bajo costo</strong>, con amplios márgenes de ganancia y <strong>precios competitivos.</strong></p>
                     </li>
                     <li>
-                        <img src="{{ asset('images/logos/wifi-logo.png') }}" alt="">
-                        <h3>Capacitación técnica y comercial <strong>GRATUITA.</strong></h3>
+                        <img src="{{ asset('images/logos/computer-logo.png') }}" alt="">
+                        <p>Capacitación técnica y comercial <strong>GRATUITA.</strong></p>
                     </li>
                     <li>
-                        <img src="{{ asset('images/logos/wifi-logo.png') }}" alt="">
-                        <h3>Acceso a base de datos de <strong>clientes potenciales</strong></h3>
+                        <img src="{{ asset('images/logos/mouse-logo.png') }}" alt="">
+                        <p>Acceso a base de datos de <strong>clientes potenciales</strong></p>
                     </li>
                     <li>
-                        <img src="{{ asset('images/logos/wifi-logo.png') }}" alt="">
-                        <h3>Con el soporte de la Infraestructura <strong>tecnológica más grande</strong> del país..</h3>
+                        <img src="{{ asset('images/logos/cogs-logo.png') }}" alt="">
+                        <p>Con el soporte de la Infraestructura <strong>tecnológica más grande</strong> del país..</p>
                     </li>
                 </ul>
             </div>
             {{-- Formulario  --}}
-            <div class="col-md-4">
+            <div class="col-md-4 form">
                 <div class="card">
                     <div class="card-body">
                         <div class="form">
@@ -99,7 +100,7 @@
             </div>
         </div>
     </div>
-</section>
+</main>
 
 
 

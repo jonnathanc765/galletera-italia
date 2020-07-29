@@ -2,4 +2,13 @@
 $primary: #1056d6;
 $secundary: #ff931e;
 
+body {
+    font-family: 'Roboto';
+    font-weight: 300;
+    strong {
+        font-weight: 700;
+    }
+}
 
+@import './frontend/layout';
+@import './frontend/index';
