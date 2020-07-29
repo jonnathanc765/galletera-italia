@@ -55,16 +55,6 @@ Route::prefix('contacts')->group(function ()
 
 Route::middleware(['auth'])->group(function ()
 {
-    Route::prefix('clients')->group(function ()
-    {
-        Route::get('/', 'ClientController@index')->name('clients.index');
-        Route::get('/create', 'ClientController@create')->name('clients.create');
-        Route::get('/edit/{client}', 'ClientController@edit')->name('clients.edit');
-        Route::post('/store', 'ClientController@store')->name('clients.store');
-        Route::put('/update/{client}', 'ClientController@update')->name('clients.update');
-        Route::delete('/destroy/{client}', 'ClientController@destroy')->name('clients.destroy');
-
-    });
     Route::prefix('dashboard')->group(function ()
     {
         Route::get('/', 'DashboardController@index')->name('dashboard.index');
