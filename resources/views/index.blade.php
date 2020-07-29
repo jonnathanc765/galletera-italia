@@ -16,11 +16,11 @@
     <div class="container-fluid">
         <div class="row">
             {{-- Imagen  --}}
-            <div class="col-md-4 main-image d-flex justify-content-center align-items-center">
+            <div class="col-md-4 col-sm-6 main-image d-flex justify-content-center align-items-center">
                 <img src="{{ asset('images/main-image.png') }}" class="w-100" alt="">
             </div>
             {{-- Información adicional --}}
-            <div class="col-md-4 promise-value">
+            <div class="col-md-4 col-sm-6 promise-value">
                 <p class="promise-text">
                     CONVIERTE TU <strong>NEGOCIO</strong> EN <strong>AGENTE AUTORIZADO</strong> DE SERVICIOS DE <strong>TELEVISIÓN, INTERNET Y TELEFONÍA</strong>
                 </p>

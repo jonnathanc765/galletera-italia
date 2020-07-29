@@ -1,13 +1,21 @@
 main {
-    background-color: $primary;
 
     &.index {
         background-image: url('./../images/wallpaper-1.png');
     }
+    background-color: $primary;
     padding: 30px 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    .card {
+        border-radius: 20px;
+        bottom: 50px;
+        @media screen and (max-width: 757px) {
+            bottom: 0;
+        }
+    }
 
     .promise-value {
         p.promise-text {
@@ -38,6 +46,7 @@ main {
         }
     }
     .form {
+        position: relative;
         .form-title {
             h2 {
                 color: $dark-primary;
