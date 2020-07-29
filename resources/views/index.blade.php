@@ -16,6 +16,37 @@
 <section class="main">
     <div class="container-fluid">
         <div class="row">
+            {{-- Imagen  --}}
+            <div class="col-md-4">
+                <img src="{{ asset('images/main-image.png') }}" class="w-100" alt="">
+            </div>
+            {{-- Información adicional --}}
+            <div class="col-md-4">
+                <p>CONVIERTE TU <strong>NEGOCIO</strong> EN <strong>AGENTE AUTORIZADO</strong> DE SERVICIOS DE <strong>TELEVISIÓN, INTERNET Y TELEFONÍA</strong></p>
+                <ul>
+                    <li>
+                        <img src="{{ asset('images/logos/wifi-logo.png') }}" alt="">
+                        <h3>Servicios y productos de <strong>alta demanda</strong> en todo el país.</h3>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/logos/wifi-logo.png') }}" alt="">
+                        <h3>Inversión a <strong>bajo costo</strong>, con amplios márgenes de ganancia y <strong>precios competitivos.</strong></h3>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/logos/wifi-logo.png') }}" alt="">
+                        <h3>Capacitación técnica y comercial <strong>GRATUITA.</strong></h3>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/logos/wifi-logo.png') }}" alt="">
+                        <h3>Acceso a base de datos de <strong>clientes potenciales</strong></h3>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/logos/wifi-logo.png') }}" alt="">
+                        <h3>Con el soporte de la Infraestructura <strong>tecnológica más grande</strong> del país..</h3>
+                    </li>
+                </ul>
+            </div>
+            {{-- Formulario  --}}
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">

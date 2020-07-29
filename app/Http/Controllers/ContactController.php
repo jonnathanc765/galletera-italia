@@ -31,17 +31,21 @@ class ContactController extends Controller
 
         $to_email   = $data['email'];
 
-        Mail::to($to_email)->send(new ClientMail($data));
+        try {
+            Mail::to($to_email)->send(new ClientMail($data));
+        } catch (\Throwable $th) {
+            return redirect()->route('contact.failure');
+        }
 
         try {
             Mail::to(env('PROVIDER_EMAIL'))->send(new ProviderMail($data));
         } catch (\Throwable $th) {
-            return view('contacts.failure');
+            return redirect()->route('contact.failure');
         }
 
         // Finalmente, si no surje ningun error, se guarda todo en la base de datos
         Contact::create($data);
 
-        return view('contacts.success');
+        return redirect()->route('contact.success');
     }
 }

@@ -8,9 +8,9 @@
 @endsection
 
 @section('content')
-    
+
 <div class="container-fluid mt-4 mb-5">
-    
+
     <div class="row">
         <div class="col-md-12">
                 <h2 class="">Lista de personas que han contactado</h2>
@@ -39,7 +39,7 @@
                                 </tr>
                             @endforeach
                         </tbody>
-    
+
                     </table>
                 </div>
 
@@ -65,6 +65,6 @@
                 }
             });
         });
-    
+
     </script>
-@endsection 
+@endsection

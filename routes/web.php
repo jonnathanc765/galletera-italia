@@ -41,6 +41,16 @@ Route::prefix('contacts')->group(function ()
 {
     Route::get('/', 'ContactController@index')->name('mails.index')->middleware('auth');
     Route::post('/store', 'ContactController@store')->name('mails.store');
+
+    Route::get('/success-message-to-contact', function ()
+    {
+        return view('contacts.success');
+    })->name('contact.success');
+
+    Route::get('/failure-message-to-contact', function ()
+    {
+        return view('contacts.failure');
+    })->name('contact.failure');
 });
 
 Route::middleware(['auth'])->group(function ()
@@ -53,7 +63,7 @@ Route::middleware(['auth'])->group(function ()
         Route::post('/store', 'ClientController@store')->name('clients.store');
         Route::put('/update/{client}', 'ClientController@update')->name('clients.update');
         Route::delete('/destroy/{client}', 'ClientController@destroy')->name('clients.destroy');
-    
+
     });
     Route::prefix('dashboard')->group(function ()
     {
