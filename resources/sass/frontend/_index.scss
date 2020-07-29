@@ -37,4 +37,67 @@ main {
             }
         }
     }
+    .form {
+        .form-title {
+            h2 {
+                color: $dark-primary;
+                font-weight: 700;
+                font-size: 25px;
+                margin-bottom: 0;
+            }
+            img {
+                max-width: 100px;
+            }
+            p {
+                font-weight: 700;
+                max-width: 200px;
+                text-align: center;
+                line-height: 1.2;
+            }
+            h3 {
+                color: $secondary;
+                font-weight: 700;
+                margin-bottom: 18px;
+            }
+        }
+        form {
+            input {
+                background-color: $gray;
+                border-radius: 25px;
+                color: $dark-gray;
+                &:focus {
+                    background-color: $gray;
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                    -webkit-box-shadow: 0px 0px 3px 2px rgba(78,84,113,1);
+                    -moz-box-shadow: 0px 0px 3px 2px rgba(78,84,113,1);
+                    box-shadow: 0px 0px 3px 2px rgba(78,84,113,1);
+                }
+            }
+            h3#send-button {
+                background-color: $secondary;
+                padding: 10px 50px;
+                border-radius: 50px;
+                text-transform: uppercase;
+                -webkit-box-shadow: 12px 12px 8px -10px rgba(0,0,0,0.45);
+                -moz-box-shadow: 12px 12px 8px -10px rgba(0,0,0,0.45);
+                box-shadow: 12px 12px 8px -10px rgba(0,0,0,0.45);
+                background: rgb(255,147,30);
+                background: linear-gradient(180deg, rgba(255,147,30,1) 0%, rgba(184,78,18,1) 100%);
+                a {
+                    color: #fff;
+                }
+            }
+            p {
+                margin-bottom: 0;
+                font-size: 12px;
+                font-weight: 500;
+                a {
+                    color: $dark-primary;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }

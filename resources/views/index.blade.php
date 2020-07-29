@@ -51,6 +51,12 @@
             <div class="col-md-4 form">
                 <div class="card">
                     <div class="card-body">
+                        <div class="form-title d-flex justify-content-center flex-column align-items-center">
+                            <img src="{{ asset('images/isotipo-logo.png') }}" class="w-100" alt="logo de telecom">
+                            <h2 class="text-center">REGISTRA</h2>
+                            <p>LOS DATOS DE TU NEGOCIO Y RECIBE LA OFERTA</p>
+                            <h3>¡Comienza ya!</h3>
+                        </div>
                         <div class="form">
                             <form action="{{ route('mails.store') }}" method="POST" id="form">
                                 {{ csrf_field() }}
@@ -88,10 +94,14 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <a type="submit" id="send-button">
-                                    <h3>Enviame la propuesta</h3>
-                                </a>
-                                <p>¿Necesitas más información? <strong>Ponte en contacto con nosotros</strong></p>
+                                <div class="d-flex justify-content-center">
+                                    <h3 id="send-button">
+                                        <a href="#">
+                                            Envíame la <br> propuesta
+                                        </a>
+                                    </h3>
+                                </div>
+                                <p class="text-center">¿Necesitas más información? <strong>Ponte en contacto con nosotros</strong></p>
                                 <p class="text-center">¿Ya te registraste? <a href="#">Inicia sesión</a></p>
                             </form>
                         </div>
