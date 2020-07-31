@@ -1,9 +1,14 @@
 main.message {
-    &.success {
-        // background-image: url('./../images/wallpaper-2.png');
-    }
-    &.failure {
-        // background-image: url('./../images/wallpaper-3.png');
+
+    > .container {
+        background-position: center;
+        background-size: cover;
+        &.success {
+            background-image: url('./../images/wallpaper-2.png');
+        }
+        &.failure {
+            background-image: url('./../images/wallpaper-3.png');
+        }
     }
 
     .text {

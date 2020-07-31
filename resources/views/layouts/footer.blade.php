@@ -14,17 +14,17 @@
                 </li>
                 <li>
                     <a href="#">
-                        <img src="{{ asset('images/social-media/facebook-logo.png') }}" alt="">
+                        <img src="{{ asset('images/social-media/whatsapp-logo.png') }}" alt="">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="{{ asset('images/social-media/facebook-logo.png') }}" alt="">
+                        <img src="{{ asset('images/social-media/twitter-logo.png') }}" alt="">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="{{ asset('images/social-media/facebook-logo.png') }}" alt="">
+                        <img src="{{ asset('images/social-media/instagram-logo.png') }}" alt="">
                     </a>
                 </li>
             </ul>

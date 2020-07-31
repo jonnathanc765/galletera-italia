@@ -4,8 +4,8 @@
 
 
 @section('content')
-<main class="message failure">
-    <div class="container">
+<main class="message">
+    <div class="container failure">
         <div class="row">
 
             <div class="col-md-5">

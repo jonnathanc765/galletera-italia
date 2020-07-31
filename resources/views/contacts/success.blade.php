@@ -3,8 +3,8 @@
 @section('title', 'Exitoso')
 
 @section('content')
-<main class="message success">
-    <div class="container">
+<main class="message">
+    <div class="container success">
         <div class="row">
             <div class="col-md-5">
                 <img class="w-100" src="{{ asset('images/correct-logo.png') }}" alt="">

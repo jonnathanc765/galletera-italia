@@ -12,8 +12,8 @@
 
 @section('content')
 
-<main class="index">
-    <div class="container-fluid">
+<main>
+    <div class="container-fluid index">
         <div class="row">
             {{-- Imagen  --}}
             <div class="col-md-4 col-sm-6 main-image d-flex justify-content-center align-items-center">
