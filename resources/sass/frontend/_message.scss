@@ -9,6 +9,10 @@ main.message {
         &.failure {
             background-image: url('./../images/wallpaper-3.png');
         }
+        @media screen and (max-width: 767px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     }
 
     .text {

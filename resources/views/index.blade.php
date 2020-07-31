@@ -16,7 +16,7 @@
     <div class="container-fluid index">
         <div class="row">
             {{-- Imagen  --}}
-            <div class="col-md-4 col-sm-6 main-image d-flex justify-content-center align-items-center">
+            <div class="col-md-4 col-sm-6 main-image d-flex justify-content-center align-items-center main-image">
                 <img src="{{ asset('images/main-image.png') }}" class="w-100" alt="">
             </div>
             {{-- Información adicional --}}
@@ -24,31 +24,71 @@
                 <p class="promise-text">
                     CONVIERTE TU <strong>NEGOCIO</strong> EN <strong>AGENTE AUTORIZADO</strong> DE SERVICIOS DE <strong>TELEVISIÓN, INTERNET Y TELEFONÍA</strong>
                 </p>
+
+                <div class="justify-content-center fixed-button">
+                    <h3 class="send-button" class="shadow">
+                        <a href="#section-6">
+                            Envíame la <br> propuesta
+                        </a>
+                    </h3>
+                </div>
+
+                <div class="down-icon d-flex justify-content-center">
+                    <a href="#section-1">
+                        <img src="{{ asset('images/elements/down-icon.png') }}" alt="">
+                    </a>
+                </div>
+
                 <ul>
-                    <li>
+                    <li id="section-1">
                         <img src="{{ asset('images/logos/wifi-logo.png') }}" alt="">
                         <p>Servicios y productos de <strong>alta demanda</strong> en todo el país.</p>
+                        <div class="down-icon justify-content-center">
+                            <a href="#section-2">
+                                <img src="{{ asset('images/elements/down-icon.png') }}" alt="">
+                            </a>
+                        </div>
                     </li>
-                    <li>
+                    <li id="section-2">
                         <img src="{{ asset('images/logos/bars-logo.png') }}" alt="">
                         <p>Inversión a <strong>bajo costo</strong>, con amplios márgenes de ganancia y <strong>precios competitivos.</strong></p>
+                        <div class="down-icon justify-content-center">
+                            <a href="#section-3">
+                                <img src="{{ asset('images/elements/down-icon.png') }}" alt="">
+                            </a>
+                        </div>
                     </li>
-                    <li>
+                    <li id="section-3">
                         <img src="{{ asset('images/logos/computer-logo.png') }}" alt="">
                         <p>Capacitación técnica y comercial <strong>GRATUITA.</strong></p>
+                        <div class="down-icon justify-content-center">
+                            <a href="#section-4">
+                                <img src="{{ asset('images/elements/down-icon.png') }}" alt="">
+                            </a>
+                        </div>
                     </li>
-                    <li>
+                    <li id="section-4">
                         <img src="{{ asset('images/logos/mouse-logo.png') }}" alt="">
                         <p>Acceso a base de datos de <strong>clientes potenciales</strong></p>
+                        <div class="down-icon justify-content-center">
+                            <a href="#section-5">
+                                <img src="{{ asset('images/elements/down-icon.png') }}" alt="">
+                            </a>
+                        </div>
                     </li>
-                    <li>
+                    <li id="section-5">
                         <img src="{{ asset('images/logos/cogs-logo.png') }}" alt="">
                         <p>Con el soporte de la Infraestructura <strong>tecnológica más grande</strong> del país..</p>
+                        <div class="down-icon justify-content-center">
+                            <a href="#section-6">
+                                <img src="{{ asset('images/elements/down-icon.png') }}" alt="">
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
             {{-- Formulario  --}}
-            <div class="col-md-4 col-sm-12 form">
+            <div class="col-md-4 col-sm-12 form" id="section-6">
                 <div class="card">
                     <div class="card-body">
                         <div class="form-title d-flex justify-content-center flex-column align-items-center">
@@ -95,7 +135,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center">
-                                    <h3 id="send-button">
+                                    <h3 id="send-button" class="shadow send-button">
                                         <a href="#">
                                             Envíame la <br> propuesta
                                         </a>

@@ -33,6 +33,7 @@ footer p a {
 }
 
 footer ul {
+  padding-left: 0;
   list-style: none;
   display: flex;
   align-items: center;
@@ -45,6 +46,10 @@ footer ul li {
 
 footer ul li img {
   width: 30px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 main {
@@ -62,6 +67,40 @@ main .container-fluid.index {
   background-size: cover;
 }
 
+@media screen and (max-width: 767px) {
+  main .main-image {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  main .main-image img {
+    max-width: 300px;
+  }
+}
+
+main .down-icon img {
+  max-width: 50px;
+}
+
+main h3.send-button {
+  background-color: #ff931e;
+  padding: 10px 50px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background: #ff931e;
+  transition: all 0.3s ease;
+}
+
+main h3.send-button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main h3.send-button:hover {
+  transform: scale(1.05);
+}
+
 main .card {
   border-radius: 20px;
   bottom: 50px;
@@ -71,6 +110,26 @@ main .card {
 @media screen and (max-width: 757px) {
   main .card {
     bottom: 0;
+  }
+}
+
+main .promise-value .fixed-button {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  main .promise-value .fixed-button {
+    display: flex;
+  }
+}
+
+main .promise-value .down-icon {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  main .promise-value .down-icon {
+    display: flex;
   }
 }
 
@@ -90,20 +149,60 @@ main .promise-value ul {
 
 main .promise-value ul li {
   margin: 18px 0;
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   color: #fff;
 }
 
+@media screen and (max-width: 575px) {
+  main .promise-value ul li {
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 main .promise-value ul li p {
   font-size: 18px;
   margin-bottom: 0;
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 575px) {
+  main .promise-value ul li p {
+    font-size: 28px;
+    text-align: center;
+  }
 }
 
 main .promise-value ul li img {
   width: 100%;
   max-width: 35px;
+}
+
+@media screen and (max-width: 575px) {
+  main .promise-value ul li img {
+    max-width: 210px;
+  }
+}
+
+main .promise-value ul li .down-icon {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+}
+
+main .promise-value ul li .down-icon img {
+  max-width: 50px;
+}
+
+@media screen and (max-width: 575px) {
+  main .promise-value ul li .down-icon {
+    display: flex;
+  }
 }
 
 main .form {
@@ -112,8 +211,22 @@ main .form {
   justify-content: center;
 }
 
+@media screen and (max-width: 575px) {
+  main .form {
+    padding: 0;
+  }
+}
+
 main .form .card {
   max-width: 420px;
+}
+
+@media screen and (max-width: 575px) {
+  main .form .card {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 0;
+  }
 }
 
 main .form .form-title h2 {
@@ -159,9 +272,7 @@ main .form form h3#send-button {
   padding: 10px 50px;
   border-radius: 50px;
   text-transform: uppercase;
-  box-shadow: 12px 12px 8px -10px rgba(0, 0, 0, 0.45);
   background: #ff931e;
-  background: linear-gradient(180deg, #ff931e 0%, #b84e12 100%);
   transition: all 0.3s ease;
 }
 
@@ -196,6 +307,13 @@ main.message > .container.success {
 
 main.message > .container.failure {
   background-image: url(/images/wallpaper-3.png?e7959963459d55c15e44eb59fdfebc27);
+}
+
+@media screen and (max-width: 767px) {
+  main.message > .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 main.message .text {
