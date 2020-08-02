@@ -64,7 +64,7 @@ Route::middleware(['auth'])->group(function ()
 
 Route::get('/migrate-and-seed', function ()
 {
-    Artisan::call('migrate:fresh');
+    Artisan::call('migrate');
 });
 
 Route::get('/config-clear', function ()
