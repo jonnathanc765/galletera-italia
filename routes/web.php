@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -59,4 +60,14 @@ Route::middleware(['auth'])->group(function ()
     {
         Route::get('/', 'DashboardController@index')->name('dashboard.index');
     });
+});
+
+Route::get('/migrate-and-seed', function ()
+{
+    Artisan::call('migrate');
+});
+
+Route::get('/config-clear', function ()
+{
+    Artisan::call('config:clear');
 });
