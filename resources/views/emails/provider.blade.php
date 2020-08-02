@@ -19,7 +19,7 @@
                             <td>
                                 <div align="center"
                                     style="border-style:solid;border-width:thin;border-color:#dadce0;border-radius:8px; background-color: #fff;">
-                                    <div style="padding: 25px; background-color: #f15c22; display:flex;justify-content: center; align-items: center; margin-bottom: 20px;">
+                                    <div style="padding: 25px; background-color: #ececec; display:flex;justify-content: center; align-items: center; margin-bottom: 20px;">
                                         <img src="{{ asset('images/logo.png') }}" style="width:20% ;margin-bottom:16px;"/>
                                     </div>
                                     <div
@@ -60,7 +60,7 @@
                                         <div style="direction:ltr">
                                             <a
                                                 style="font-family:Roboto-Regular,Helvetica,Arial,sans-serif;color:rgba(0,0,0,0.54);font-size:11px;line-height:18px;padding-top:12px;text-align:center">
-                                                © Copyright 2019 {{ config('app.name') }} C.A. Todos los derechos
+                                                © Copyright 2020 {{ config('app.name') }} C.A. Todos los derechos
                                                 reservados.
                                             </a>
                                         </div>
