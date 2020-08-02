@@ -214,6 +214,7 @@ main .form {
 @media screen and (max-width: 575px) {
   main .form {
     padding: 0;
+    height: 100vh;
   }
 }
 

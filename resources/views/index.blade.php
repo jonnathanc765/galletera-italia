@@ -33,7 +33,7 @@
                     </h3>
                 </div>
 
-                <div class="down-icon d-flex justify-content-center">
+                <div class="down-icon justify-content-center">
                     <a href="#section-1">
                         <img src="{{ asset('images/elements/down-icon.png') }}" alt="">
                     </a>
