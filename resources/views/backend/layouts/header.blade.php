@@ -8,13 +8,10 @@
     </button>
 
     @if (Auth::check())
-        
+
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item @yield('nav.clients')">
-                <a class="nav-link" href="{{ route('clients.index') }}"><i class="fa fa-user-o mr-2" aria-hidden="true"></i> Clientes <span class="sr-only">(current)</span></a>
-            </li>
             <li class="nav-item @yield('nav.mails')">
                 <a class="nav-link" href="{{ route('mails.index') }}"><i class="fa fa-envelope-open mr-2" aria-hidden="true"></i> Contactos</a>
             </li>

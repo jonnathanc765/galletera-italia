@@ -15,13 +15,12 @@
                 <h2 class="">Lista de personas que han contactado</h2>
 
                 <div class="card shadow p-2">
-                    <table class="table table-hover mt-3 dataTable">
+                    <table class="table table-hover mt-3 dataTable text-center">
                         <thead class="thead-dark">
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Correo</th>
-                                <th scope="col">Ciudad</th>
                                 <th scope="col">Telefono</th>
                                 <th scope="col">Fecha</th>
                             </tr>
@@ -32,7 +31,6 @@
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $contact->name }}</td>
                                     <td>{{ $contact->email }}</td>
-                                    <td>{{ $contact->city }}</td>
                                     <td>{{ $contact->phone }}</td>
                                     <td>{{ $contact->created_at->format('d/m/Y g:i a') }}</td>
                                 </tr>
