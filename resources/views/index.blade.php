@@ -78,7 +78,7 @@
                     </li>
                     <li id="section-5">
                         <img src="{{ asset('images/logos/cogs-logo.png') }}" alt="">
-                        <p>Con el soporte de la Infraestructura <strong>tecnológica más grande</strong> del país..</p>
+                        <p>Con el soporte de la Infraestructura <strong>tecnológica más grande</strong> del país.</p>
                         <div class="down-icon justify-content-center">
                             <a href="#section-6">
                                 <img src="{{ asset('images/elements/down-icon.png') }}" alt="">
@@ -94,7 +94,7 @@
                         <div class="form-title d-flex justify-content-center flex-column align-items-center">
                             <img src="{{ asset('images/isotipo-logo.png') }}" class="w-100" alt="logo de telecom">
                             <h2 class="text-center">REGISTRA</h2>
-                            <p>LOS DATOS DE TU NEGOCIO Y RECIBE LA OFERTA</p>
+                            <p>LOS DATOS DE TU NEGOCIO Y RECIBE LA PROPUESTA</p>
                             <h3>¡Comienza ya!</h3>
                         </div>
                         <div class="form">
@@ -102,7 +102,7 @@
                                 {{ csrf_field() }}
                                 <div class="inputs">
                                     <div class="form-group">
-                                        <input type="text" value="{{ old('name') }}" class="form-control @error('name')is-invalid @enderror" id="name" placeholder="Nombres y apellidos" name="name">
+                                        <input type="text" value="{{ old('name') }}" class="form-control @error('name')is-invalid @enderror" id="name" placeholder="Nombre y apellido   " name="name">
                                         @error('name')
                                         <div class="invalid-feedback">
                                             {{ $message }}
@@ -110,8 +110,16 @@
                                         @enderror
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" value="{{ old('company') }}" class="form-control @error('company')is-invalid @enderror" id="company" placeholder="Nombre del negocio" name="company">
+                                        <input type="text" value="{{ old('company') }}" class="form-control @error('company')is-invalid @enderror" id="company" placeholder="Razón social" name="company">
                                         @error('company')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" value="{{ old('city') }}" class="form-control @error('city')is-invalid @enderror" id="city" placeholder="Cuidad" name="city">
+                                        @error('city')
                                         <div class="invalid-feedback">
                                             {{ $message }}
                                         </div>
@@ -142,7 +150,6 @@
                                     </h3>
                                 </div>
                                 <p class="text-center">¿Necesitas más información? <strong>Ponte en contacto con nosotros</strong></p>
-                                <p class="text-center">¿Ya te registraste? <a href="#">Inicia sesión</a></p>
                             </form>
                         </div>
                     </div>
