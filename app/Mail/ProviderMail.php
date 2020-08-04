@@ -31,7 +31,9 @@ class ProviderMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Contacto ' . config('app.name'))
+        return $this
+                    ->from('info@mitelecomve.com')
+                    ->subject('Contacto ' . config('app.name'))
                     ->view('emails.provider');
     }
 }
