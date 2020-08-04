@@ -35,6 +35,7 @@ class ClientMail extends Mailable
         return $this
             ->from('info@mitelecomve.com')
             ->subject('Contacto ' . config('app.name'))
+            ->attach(public_path() . '/' . 'resource/Instrucciones.docx')
             ->view('emails.client');
     }
 }
