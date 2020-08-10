@@ -22,6 +22,8 @@
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Correo</th>
                                 <th scope="col">Telefono</th>
+                                <th scope="col">Ciudad</th>
+                                <th scope="col">Razón social</th>
                                 <th scope="col">Fecha</th>
                             </tr>
                         </thead>
@@ -32,6 +34,8 @@
                                     <td>{{ $contact->name }}</td>
                                     <td>{{ $contact->email }}</td>
                                     <td>{{ $contact->phone }}</td>
+                                    <td>{{ $contact->city }}</td>
+                                    <td>{{ $contact->company }}</td>
                                     <td>{{ $contact->created_at->format('d/m/Y g:i a') }}</td>
                                 </tr>
                             @endforeach

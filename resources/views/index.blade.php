@@ -118,7 +118,7 @@
                                         @enderror
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" value="{{ old('city') }}" class="form-control @error('city')is-invalid @enderror" id="city" placeholder="Cuidad" name="city">
+                                        <input type="text" value="{{ old('city') }}" class="form-control @error('city')is-invalid @enderror" id="city" placeholder="Ciudad" name="city">
                                         @error('city')
                                         <div class="invalid-feedback">
                                             {{ $message }}
