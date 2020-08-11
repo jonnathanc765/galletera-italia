@@ -110,7 +110,7 @@
                                         @enderror
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" value="{{ old('company') }}" class="form-control @error('company')is-invalid @enderror" id="company" placeholder="Razón social" name="company">
+                                        <input type="text" value="{{ old('company') }}" class="form-control @error('company')is-invalid @enderror" id="company" placeholder="Razón social (Campo obligatorio *)" name="company">
                                         @error('company')
                                         <div class="invalid-feedback">
                                             {{ $message }}
@@ -149,7 +149,7 @@
                                         </a>
                                     </h3>
                                 </div>
-                                <p class="text-center">¿Necesitas más información? <strong>Ponte en contacto con nosotros</strong></p>
+                                <p class="text-center">* PARA POSTULARTE DEBES TENER <strong>EMPRESA REGISTRADA</strong></p>
                             </form>
                         </div>
                     </div>
