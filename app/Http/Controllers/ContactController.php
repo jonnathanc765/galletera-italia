@@ -98,7 +98,6 @@ class ContactController extends Controller
                 Contact::create($data);
             }
             // Finalmente, si no surje ningun error, se guarda todo en la base de datos
-            break;
         }
         return redirect()->route('contact.success');
     }
