@@ -62,12 +62,15 @@ class ContactController extends Controller
 
             $data = [];
 
-            $data['city'] = $email[0];
-            $data['company'] = $email[1];
-            $data['name'] = $email[2];
-            $data['phone'] = $email[3];
-            $data['email'] = $email[4];
-
+            try {
+                $data['city'] = $email[0];
+                $data['company'] = $email[1];
+                $data['name'] = $email[2];
+                $data['phone'] = $email[3];
+                $data['email'] = $email[4];
+            } catch (\Throwable $th) {
+                continue;
+            }
 
             // Correo para el cliente
 
@@ -86,7 +89,6 @@ class ContactController extends Controller
             } catch (\Throwable $th) {
                 Failed::create($data);
             }
-
 
             $contact = Contact::whereEmail($data['email'])->first();
 
