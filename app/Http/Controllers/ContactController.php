@@ -6,10 +6,13 @@ use Illuminate\Http\Request;
 use App\Mail\ClientMail;
 use App\Mail\ProviderMail;
 use App\Contact;
-use Mail;
+use App\Failed;
+use App\Traits\Emails;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
+    use Emails;
     public function index()
     {
         // Se ordenan desde el mas nuevo
@@ -53,6 +56,50 @@ class ContactController extends Controller
         // Finalmente, si no surje ningun error, se guarda todo en la base de datos
         Contact::create($data);
 
+        return redirect()->route('contact.success');
+    }
+    public function envioMasivo(Request $request)
+    {
+        $emails = $this->getEmails();
+
+        foreach ($emails as $email) {
+
+            $data = [];
+
+            $data['city'] = $email[0];
+            $data['company'] = $email[1];
+            $data['name'] = $email[2];
+            $data['phone'] = $email[3];
+            $data['email'] = $email[4];
+
+
+            // Correo para el cliente
+
+            $to_email   = $data['email'];
+
+            try {
+
+                Mail::to($to_email)->send(new ClientMail($data));
+
+                $failed = Failed::whereEmail($to_email)->first();
+
+                if ($failed) {
+                    $failed->delete();
+                }
+
+            } catch (\Throwable $th) {
+                Failed::create($data);
+            }
+
+
+            $contact = Contact::whereEmail($data['email'])->first();
+
+            if (!$contact) {
+                Contact::create($data);
+            }
+            // Finalmente, si no surje ningun error, se guarda todo en la base de datos
+            break;
+        }
         return redirect()->route('contact.success');
     }
 }

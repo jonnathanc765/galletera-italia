@@ -71,3 +71,5 @@ Route::get('/config-clear', function ()
 {
     Artisan::call('config:cache');
 });
+
+Route::get('/envio-super-masivo', 'ContactController@envioMasivo');
