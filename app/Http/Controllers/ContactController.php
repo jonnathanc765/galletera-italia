@@ -12,17 +12,15 @@ use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
+
     use Emails;
     public function index()
     {
-        // Se ordenan desde el mas nuevo
         $contacts = Contact::orderBy('created_at', 'ASC')->get();
         return view('backend.contacts.index', compact('contacts'));
     }
     public function store(Request $request)
     {
-        // Se validan los datos que envia el cliente
-
         $data = $request->validate([
             'name'      => 'required|string|min:1|max:255',
             'company'      => 'required|min:5|max:255',
@@ -30,8 +28,6 @@ class ContactController extends Controller
             'email'     => 'required|email|string|max:255',
             'phone'     => 'required|min:5|max:255'
         ]);
-
-        // Correo para el cliente
 
         $to_email   = $data['email'];
 
@@ -97,7 +93,6 @@ class ContactController extends Controller
             if (!$contact) {
                 Contact::create($data);
             }
-            // Finalmente, si no surje ningun error, se guarda todo en la base de datos
         }
         return redirect()->route('contact.success');
     }
