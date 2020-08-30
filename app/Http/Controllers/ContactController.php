@@ -76,25 +76,26 @@ class ContactController extends Controller
 
             $to_email   = $data['email'];
 
-            try {
-
-                Mail::to($to_email)->send(new ClientMail($data));
-
-                $failed = Failed::whereEmail($to_email)->first();
-
-                if ($failed) {
-                    $failed->delete();
-                }
-
-            } catch (\Throwable $th) {
-                Failed::create($data);
-            }
-
             $contact = Contact::whereEmail($data['email'])->first();
 
             if (!$contact) {
-                Contact::create($data);
+                try {
+
+                    Mail::to($to_email)->send(new ClientMail($data));
+
+                    $failed = Failed::whereEmail($to_email)->first();
+
+                    if ($failed) {
+                        $failed->delete();
+                    }
+
+                    Contact::create($data);
+
+                } catch (\Throwable $th) {
+                    Failed::create($data);
+                }
             }
+
         }
         return redirect()->route('contact.success');
     }
