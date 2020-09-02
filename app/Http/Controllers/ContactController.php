@@ -113,8 +113,6 @@ class ContactController extends Controller
                 }
             }
 
-            break;
-
         }
         // return redirect()->route('contact.success');
     }
