@@ -67,7 +67,8 @@ class ContactController extends Controller
                 $data['company'] = $email[1];
                 $data['name'] = $email[2];
                 $data['phone'] = $email[3];
-                $data['email'] = $email[4];
+                $data['phone'] .=  ' - ' . $email[4];
+                $data['email'] = $email[5];
             } catch (\Throwable $th) {
                 continue;
             }
@@ -91,12 +92,30 @@ class ContactController extends Controller
 
                     Contact::create($data);
 
+                    echo "Success {$data['email']} <br>";
+
+                } catch (\Throwable $th) {
+                    Failed::create($data);
+                }
+            } else {
+                try {
+                    Mail::to($to_email)->send(new ClientMail($data));
+
+                    $failed = Failed::whereEmail($to_email)->first();
+
+                    if ($failed) {
+                        $failed->delete();
+                    }
+
+                    echo "Success {$data['email']} <br>";
                 } catch (\Throwable $th) {
                     Failed::create($data);
                 }
             }
 
+            break;
+
         }
-        return redirect()->route('contact.success');
+        // return redirect()->route('contact.success');
     }
 }
