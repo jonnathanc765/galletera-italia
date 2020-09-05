@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/', 'HomeController@index')->name('home');
 
+Route::get('/contact', 'HomeController@contact');
+
 Route::get('/home', function () {
     return redirect()->route('home');
 });
