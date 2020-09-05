@@ -5,97 +5,34 @@
     Presentacion
 @endsection
 
-@section('head')
 
-    <link rel="stylesheet" href="{{ asset('css/sweetalert.css') }}">
-
-@endsection
-
-{{-- Este es el formulario (dejarolo ) --}}
-<div class="form">
-    <form action="{{ route('mails.store') }}" method="POST" id="form">
-        {{ csrf_field() }}
-        <div class="inputs">
-            <div class="form-group">
-                <input type="text" value="{{ old('name') }}" class="form-control @error('name')is-invalid @enderror" id="name" placeholder="Nombre y apellido   " name="name">
-                @error('name')
-                <div class="invalid-feedback">
-                    {{ $message }}
-                </div>
-                @enderror
-            </div>
-            <div class="form-group">
-                <input type="text" value="{{ old('company') }}" class="form-control @error('company')is-invalid @enderror" id="company" placeholder="Razón social (Campo obligatorio *)" name="company">
-                @error('company')
-                <div class="invalid-feedback">
-                    {{ $message }}
-                </div>
-                @enderror
-            </div>
-            <div class="form-group">
-                <input type="text" value="{{ old('city') }}" class="form-control @error('city')is-invalid @enderror" id="city" placeholder="Ciudad" name="city">
-                @error('city')
-                <div class="invalid-feedback">
-                    {{ $message }}
-                </div>
-                @enderror
-            </div>
-            <div class="form-group">
-                <input type="text" value="{{ old('phone') }}" class="form-control @error('phone')is-invalid @enderror" id="phone" placeholder="Teléfono" name="phone">
-                @error('phone')
-                <div class="invalid-feedback">
-                    {{ $message }}
-                </div>
-                @enderror
-            </div>
-            <div class="form-group">
-                <input type="text" value="{{ old('email') }}" class="form-control @error('email')is-invalid @enderror" id="email" placeholder="Correo" name="email">
-                @error('email')
-                <div class="invalid-feedback">
-                    {{ $message }}
-                </div>
-                @enderror
-            </div>
+@section('content')
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h1>El placer de un <span>dulce momento</span></h1>
+            <img src="{{ asset('img/galleta.jpg') }}" height="150" width="150" alt="tag">
+            <button class="btn btn-secondary">Conoce nuestros productos</button>
         </div>
-        <div class="d-flex justify-content-center">
-            <h3 id="send-button" class="shadow send-button">
-                <a href="#">
-                    Envíame la <br> propuesta
-                </a>
-            </h3>
-        </div>
-        <p class="text-center">* PARA POSTULARTE DEBES TENER <strong>EMPRESA REGISTRADA</strong></p>
-    </form>
+    </div>
+
+    <div class="row">
+        <div class="col-3"><p> Nosotros</p></div>
+        <div class="col-3"><p> Productos</p></div>
+        <div class="col-3"><p> Galeria</p></div>
+        <div class="col-3"><p> Contacto</p></div>
+    </div>
+    <div class="row">
+        <p class="h2">Nosotros</p>
+        <p>Galletera Italia, C.A es una empresa de origen venezolano
+            fundada en el año 2015, dedicada a la fabricación,
+            comercialización y distribución de artículos de galletería con
+            alcance a nivel nacional. Actualmente
+             fabricante de marcas comerciales como: María Italia, su marca
+            estrella desde los inicios de la empresa y María Tentazione desde
+            el año 2019 en sus dos presentaciones en sabor vainilla y sabor
+            chocolate.</p>
+            <button class="btn btn-primary">Conocenos</button>
+    </div>
 </div>
-
-@endsection
-
-@section('scripts')
-
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
-
-    <script type="text/javascript">
-        $('#send-button').click(function(e) {
-            e.preventDefault();
-            $("#send-button").attr('disabled', true);
-            $('#form').submit();
-        });
-    </script>
-
-    @if ($errors->any())
-    <script src="{{ asset('js/sweetalert2@8.js') }}"></script>
-    <script>
-        Swal.fire('Tenemos un problema...', 'Debe llenar todos los campos correctamente',
-            'error');
-    </script>
-    @endif
-
-    @if (session()->has('error'))
-    <script src="{{ asset('js/sweetalert2@8.js') }}"></script>
-    <script>
-        Swal.fire('Tenemos un problema...', "{{ session('error') }}",
-            'error');
-    </script>
-    @endif
-
 @endsection
