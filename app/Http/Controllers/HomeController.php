@@ -21,7 +21,7 @@ class HomeController extends Controller
         return view('contact');
     }
 
-    public function nosotros()
+    public function about()
     {
         return view('about');
     }

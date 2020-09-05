@@ -16,13 +16,13 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/contacto', 'HomeController@contact');
+Route::get('/contacto', 'HomeController@contact')->name('contact');
 
-Route::get('/nosotros', 'HomeController@about');
+Route::get('/nosotros', 'HomeController@about')->name('about');
 
-Route::get('/productos', 'HomeController@products');
+Route::get('/productos', 'HomeController@products')->name('products');
 
-Route::get('/galeria', 'HomeController@gallery');
+Route::get('/galeria', 'HomeController@gallery')->name('gallery');
 
 
 Route::get('/home', function () {
