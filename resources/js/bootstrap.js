@@ -1,4 +1,4 @@
-window._ = require('lodash');
+// window._ = require('lodash');
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -7,18 +7,20 @@ window._ = require('lodash');
  */
 
 try {
-    // window.Popper = require('popper.js').default;
+    window.Popper = require('popper.js').default;
     window.$ = window.jQuery = require('jquery');
-
-    window.JSZip = require("jszip");
-    // require( "pdfmake" );
-    require( 'datatables.net-bs4' );
-    require( 'datatables.net-buttons-bs4' );
-    require( 'datatables.net-buttons/js/buttons.html5.js' );
-    require( 'datatables.net-buttons/js/buttons.print.js' );
+    require('bootstrap');
 
 
-} catch (e) {}
+    // window.JSZip = require("jszip");
+    // // require( "pdfmake" );
+    // require( 'datatables.net-bs4' );
+    // require( 'datatables.net-buttons-bs4' );
+    // require( 'datatables.net-buttons/js/buttons.html5.js' );
+    // require( 'datatables.net-buttons/js/buttons.print.js' );
+
+
+} catch (e) {console.log(e)}
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
