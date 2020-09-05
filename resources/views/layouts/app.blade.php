@@ -10,8 +10,8 @@
     <meta name="language" content="es" />
     <meta name="revisit-after" content="1 day" />
     <meta name="rating" content="General" />
-    <meta name="author" content="La Machine" />
-    <meta name="owner" content="Tconecta" />
+    <meta name="author" content="Multiviral & Adrian Guerrero"/>
+    <meta name="owner" content="Galleteria Italia" />
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
