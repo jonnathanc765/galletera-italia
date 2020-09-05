@@ -17,7 +17,7 @@
             aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand d-none" href="#">
+        <a class="navbar-brand d-block d-md-none" href="#">
             <img src="{{ asset('img/galleteraitalialogo.png') }}" height="30" width="30" alt="tag">
         </a>
 
