@@ -30,4 +30,9 @@ class HomeController extends Controller
     {
         return view('products');
     }
+
+    public function gallery()
+    {
+        return view('gallery');
+    }
 }
