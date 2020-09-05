@@ -1,23 +1,20 @@
 <footer>
     <div class="container">
-        <p class="text-center">
-            ¿Quieres saber de más ofertas de negocio para el <strong>sector telecomunicaciones?</strong>
-            <br>
-            <a href="#">Siguenos en redes sociales</a>
-        </p>
-        <div>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/mitelecom.ve">
-                        <img src="{{ asset('images/social-media/facebook-logo.png') }}" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/mitelecom.ve/">
-                        <img src="{{ asset('images/social-media/instagram-logo.png') }}" alt="">
-                    </a>
-                </li>
-            </ul>
+        <div class="row">
+
+            <div class="col-md-4 col-12">
+                <p>Ubicacion</p>
+                <address>Av. 02 Sur, Parque IndustrialCOSDZIEBA. Barinas, Venezuela.</address>
+            </div>
+            <div class="col-md-4 col-12">
+                <p>Contacto</p>
+                <p>nfo@galleteraitalia.com0273-5420707 / 5420461 / 5420392</p>
+            </div>
+            <div class="col-md-4 col-12">
+                <p>Redes sociales</p>
+                <p>3 iconos sociales aca</p>
+            </div>
         </div>
+
     </div>
 </footer>
