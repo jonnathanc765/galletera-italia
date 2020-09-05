@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    return view('.index');
-})->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/home', function () {
     return redirect()->route('home');
@@ -71,5 +69,3 @@ Route::get('/config-clear', function ()
 {
     Artisan::call('config:cache');
 });
-
-Route::get('/envio-super-masivo', 'ContactController@envioMasivo');
