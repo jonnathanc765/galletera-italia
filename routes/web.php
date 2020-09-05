@@ -20,6 +20,8 @@ Route::get('/contact', 'HomeController@contact');
 
 Route::get('/nosotros', 'HomeController@about');
 
+Route::get('/productos', 'HomeController@products');
+
 Route::get('/home', function () {
     return redirect()->route('home');
 });
