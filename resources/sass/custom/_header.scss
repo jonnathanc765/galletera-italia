@@ -1,5 +1,9 @@
 header {
+    --triangle-position: -1%;
+    --right-side: calc(var(--triangle-position) + 1%);
+    --left-side: calc(var(--triangle-position) - 1%);
     margin-bottom: 15vh;
+    position: relative;
 
         nav {
             ul {
@@ -27,6 +31,8 @@ header {
                         bottom: 7vh;
                         display: flex;
                         justify-content: center;
+                        position: relative;
+                        z-index: 10;
 
                         img {
                             width: 90%;
@@ -59,5 +65,29 @@ header {
                 }
             }
         }
+
+    &:after {
+
+
+
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -18%;
+        height: 10px;
+        background-color: var(--primary);
+        width: 100%;
+        z-index: 5;
+        clip-path:  polygon(100% 0%, 100% 100%, var(--right-side) 100%, var(--triangle-position) 0, var(--left-side) 100%, 0% 100%, 0% 0%);
+
+    }
+
+    // &:before {
+    //     content: "";
+    //     z-index: 10;
+    //     position: relative;
+    // }
 }
 
