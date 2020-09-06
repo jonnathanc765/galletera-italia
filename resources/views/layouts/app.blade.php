@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="{{ asset('css/app.css')  }}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;400;700&display=swap" rel="stylesheet">
     <meta name="theme-color" content="#00013a">
     <link rel="shortcut icon" href="{{ asset('images/isotipo-logo.png') }}">
 
