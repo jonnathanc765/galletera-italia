@@ -12,7 +12,7 @@
         </a>
 
         <div class="collapse navbar-collapse" id="main-nav">
-            <ul class="navbar-nav w-100 justify-content-center">
+            <ul class="navbar-nav w-100">
                 <li class="nav-item {{request()->is('/') ? 'active-page' : ''}}">
                     <a class="nav-link" href="{{route('home')}}">Inicio <span class="sr-only">(current)</span></a>
                 </li>
