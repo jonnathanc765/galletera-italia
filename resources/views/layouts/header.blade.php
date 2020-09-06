@@ -13,23 +13,23 @@
 
         <div class="collapse navbar-collapse" id="main-nav">
             <ul class="navbar-nav w-100 justify-content-center">
-                <li class="nav-item active">
+                <li class="nav-item {{request()->is('/') ? 'active-page' : ''}}">
                     <a class="nav-link" href="{{route('home')}}">Inicio <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item {{request()->is('nosotros') ? 'active-page' : ''}}">
                     <a class="nav-link" href="{{route('about')}}">Nosotros</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item {{request()->is('productos') ? 'active-page' : ''}}">
                     <a class="nav-link" href="{{route('products')}}">Productos</a>
                 </li>
                 <li class="nav-item logo">
                     <img src="{{ asset('img/galleteraitalialogo.png') }}" alt="tag">
 
                 </li>
-                <li class="nav-item">
+                <li class="nav-item {{request()->is('galeria') ? 'active-page' : ''}}">
                     <a class="nav-link" href="{{route('gallery')}}">Galeria</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item {{request()->is('contacto') ? 'active-page' : ''}}">
                     <a class="nav-link" href="{{route('contact')}}">Contacto</a>
                 </li>
                 <li class="nav-item form">
@@ -44,3 +44,4 @@
     </nav>
 
 </header>
+

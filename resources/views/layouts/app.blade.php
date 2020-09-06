@@ -37,5 +37,25 @@
     @include('layouts.footer')
 
     <script src="{{ asset('js/app.js') }}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+
+            let header = document.querySelector('header')
+            let active = document.querySelector('.active-page')
+            if(typeof active === 'undefined') {
+                return
+            } else {
+
+                let headerCoords = header.getBoundingClientRect()
+                let activeCoords = active.getBoundingClientRect()
+                // calculamos q tan a la izquiera esta
+                // pasa eso sacamos q tan a la izquierda, mas la mitad del ancho
+                let halfActive = activeCoords.left + (activeCoords.width/2)
+                // cantidad porcentual con respecto al padre
+                let percentage = ((halfActive)*100)/headerCoords.width
+                header.style.setProperty('--triangle-position', `${String(percentage)}%`);
+            }
+        })
+    </script>
 </body>
 </html>
