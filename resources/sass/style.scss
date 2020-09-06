@@ -9,4 +9,9 @@ html {
     scroll-behavior: smooth;
 }
 
+.first-row {
+    padding-top: 15vh;
+}
+
 @import 'custom/header';
+@import 'custom/home';

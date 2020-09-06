@@ -17,3 +17,11 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+$azul : #006794;
+$rojo : #c12a2a;
+
+:root {
+    --azul: #{$azul};
+    --rojo: #{$rojo};
+}

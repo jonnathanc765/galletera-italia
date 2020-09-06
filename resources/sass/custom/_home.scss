@@ -1,0 +1,64 @@
+.hero-container {
+
+    text-align: center;
+    background-color: var(--azul);
+
+    &__main {
+        padding-bottom: 45vh;
+
+        h1 {
+            position: relative;
+            color: var(--rojo);
+            z-index: 10;
+            font-size: 4.5em;
+            font-weight: bolder;
+            font-family: 'Spartan', sans-serif;
+            margin-top: -6vh;
+            margin-bottom: 4vh;
+
+            span {
+
+                display: block;
+                color: var(--secondary);
+                font-size: 2.5rem;
+            }
+
+            &::before {
+                content: "";
+                background-color: white;
+                -webkit-clip-path: circle(50% at 50% 0);
+                clip-path: circle(50% at 50% 0);
+                display: block;
+                position: absolute;
+                width: 93%;
+                height: 100vh;
+                z-index: 5;
+                top: -50vh;
+                z-index: -1;
+                left: 50%;
+                transform: translateX(-50%);
+
+            }
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            height: 35vh;
+            width: 70vw;
+            margin-bottom: 1em;
+        }
+
+        button {
+            background-color: #d9d9d9;
+            font-family: 'Spartan', sans-serif;
+            color: var(--primary);
+            border: 1px solid #d9d9d9;
+            border-radius: 2em;
+            font-weight: bold;
+            font-size: 1.25em;
+
+        }
+    }
+
+}

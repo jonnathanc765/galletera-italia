@@ -8,8 +8,8 @@
 
 @section('content')
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
+    <div class="row first-row hero-container">
+        <div class="col-12 hero-container__main">
             <h1>El placer de un <span>dulce momento</span></h1>
             <img src="{{ asset('img/galleta.jpg') }}" height="150" width="150" alt="tag">
             <button class="btn btn-secondary">Conoce nuestros productos</button>
