@@ -2,5 +2,10 @@
 // Variables
 @import 'variables';
 
+// Custom
+@import 'style';
+
 // Bootstrap
+$enable-responsive-font-sizes: true;
+
 @import '~bootstrap/scss/bootstrap';

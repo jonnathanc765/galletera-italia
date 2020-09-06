@@ -17,10 +17,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/frontend.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css')  }}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
-    <meta name="theme-color" content="#3c6aea">
+    <meta name="theme-color" content="#00013a">
     <link rel="shortcut icon" href="{{ asset('images/isotipo-logo.png') }}">
 
 
@@ -38,5 +37,25 @@
     @include('layouts.footer')
 
     <script src="{{ asset('js/app.js') }}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+
+            let header = document.querySelector('header')
+            let active = document.querySelector('.active-page')
+            if(typeof active === 'undefined') {
+                return
+            } else {
+
+                let headerCoords = header.getBoundingClientRect()
+                let activeCoords = active.getBoundingClientRect()
+                // calculamos q tan a la izquiera esta
+                // pasa eso sacamos q tan a la izquierda, mas la mitad del ancho
+                let halfActive = activeCoords.left + (activeCoords.width/2)
+                // cantidad porcentual con respecto al padre
+                let percentage = ((halfActive)*100)/headerCoords.width
+                header.style.setProperty('--triangle-position', `${String(percentage)}%`);
+            }
+        })
+    </script>
 </body>
 </html>
