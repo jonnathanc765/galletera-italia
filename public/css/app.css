@@ -24,10 +24,12 @@ header {
           filter: drop-shadow(0 1px 2px black);
 }
 
-header nav ul {
-  align-items: flex-start;
-  height: 40px;
-  justify-content: space-around;
+@media screen and (min-width: 992px) {
+  header nav ul {
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 40px;
+  }
 }
 
 header nav ul li a {
@@ -51,6 +53,12 @@ header nav ul li.logo {
   justify-content: center;
   position: relative;
   z-index: 10;
+}
+
+@media screen and (max-width: 991px) {
+  header nav ul li.logo {
+    display: none;
+  }
 }
 
 header nav ul li.logo img {
@@ -96,9 +104,16 @@ header:after {
           clip-path: polygon(100% 0%, 100% 100%, var(--right-side) 100%, var(--triangle-position) 0, var(--left-side) 100%, 0% 100%, 0% 0%);
 }
 
+@media screen and (max-width: 991px) {
+  header:after {
+    display: none;
+  }
+}
+
 .hero-container {
   text-align: center;
   background-color: var(--azul);
+  overflow: hidden;
 }
 
 .hero-container__main {
@@ -129,10 +144,10 @@ header:after {
   clip-path: circle(50% at 50% 0);
   display: block;
   position: absolute;
-  width: 93%;
+  width: 19em;
   height: 100vh;
   z-index: 5;
-  top: -50vh;
+  top: -5em;
   z-index: -1;
   left: 50%;
   transform: translateX(-50%);

@@ -2,6 +2,7 @@
 
     text-align: center;
     background-color: var(--azul);
+    overflow: hidden;
 
     &__main {
         padding-bottom: 45vh;
@@ -30,10 +31,10 @@
                 clip-path: circle(50% at 50% 0);
                 display: block;
                 position: absolute;
-                width: 93%;
+                width: 19em;
                 height: 100vh;
                 z-index: 5;
-                top: -50vh;
+                top: -5em;
                 z-index: -1;
                 left: 50%;
                 transform: translateX(-50%);
