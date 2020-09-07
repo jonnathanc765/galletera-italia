@@ -15,12 +15,14 @@
             <button class="btn btn-secondary">Conoce nuestros productos</button>
         </div>
     </div>
+    <div class="row cards-wrapper position-relative">
 
-    <div class="row">
-        <div class="col-3"><p> Nosotros</p></div>
-        <div class="col-3"><p> Productos</p></div>
-        <div class="col-3"><p> Galeria</p></div>
-        <div class="col-3"><p> Contacto</p></div>
+        <div class="row cards-container">
+            <div class="cards-container__card offset-2 col-2"><p>Nosotros</p></div>
+            <div class="cards-container__card col-2"><p>Productos</p></div>
+            <div class="cards-container__card col-2"><p>Galeria</p></div>
+            <div class="cards-container__card col-2"><p>Contacto</p></div>
+        </div>
     </div>
     <div class="row">
         <p class="h2">Nosotros</p>

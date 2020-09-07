@@ -57,7 +57,7 @@ header nav ul li.logo img {
   height: 75%;
   -o-object-fit: contain;
      object-fit: contain;
-  align-self: end;
+  align-self: flex-end;
 }
 
 header nav ul li.form {
@@ -153,6 +153,95 @@ header:after {
   border-radius: 2em;
   font-weight: bold;
   font-size: 1.25em;
+}
+
+.cards-wrapper {
+  padding-bottom: 22vh;
+}
+
+.cards-wrapper .cards-container {
+  position: absolute;
+  width: 100%;
+  bottom: -6em;
+}
+
+.cards-wrapper .cards-container__card {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 !important;
+  background-image: url(/images/fabrica.jpg?d6108a1471a7a4d47d64d3d2358348ef);
+}
+
+.cards-wrapper .cards-container__card p {
+  flex-grow: 0.25;
+  font-size: 2.5em;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: flex-grow 0.3s ease-in;
+}
+
+.cards-wrapper .cards-container__card p::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 34px;
+}
+
+.cards-wrapper .cards-container__card p:hover {
+  flex-grow: 0.75;
+}
+
+.cards-wrapper .cards-container__card:nth-child(odd) {
+  justify-content: flex-end;
+}
+
+.cards-wrapper .cards-container__card:nth-child(odd) p {
+  background-color: var(--primary);
+  color: white;
+}
+
+.cards-wrapper .cards-container__card:nth-child(odd) p::after {
+  background-color: var(--primary);
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  top: -33px;
+  left: 0;
+}
+
+.cards-wrapper .cards-container__card:nth-child(even) p {
+  background-color: var(--secondary);
+  color: black;
+}
+
+.cards-wrapper .cards-container__card:nth-child(even) p::after {
+  background-color: var(--secondary);
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
+  right: 0;
+  bottom: -34px;
+}
+
+.cards-wrapper .cards-container__card:first-of-type {
+  border-radius: 35px 0 0 35px;
+}
+
+.cards-wrapper .cards-container__card:first-of-type p {
+  border-radius: 0 0 0 35px;
+}
+
+.cards-wrapper .cards-container__card:last-of-type {
+  border-radius: 0 35px 35px 0;
+}
+
+.cards-wrapper .cards-container__card:last-of-type p {
+  border-radius: 0 35px 0 0;
 }
 
 /*!

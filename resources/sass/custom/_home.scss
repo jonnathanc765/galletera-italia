@@ -62,3 +62,102 @@
     }
 
 }
+
+.cards-wrapper {
+    padding-bottom: 22vh;
+
+    .cards-container {
+
+        position: absolute;
+        width: 100%;
+        bottom: -6em;
+
+        &__card {
+            height: 75vh;
+            display:flex;
+            flex-direction: column;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 0 !important;
+            background-image: url('../img/fabrica.jpg');
+
+            p {
+                // height: 25%;
+                flex-grow: 0.25;
+                font-size: 2.5em;
+                margin-bottom: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                transition: flex-grow 0.3s ease-in;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 50px;
+                    height: 34px;
+
+                }
+
+                &:hover {
+                    flex-grow: 0.75;
+                }
+            }
+
+            &:nth-child(odd) {
+                justify-content: flex-end;
+
+                p {
+                    // order.
+                    background-color: var(--primary);
+                    color: white;
+
+                    &::after{
+                        background-color: var(--primary);
+                        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                        top: -33px;
+                        left: 0;
+                    }
+
+
+                }
+            }
+
+            &:nth-child(even) {
+                p{
+
+                    background-color: var(--secondary);
+                    color: black;
+
+                    &::after{
+
+                        background-color: var(--secondary);
+                        clip-path: polygon(50% 100%, 0 0, 100% 0);
+                        right: 0;
+                        bottom: -34px;
+                    }
+                }
+            }
+
+            &:first-of-type{
+                border-radius: 35px 0 0 35px;
+                // background-image: url('../img/fabrica.jpg');
+                p {
+                    border-radius: 0 0 0 35px;
+                }
+
+            }
+
+            &:last-of-type {
+                border-radius: 0 35px 35px 0;
+
+                p {
+                    border-radius: 0 35px 0 0;
+                }
+            }
+        }
+    }
+}
+
