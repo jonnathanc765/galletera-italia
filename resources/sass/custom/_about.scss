@@ -1,0 +1,37 @@
+.about {
+
+
+    &__timeline{
+        background-color: var(--rojo);
+
+        &--main-column {
+            margin-top: -6em;
+            padding: 6em 8em!important;
+            background-color: var(--beige);
+        }
+    }
+
+    &__info {
+        // background-color: var(--azul);
+
+        &-mision, &-valores {
+            background-size: cover,36%;
+            background-repeat: no-repeat;
+            color: var(--primary);
+            background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 75%, rgba(255,255,255,0) 100%), url('../img/maria-italia.png');
+            padding: 45px 0 45px 45px;
+            background-position: right;
+        }
+
+        &-vision {
+            background-size: cover,36%;
+            background-repeat: no-repeat;
+            color:white;
+            // // background-image: linear-gradient(90deg, var(--rojo) 0%, var(--rojo) 25%, rgba(255,255,255,0) 100%);
+            background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--rojo) 25%, var(--rojo) 100%), url('../img/maria-italia.png');
+            background-position: left;
+            padding: 45px 45px 45px 0;
+            justify-content: flex-end;
+        }
+    }
+}

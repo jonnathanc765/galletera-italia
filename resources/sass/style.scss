@@ -1,7 +1,9 @@
 // Variables
-$primary: #00013a;
+$primary: #000839;
 // $dark-primary: #2e31a6;
-$secondary: #d0a747;
+$secondary: #d3af48;
+$info: #006691;
+$danger: #ad2c27;
 // $gray: #e3e4e6;
 // $dark-gray: #4e5471;
 
@@ -15,4 +17,5 @@ html {
 
 @import 'custom/header';
 @import 'custom/home';
+@import 'custom/about';
 @import 'custom/products';

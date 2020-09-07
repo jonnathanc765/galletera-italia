@@ -20,9 +20,12 @@ $line-height-base: 1.6;
 
 $colores:(
 
-    azul : #006794,
-    rojo : #c12a2a,
-    azul-claro: #bbe1ea
+    azul : rgb(0, 102, 145),
+    rojo : rgb(173, 44, 39),
+    azul-claro: rgb(187, 225, 234),
+    beige: rgb(255, 250, 240),
+    marron: rgb(67, 31, 10),
+    otro-azul-claro: rgb(118, 177, 181)
 );
 
 :root {
