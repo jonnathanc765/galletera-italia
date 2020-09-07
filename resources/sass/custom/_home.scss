@@ -65,6 +65,9 @@
 
 .cards-wrapper {
     padding-bottom: 22vh;
+    background-color: white;
+    position: relative;
+    z-index: 10;
 
     .cards-container {
 
@@ -161,3 +164,31 @@
     }
 }
 
+.us-container {
+
+    background-color: var(--azul-claro);
+    padding-top: 10em;
+
+    &__text {
+
+        padding-top: 8em;
+
+        .display-3 {
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .btn {
+            border-radius: 18px;
+            padding: 3px 45px;
+        }
+    }
+
+
+    img {
+        position: relative;
+        left: 37px;
+        top: -16%;
+        z-index: 5;
+    }
+}
