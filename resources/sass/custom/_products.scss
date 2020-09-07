@@ -14,7 +14,10 @@
         padding-left: 2em;
         font-family: 'Spartan', sans-serif;
         background-color:green;
-        background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255,255,255,0.5) 25%, rgba(255,255,255,0) 100%);
+        background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255,255,255,0.5) 25%, rgba(255,255,255,0) 100%), var(--image);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
 
 
@@ -26,6 +29,42 @@
 
             width: 100%;
             margin-right: 0;
+        }
+
+        &[data-maria="chocolate"] {
+            background-color: var(--rojo);
+            --image: url('../img/maria-chocolate.png');
+            p {
+                color: var(--rojo);
+            }
+
+            button {
+                background-color: var(--rojo);
+            }
+        }
+
+        &[data-maria="original"] {
+            background-color: var(--azul);
+            --image: url('../img/maria-italia.png');
+            p {
+                color: var(--azul);
+            }
+
+            button {
+                background-color: var(--azul);
+            }
+        }
+
+        &[data-maria="vainilla"]{
+            background-color: var(--primary);
+            --image: url('../img/maria-vainilla.png');
+            p {
+                color: var(--primary);
+            }
+
+            button {
+                background-color: var(--primary);
+            }
         }
 
 
@@ -49,25 +88,9 @@
 
             }
 
-            &[data-maria="chocolate"] {
-                p {
-                    color: var(--rojo);
-                }
 
-                button {
-                    background-color: var(--rojo);
-                }
-            }
 
-            &[data-maria="original"] {
-                p {
-                    color: var(--azul);
-                }
 
-                button {
-                    background-color: var(--azul);
-                }
-            }
         }
     }
 }
