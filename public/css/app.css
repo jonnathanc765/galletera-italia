@@ -254,6 +254,7 @@ header:after {
   text-align: center;
   background-color: var(--azul);
   overflow: hidden;
+  background-image: url(/images/bg-puntos-blancos.png?660aead1ecd36cc194f305bf72b9db37);
 }
 
 .hero-container__main {
@@ -295,9 +296,13 @@ header:after {
 .hero-container__main img {
   display: block;
   margin: auto;
-  height: 35vh;
-  width: 70vw;
-  margin-bottom: 1em;
+  height: 30em;
+  width: 60em;
+  margin-top: -9em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  z-index: 10;
 }
 
 .hero-container__main button {
@@ -321,6 +326,7 @@ header:after {
   position: absolute;
   width: 100%;
   bottom: -6em;
+  background-image: url(/images/bg-puntos-rojos.png?660aead1ecd36cc194f305bf72b9db37);
 }
 
 .cards-wrapper .cards-container__card {
@@ -331,7 +337,6 @@ header:after {
   background-size: cover;
   background-position: center;
   padding: 0 !important;
-  background-image: url(/images/fabrica.jpg?d6108a1471a7a4d47d64d3d2358348ef);
 }
 
 .cards-wrapper .cards-container__card p {
@@ -358,6 +363,7 @@ header:after {
 
 .cards-wrapper .cards-container__card:nth-child(odd) {
   justify-content: flex-end;
+  background-color: var(--primary);
 }
 
 .cards-wrapper .cards-container__card:nth-child(odd) p {
@@ -371,6 +377,10 @@ header:after {
           clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   top: -33px;
   left: 0;
+}
+
+.cards-wrapper .cards-container__card:nth-child(even) {
+  background-color: var(--secondary);
 }
 
 .cards-wrapper .cards-container__card:nth-child(even) p {
@@ -388,13 +398,24 @@ header:after {
 
 .cards-wrapper .cards-container__card:first-of-type {
   border-radius: 35px 0 0 35px;
+  background-image: url(/images/fabroca.png?3d07d025dd64040730a1cdabf91725ca);
 }
 
 .cards-wrapper .cards-container__card:first-of-type p {
   border-radius: 0 0 0 35px;
 }
 
+.cards-wrapper .cards-container__card:nth-child(2) {
+  background-position: -2px -70px;
+  background-image: url(/images/productos.png?554da74f8c2b474232e60b938a7a74a4);
+}
+
+.cards-wrapper .cards-container__card:nth-child(3) {
+  background-image: url(/images/galeria.png?2c33ef898b668d8d7028b5eadf91d6a0);
+}
+
 .cards-wrapper .cards-container__card:last-of-type {
+  background-image: url(/images/gorra.png?4c64b37b6875c8209462e0d5aa18644d);
   border-radius: 0 35px 35px 0;
 }
 
@@ -404,6 +425,7 @@ header:after {
 
 .us-container {
   background-color: var(--azul-claro);
+  background-image: url(/images/bg-puntos-azules.png?7cf50e8008c1639c978cc157bcb568ab);
   padding-top: 10em;
 }
 
@@ -430,6 +452,7 @@ header:after {
 
 .about__timeline {
   background-color: var(--rojo);
+  background-image: url(/images/bg-puntos-blancos.png?660aead1ecd36cc194f305bf72b9db37);
 }
 
 .about__timeline--main-column {
@@ -440,10 +463,10 @@ header:after {
 
 .about__info-mision,
 .about__info-valores {
-  background-size: cover, 36%;
+  background-size: contain;
   background-repeat: no-repeat;
   color: var(--primary);
-  background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 75%, rgba(255, 255, 255, 0) 100%), url(/images/maria-italia.png?6a168dfdfdafff7130e7978fc8ce18ac);
+  background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 75%, rgba(255, 255, 255, 0) 100%), var(--image);
   padding: 45px 0 45px 45px;
   background-position: right;
 }
@@ -452,10 +475,18 @@ header:after {
   background-size: cover, 36%;
   background-repeat: no-repeat;
   color: white;
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, var(--rojo) 25%, var(--rojo) 100%), url(/images/maria-italia.png?6a168dfdfdafff7130e7978fc8ce18ac);
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, var(--rojo) 25%, var(--rojo) 100%), url(/images/vision.jpg?37a7a898dcbfc77d95f36c0cd6ffb27d);
   background-position: left;
   padding: 45px 45px 45px 0;
   justify-content: flex-end;
+}
+
+.about__info-mision {
+  --image: url(/images/mision.jpg?34c49d1f44f87e5e837193724212868b);
+}
+
+.about__info-valores {
+  --image: url(/images/valores.jpg?2e3c917e89ee49508eb3d055e902aa85);
 }
 
 .carousel {

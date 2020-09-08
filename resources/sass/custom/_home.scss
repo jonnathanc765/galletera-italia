@@ -3,6 +3,7 @@
     text-align: center;
     background-color: var(--azul);
     overflow: hidden;
+    background-image: url('../img/bg-puntos-blancos.png');
 
     &__main {
         padding-bottom: 45vh;
@@ -43,9 +44,12 @@
         img {
             display: block;
             margin: auto;
-            height: 35vh;
-            width: 70vw;
-            margin-bottom: 1em;
+            height: 30em;
+            width: 60em;
+            margin-top: -9em;
+            object-fit: contain;
+            position: relative;
+            z-index: 10;
         }
 
         button {
@@ -73,6 +77,7 @@
         position: absolute;
         width: 100%;
         bottom: -6em;
+        background-image: url('../img/bg-puntos-rojos.png');
 
         &__card {
             height: 75vh;
@@ -82,7 +87,7 @@
             background-size: cover;
             background-position: center;
             padding: 0 !important;
-            background-image: url('../img/fabrica.jpg');
+            // background-image: url('../img/NOSOTROS.png');
 
             p {
                 // height: 25%;
@@ -110,6 +115,7 @@
 
             &:nth-child(odd) {
                 justify-content: flex-end;
+                background-color: var(--primary);
 
                 p {
                     // order.
@@ -128,6 +134,8 @@
             }
 
             &:nth-child(even) {
+                background-color: var(--secondary);
+
                 p{
 
                     background-color: var(--secondary);
@@ -145,14 +153,31 @@
 
             &:first-of-type{
                 border-radius: 35px 0 0 35px;
+                // background-position: bottom left;
                 // background-image: url('../img/fabrica.jpg');
+                background-image: url('../img/fabroca.png');
+
                 p {
                     border-radius: 0 0 0 35px;
                 }
 
             }
 
+            &:nth-child(2) {
+
+                background-position:  -2px -70px;
+                background-image: url('../img/productos.png');
+            }
+
+            &:nth-child(3) {
+                background-image: url('../img/galeria.png');
+            }
+
             &:last-of-type {
+
+                // background-position: left center;
+                background-image: url('../img/gorra.png');
+
                 border-radius: 0 35px 35px 0;
 
                 p {
@@ -166,6 +191,7 @@
 .us-container {
 
     background-color: var(--azul-claro);
+    background-image: url('../img/bg-puntos-azules.png');
     padding-top: 10em;
 
     &__text {

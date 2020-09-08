@@ -3,6 +3,7 @@
 
     &__timeline{
         background-color: var(--rojo);
+        background-image: url('../img/bg-puntos-blancos.png');
 
         &--main-column {
             margin-top: -6em;
@@ -15,10 +16,11 @@
         // background-color: var(--azul);
 
         &-mision, &-valores {
-            background-size: cover,36%;
+            // background-size: cover,36%;
+            background-size: contain;
             background-repeat: no-repeat;
             color: var(--primary);
-            background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 75%, rgba(255,255,255,0) 100%), url('../img/maria-italia.png');
+            background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 75%, rgba(255,255,255,0) 100%), var(--image);
             padding: 45px 0 45px 45px;
             background-position: right;
         }
@@ -28,10 +30,17 @@
             background-repeat: no-repeat;
             color:white;
             // // background-image: linear-gradient(90deg, var(--rojo) 0%, var(--rojo) 25%, rgba(255,255,255,0) 100%);
-            background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--rojo) 25%, var(--rojo) 100%), url('../img/maria-italia.png');
+            background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--rojo) 25%, var(--rojo) 100%), url('../img/vision.jpg');
             background-position: left;
             padding: 45px 45px 45px 0;
             justify-content: flex-end;
+        }
+
+        &-mision {
+            --image: url('../img/mision.jpg');
+        }
+        &-valores {
+            --image: url('../img/valores.jpg');
         }
     }
 }
