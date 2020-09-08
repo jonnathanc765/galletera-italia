@@ -7,15 +7,49 @@
 
     overflow: hidden;
     background-color: var(--azul);
-    height: 85vh;
+    position: relative;
+
+
+    &::before,&::after {
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        // background-size: contain;
+        display: block;
+        height: 100%;
+        width: 100%;
+
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    &::before {
+
+        bottom: -1em;
+        background-image: url('../img/arbol.png');
+    }
+
+    &::after {
+
+
+        background-image: url('../img/milk.png');
+        right: -77%;
+        height: 78%;
+        background-size: contain;
+        z-index: 5;
+    }
+
+
 
     .slogan__main {
 
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
         font-family: 'Spartan', sans-serif;
+        padding: 0;
         p{
             font-weight: bold;
 
@@ -29,7 +63,7 @@
         z-index: 5;
         font-size: 4em;
         text-align: center;
-        margin-top: -3%;
+        margin-top: 3%;
         margin-bottom: 1em;
 
         span {
@@ -92,5 +126,19 @@
     .btn {
         border-radius: 18px;
         padding: 4px 30px;
+        margin-bottom: 5%;
+    }
+
+    img.galletas {
+        width: 100%;
+        position: relative;
+        z-index: 10;
+    }
+
+    img.animalito {
+        position: absolute;
+        bottom: 28%;
+        left: 17em;
+        width: 180px;
     }
 }

@@ -555,15 +555,46 @@ header:after {
 .slogan-container {
   overflow: hidden;
   background-color: var(--azul);
-  height: 85vh;
+  position: relative;
+}
+
+.slogan-container::before,
+.slogan-container::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .slogan-container::before,
+  .slogan-container::after {
+    display: none;
+  }
+}
+
+.slogan-container::before {
+  bottom: 0;
+  background-image: url(/images/arbol.png?35f364d2cfb0eda3ff71349592900e7b);
+}
+
+.slogan-container::after {
+  background-image: url(/images/milk.png?0d032ea75a31ddbd25a785f82389e439);
+  right: -77%;
+  height: 78%;
+  background-size: contain;
+  z-index: 5;
 }
 
 .slogan-container .slogan__main {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   font-family: "Spartan", sans-serif;
+  padding: 0;
 }
 
 .slogan-container .slogan__main p {
@@ -576,7 +607,7 @@ header:after {
   z-index: 5;
   font-size: 4em;
   text-align: center;
-  margin-top: -3%;
+  margin-top: 3%;
   margin-bottom: 1em;
 }
 
@@ -639,6 +670,20 @@ header:after {
 .slogan-container .btn {
   border-radius: 18px;
   padding: 4px 30px;
+  margin-bottom: 5%;
+}
+
+.slogan-container img.galletas {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.slogan-container img.animalito {
+  position: absolute;
+  bottom: 28%;
+  left: 17em;
+  width: 180px;
 }
 
 /*!

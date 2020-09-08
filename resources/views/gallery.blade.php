@@ -18,6 +18,8 @@
             <p class="h1">Galletas <span>MARÍA</span></p>
             <p class="h2">QUE ACOMPAÑAN <span>tus dulces momentos</span></p>
             <button class="btn btn-primary">Contactanos</button>
+            <img class="galletas" src="{{ asset('img/montaña.png') }}" alt="galletas">
+            <img src="{{ asset('img/animalito.png') }}" alt="animal de galletas" class="animalito">
         </div>
     </div>
 </div>
