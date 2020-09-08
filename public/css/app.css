@@ -680,10 +680,13 @@ header:after {
 }
 
 .slogan-container img.animalito {
+  --posX: 0%;
   position: absolute;
   bottom: 28%;
-  left: 17em;
+  left: 5em;
   width: 180px;
+  transform: translateX(var(--posX));
+  transition: transform 0.3s ease;
 }
 
 /*!
