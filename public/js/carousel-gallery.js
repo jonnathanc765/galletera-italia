@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -273,26 +273,26 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * Un
 
 /***/ }),
 
-/***/ "./resources/js/carousel-products.js":
-/*!*******************************************!*\
-  !*** ./resources/js/carousel-products.js ***!
-  \*******************************************/
+/***/ "./resources/js/carousel-gallery.js":
+/*!******************************************!*\
+  !*** ./resources/js/carousel-gallery.js ***!
+  \******************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var flickity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flickity */ \"./node_modules/flickity/js/index.js\");\n/* harmony import */ var flickity__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(flickity__WEBPACK_IMPORTED_MODULE_0__);\n\nvar flkty = new flickity__WEBPACK_IMPORTED_MODULE_0___default.a('.carousel', {\n  wrapAround: true,\n  pageDots: false\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvY2Fyb3VzZWwtcHJvZHVjdHMuanM/NGUwZSJdLCJuYW1lcyI6WyJmbGt0eSIsIkZsaWNraXR5Iiwid3JhcEFyb3VuZCIsInBhZ2VEb3RzIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7QUFBQTtBQUdBLElBQUlBLEtBQUssR0FBRyxJQUFJQywrQ0FBSixDQUFjLFdBQWQsRUFBMkI7QUFDbkNDLFlBQVUsRUFBRSxJQUR1QjtBQUVuQ0MsVUFBUSxFQUFFO0FBRnlCLENBQTNCLENBQVoiLCJmaWxlIjoiLi9yZXNvdXJjZXMvanMvY2Fyb3VzZWwtcHJvZHVjdHMuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgRmxpY2tpdHkgZnJvbSAnZmxpY2tpdHknO1xyXG5cclxuXHJcbmxldCBmbGt0eSA9IG5ldyBGbGlja2l0eSggJy5jYXJvdXNlbCcsIHtcclxuICAgIHdyYXBBcm91bmQ6IHRydWUsXHJcbiAgICBwYWdlRG90czogZmFsc2VcclxuXHJcblxyXG4gIH0pO1xyXG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/js/carousel-products.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var flickity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flickity */ \"./node_modules/flickity/js/index.js\");\n/* harmony import */ var flickity__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(flickity__WEBPACK_IMPORTED_MODULE_0__);\n\nvar flkty = new flickity__WEBPACK_IMPORTED_MODULE_0___default.a('.carousel-gallery', {\n  wrapAround: true,\n  pageDots: false\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvY2Fyb3VzZWwtZ2FsbGVyeS5qcz8yZGIzIl0sIm5hbWVzIjpbImZsa3R5IiwiRmxpY2tpdHkiLCJ3cmFwQXJvdW5kIiwicGFnZURvdHMiXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUFBO0FBR0EsSUFBSUEsS0FBSyxHQUFHLElBQUlDLCtDQUFKLENBQWMsbUJBQWQsRUFBbUM7QUFDM0NDLFlBQVUsRUFBRSxJQUQrQjtBQUUzQ0MsVUFBUSxFQUFFO0FBRmlDLENBQW5DLENBQVoiLCJmaWxlIjoiLi9yZXNvdXJjZXMvanMvY2Fyb3VzZWwtZ2FsbGVyeS5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBGbGlja2l0eSBmcm9tICdmbGlja2l0eSc7XHJcblxyXG5cclxubGV0IGZsa3R5ID0gbmV3IEZsaWNraXR5KCAnLmNhcm91c2VsLWdhbGxlcnknLCB7XHJcbiAgICB3cmFwQXJvdW5kOiB0cnVlLFxyXG4gICAgcGFnZURvdHM6IGZhbHNlXHJcblxyXG4gIH0pO1xyXG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/js/carousel-gallery.js\n");
 
 /***/ }),
 
-/***/ 1:
-/*!*************************************************!*\
-  !*** multi ./resources/js/carousel-products.js ***!
-  \*************************************************/
+/***/ 2:
+/*!************************************************!*\
+  !*** multi ./resources/js/carousel-gallery.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\laragon\www\galletera-italia\resources\js\carousel-products.js */"./resources/js/carousel-products.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\galletera-italia\resources\js\carousel-gallery.js */"./resources/js/carousel-gallery.js");
 
 
 /***/ })

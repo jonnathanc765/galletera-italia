@@ -27,13 +27,11 @@
             &::before {
                 content: "";
                 background-color: white;
-                -webkit-clip-path: circle(50% at 50% 0);
                 clip-path: circle(50% at 50% 0);
                 display: block;
                 position: absolute;
                 width: 19em;
                 height: 100vh;
-                z-index: 5;
                 top: -5em;
                 z-index: -1;
                 left: 50%;

@@ -9,14 +9,22 @@
 @section('content')
 <div class="container-fluid">
     <div class="row">
-        2 imagenes aqui sabra dios q iran a hacer
+        <div class="col-12">
+            <div class="carousel-gallery"></div>
+        </div>
     </div>
-    <div class="row">
-        <div class="col-12 col-md-8 offset-md-4 offset-0">
-            <p class="h1">Galletas MARIA</p>
-            <p>QUE ACOMPAÑAN tus dulces momentos</p>
+    <div class="row slogan-container">
+        <div class="col-12 slogan__main">
+            <p class="h1">Galletas <span>MARÍA</span></p>
+            <p class="h2">QUE ACOMPAÑAN <span>tus dulces momentos</span></p>
             <button class="btn btn-primary">Contactanos</button>
         </div>
     </div>
 </div>
+@endsection
+
+
+@section('scripts')
+{{-- <script src="{{ asset('js/carousel-gallery.js') }}"></script> --}}
+
 @endsection
