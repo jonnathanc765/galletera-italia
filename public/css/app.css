@@ -576,7 +576,7 @@ header:after {
 }
 
 .slogan-container::before {
-  bottom: 0;
+  bottom: -1em;
   background-image: url(/images/arbol.png?35f364d2cfb0eda3ff71349592900e7b);
 }
 
