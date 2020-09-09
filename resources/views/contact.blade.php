@@ -120,8 +120,8 @@
             <p>venezuela</p>
             <p>venezuela</p>
         </div>
-        <div class="col-md-6 col-12">
-            MAPA DE VENEZUELA TE AMO VENEZUELA
+        <div class="col-md-6 col-12" id="mapa-container">
+            {{-- MAPA DE VENEZUELA TE AMO VENEZUELA --}}
         </div>
     </div>
 </div>
@@ -130,6 +130,21 @@
 @endsection
 
 @section('scripts')
+
+    <script>
+        document.addEventListener('DOMContentLoaded',async function(){
+
+            const svgUrl = {!! json_encode(asset('img/vzla.svg')) !!}
+            const mapaContainer = document.getElementById('mapa-container')
+
+            let request = await fetch(svgUrl)
+            let svgText = await request.text()
+
+            const parser = new DOMParser();
+            const svgHtml = parser.parseFromString(svgText, "text/html");
+            mapaContainer.appendChild(svgHtml.body.querySelector('svg'))
+        })
+    </script>
 
     <script src="{{ asset('js/jquery.min.js') }}"></script>
 
