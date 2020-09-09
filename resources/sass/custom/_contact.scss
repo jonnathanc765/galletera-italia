@@ -108,13 +108,19 @@
 }
 #mapa-container {
 
+    background-color: var(--azul-claro);
+    padding: 3em;
+    border-radius: 25px;
+    position: relative;
+    align-self: flex-start;
+
 
     svg {
         g {
 
             path {
                 transition: fill 0.3s ease-in-out;
-                fill: var(--primary)
+                fill: var(--azul)
             }
 
             &.active-state {
@@ -125,5 +131,49 @@
         }
 
 
+    }
+
+    ul {
+        list-style: none;
+        position: absolute;
+        bottom: 20%;
+
+        li {
+            font-family: 'Spartan', sans-serif;
+            font-weight: bold;
+
+            &::before {
+                content: "";
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
+                display: inline-block;
+                margin-right: 8px;
+
+            }
+
+            &:first-of-type{
+
+                &::before {
+                    background-color: var(--primary);
+                }
+
+            }
+
+            &:nth-child(2) {
+
+                &::before {
+                    background-color: var(--secondary);
+                }
+            }
+
+            &:last-of-type{
+
+                &::before {
+                    background-color: var(--azul);
+                }
+
+            }
+        }
     }
 }

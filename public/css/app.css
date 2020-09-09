@@ -824,13 +824,53 @@ header:after {
   color: var(--primary);
 }
 
+#mapa-container {
+  background-color: var(--azul-claro);
+  padding: 3em;
+  border-radius: 25px;
+  position: relative;
+  align-self: flex-start;
+}
+
 #mapa-container svg g path {
   transition: fill 0.3s ease-in-out;
-  fill: var(--primary);
+  fill: var(--azul);
 }
 
 #mapa-container svg g.active-state path {
   fill: var(--secondary);
+}
+
+#mapa-container ul {
+  list-style: none;
+  position: absolute;
+  bottom: 20%;
+}
+
+#mapa-container ul li {
+  font-family: "Spartan", sans-serif;
+  font-weight: bold;
+}
+
+#mapa-container ul li::before {
+  content: "";
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+#mapa-container ul li:first-of-type::before {
+  background-color: var(--primary);
+}
+
+#mapa-container ul li:nth-child(2)::before {
+  background-color: var(--secondary);
+}
+
+#mapa-container ul li:last-of-type::before {
+  background-color: var(--azul);
 }
 
 /*!

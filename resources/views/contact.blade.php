@@ -270,7 +270,13 @@
             </div>
         </div>
         <div class="col-md-6 col-12" id="mapa-container">
-            {{-- MAPA DE VENEZUELA TE AMO VENEZUELA --}}
+            <div class="leyenda">
+                <ul>
+                    <li>Ubicador</li>
+                    <li>Estado Seleccionado</li>
+                    <li>Resto del Mapa</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
