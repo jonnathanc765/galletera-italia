@@ -91,12 +91,20 @@
 
         </div>
     </div>
-    <div class="row">
+    <div class="row mapa-container">
+        <div class="col-12 mb-3">
+            <div class="row">
+                <div class="col-12">
+
+                    <p class="h1"><small class="d-block h2">Nuestros</small>Distribuidores</p>
+                </div>
+
+            </div>
+        </div>
         <div class="col-md-6 col-12">
-            <p>Nuestros distribuidores</p>
-            <div class="accordion" id="accordionMapa">
+            <div class="accordion" id="accordion-mapa">
                 <div class="card">
-                  <div class="card-header" id="card-barinas">
+                  <div class="card-header active-state" id="card-barinas">
                     <h2 class="mb-0">
                       <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-barinas" aria-expanded="true" aria-controls="collapse-barinas" data-estado="barinas">
                         Barinas
@@ -104,9 +112,9 @@
                     </h2>
                   </div>
 
-                  <div id="collapse-barinas" class="collapse show" aria-labelledby="card-barinas" data-parent="#accordionMapa" >
+                  <div id="collapse-barinas" class="collapse show" aria-labelledby="card-barinas" data-parent="#accordion-mapa" >
                     <div class="card-body">
-
+                    <ul>
                         <li>
                             <p class="distribuidor-rif">J-090330615</p>
                             <p class="distribuidor-name">MAYOR Y DISTRIBUCIONES DON PEPE, C.A.</p>
@@ -207,18 +215,19 @@
                             <p class="distribuidor-client">TIENDAS TREBOL JL</p>
                             <address>ALTO BARINAS NORTE, AVENIDA FRANCIA CASA 190, BARINAS</address>
                         </li>
+                    </ul>
                     </div>
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header" id="card-lara">
+                  <div class="card-header" id="card-lara>
                     <h2 class="mb-0">
                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-lara" aria-expanded="false" aria-controls="collapse-lara" data-estado="lara">
                         Lara
                       </button>
                     </h2>
                   </div>
-                  <div id="collapse-lara" class="collapse" aria-labelledby="card-lara" data-parent="#accordionMapa">
+                  <div id="collapse-lara" class="collapse" aria-labelledby="card-lara" data-parent="#accordion-mapa">
                     <div class="card-body">
                       <ul>
 
@@ -227,14 +236,14 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header" id="card-caracas">
+                  <div class="card-header" id="card-caracas>
                     <h2 class="mb-0">
                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-caracas" aria-expanded="false" aria-controls="collapse-caracas" data-estado="caracas">
                         Caracas
                       </button>
                     </h2>
                   </div>
-                  <div id="collapse-caracas" class="collapse" aria-labelledby="card-caracas" data-parent="#accordionMapa">
+                  <div id="collapse-caracas" class="collapse" aria-labelledby="card-caracas" data-parent="#accordion-mapa">
                     <div class="card-body">
                       <ul>
 
@@ -251,7 +260,7 @@
                         </button>
                       </h2>
                     </div>
-                    <div id="collapse-estadoaca" class="collapse" aria-labelledby="card-estadoaca" data-parent="#accordionMapa">
+                    <div id="collapse-estadoaca" class="collapse" aria-labelledby="card-estadoaca" data-parent="#accordion-mapa">
                       <div class="card-body">
                         <ul></ul>
                       </div>
@@ -308,11 +317,26 @@
     <script src="{{ asset('js/jquery.min.js') }}"></script>
 
     <script type="text/javascript">
+    $(document).ready(function(){
+
         $('#send-button').click(function(e) {
             e.preventDefault();
             $("#send-button").attr('disabled', true);
             $('#form').submit();
         });
+
+        // q chimbo me toco jquery para esto boostrap muevela con la v5
+        $('#accordion-mapa').on('shown.bs.collapse', function (e) {
+            let cardHeader = e.target.parentElement.querySelector('.card-header')
+            cardHeader.classList.add('active-state')
+        })
+
+        $('#accordion-mapa').on('hidden.bs.collapse', function (e) {
+            let cardHeader = e.target.parentElement.querySelector('.card-header')
+            cardHeader.classList.remove('active-state')
+        })
+    })
+  // do something…
     </script>
 
     @if ($errors->any())
