@@ -720,6 +720,57 @@ header:after {
   transition: transform 0.3s ease;
 }
 
+.form-container {
+  background-color: var(--azul-claro);
+  color: var(--primary);
+  padding-left: 90px;
+  padding-right: 90px;
+  font-family: "Spartan", sans-serif;
+}
+
+.form-container__form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container__form input,
+.form-container__form textarea {
+  background-color: var(--otro-azul-claro);
+  border: none;
+  font-weight: bold;
+}
+
+.form-container__form input::-webkit-input-placeholder {
+  color: var(--primary);
+}
+
+.form-container__form input::-moz-placeholder {
+  color: var(--primary);
+}
+
+.form-container__form input:-ms-input-placeholder {
+  color: var(--primary);
+}
+
+.form-container__form input::-ms-input-placeholder {
+  color: var(--primary);
+}
+
+.form-container__form input::placeholder {
+  color: var(--primary);
+}
+
+.form-container__form textarea {
+  max-height: 120px;
+}
+
+.form-container__form button {
+  background-color: var(--azul);
+  color: white;
+  align-self: flex-end;
+  border: 1px solid var(--azul);
+}
+
 #mapa-container svg g path {
   transition: fill 0.3s ease-in-out;
   fill: var(--primary);

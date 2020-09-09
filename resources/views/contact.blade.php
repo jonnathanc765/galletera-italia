@@ -14,15 +14,15 @@
 {{-- Este es el formulario (dejarolo ) --}}
 @section('content')
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 col-12">
+<div class="container-fluid">
+    <div class="row first-row form-container">
+        <div class="col-md-3 col-12">
             <p>Lorem ipsum dolor sit amet, con-sectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
-            <address><p>Ubicación</p><p>Av. 02 Sur, Parque IndustrialCOSDZIEBA. Barinas, Venezuela.</p></address>
-            <p>Contacto: <span>info@galleteraitalia.com0273-5420707 / 5420461 / 5420392</span></p>
-            <p>Redes sociales: 3 iconos sociales aca</p>
+            <address><p class="font-weight-bold mb-1">Ubicación:</p><p>Av. 02 Sur, Parque IndustrialCOSDZIEBA. Barinas, Venezuela.</p></address>
+            <p class="font-weight-bold mb-1">Contacto: <span class="d-block font-weight-normal">info@galleteraitalia.com0273-5420707 / 5420461 / 5420392</span></p>
+            <p class="font-weight-bold mt-3">Redes sociales: 3 iconos sociales aca</p>
         </div>
-        <div class="col-md-6 col-12">
+        <div class="col-md-6 col-12 offset-3 form-container__form">
 
             <div class="form">
                 <form action="{{ route('mails.store') }}" method="POST" id="form">
@@ -71,8 +71,7 @@
                             @enderror
                         </div> --}}
                         <div class="form-group">
-                            <textarea  id="" cols="30" rows="10" class="form-control">
-                                ¿En qué podemos ayudarte?
+                            <textarea  id="" class="form-control">¿En qué podemos ayudarte?
                             </textarea>
                         </div>
 

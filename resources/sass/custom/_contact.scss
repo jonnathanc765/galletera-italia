@@ -1,4 +1,46 @@
+.form-container {
+    background-color: var(--azul-claro);
+    color: var(--primary);
+    padding-left: 90px;
+    padding-right: 90px;
+    font-family: 'Spartan', sans-serif;
+
+
+
+    &__form {
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,textarea {
+            background-color: var(--otro-azul-claro);
+            border: none;
+            font-weight: bold;
+        }
+
+        input::placeholder {
+            color: var(--primary)
+        }
+
+        textarea {
+            max-height: 120px;
+        }
+
+        button {
+            background-color: var(--azul);
+            color: white;
+            align-self: flex-end;
+            border: 1px solid var(--azul);
+        }
+    }
+
+}
+
+
 #mapa-container {
+
 
     svg {
         g {
