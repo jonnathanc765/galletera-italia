@@ -39,6 +39,73 @@
 }
 
 
+
+.mapa-container {
+
+    padding-left: 90px;
+    padding-right: 90px;
+    background-color: var(--beige);
+
+
+    .accordion {
+
+        .card {
+            background-color: transparent;
+            border-radius: 0;
+            border: none;
+            font-family: 'Spartan', sans-serif;
+
+
+            &-header {
+                background-color: transparent;
+                border-bottom: 1px solid black;
+                padding-left: 0;
+                margin-bottom: 0!important;
+
+                &.active-state {
+                    button {
+
+                        font-weight: bold;
+                    }
+                }
+
+                button {
+                    padding-left: 0;
+                    font-weight: 300;
+
+                    &:hover,&.focus,&:focus {
+
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            ul {
+                list-style: none;
+                padding-left: 0;
+
+                li {
+                    .distribuidor {
+
+                        &-name {
+                            font-weight: bold;
+                            font-size: 1.25em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .h1 {
+        color: var(--secondary);
+        small {
+
+            color: var(--primary)
+        }
+    }
+}
 #mapa-container {
 
 

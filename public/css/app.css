@@ -771,6 +771,59 @@ header:after {
   border: 1px solid var(--azul);
 }
 
+.mapa-container {
+  padding-left: 90px;
+  padding-right: 90px;
+  background-color: var(--beige);
+}
+
+.mapa-container .accordion .card {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  font-family: "Spartan", sans-serif;
+}
+
+.mapa-container .accordion .card-header {
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  padding-left: 0;
+  margin-bottom: 0 !important;
+}
+
+.mapa-container .accordion .card-header.active-state button {
+  font-weight: bold;
+}
+
+.mapa-container .accordion .card-header button {
+  padding-left: 0;
+  font-weight: 300;
+}
+
+.mapa-container .accordion .card-header button:hover,
+.mapa-container .accordion .card-header button.focus,
+.mapa-container .accordion .card-header button:focus {
+  text-decoration: none;
+}
+
+.mapa-container .accordion .card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mapa-container .accordion .card ul li .distribuidor-name {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.mapa-container .h1 {
+  color: var(--secondary);
+}
+
+.mapa-container .h1 small {
+  color: var(--primary);
+}
+
 #mapa-container svg g path {
   transition: fill 0.3s ease-in-out;
   fill: var(--primary);
