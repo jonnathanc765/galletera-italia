@@ -1,0 +1,20 @@
+#mapa-container {
+
+    svg {
+        g {
+
+            path {
+                transition: fill 0.3s ease-in-out;
+                fill: var(--primary)
+            }
+
+            &.active-state {
+                path {
+                    fill: var(--secondary)
+                }
+            }
+        }
+
+
+    }
+}

@@ -720,6 +720,15 @@ header:after {
   transition: transform 0.3s ease;
 }
 
+#mapa-container svg g path {
+  transition: fill 0.3s ease-in-out;
+  fill: var(--primary);
+}
+
+#mapa-container svg g.active-state path {
+  fill: var(--secondary);
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
