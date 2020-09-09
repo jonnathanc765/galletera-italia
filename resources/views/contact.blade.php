@@ -97,15 +97,15 @@
             <p>Nuestros distribuidores</p>
             <div class="accordion" id="accordionMapa">
                 <div class="card">
-                  <div class="card-header" id="barinas-card">
+                  <div class="card-header" id="card-barinas">
                     <h2 class="mb-0">
-                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#barinas-collapse" aria-expanded="true" aria-controls="barinas-collapse" data-estado="barinas">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-barinas" aria-expanded="true" aria-controls="collapse-barinas" data-estado="barinas">
                         Barinas
                       </button>
                     </h2>
                   </div>
 
-                  <div id="barinas-collapse" class="collapse show" aria-labelledby="barinas-card" data-parent="#accordionMapa" >
+                  <div id="collapse-barinas" class="collapse show" aria-labelledby="card-barinas" data-parent="#accordionMapa" >
                     <div class="card-body">
 
                         <li>
@@ -212,34 +212,54 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header" id="headingTwo">
+                  <div class="card-header" id="card-lara">
                     <h2 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Collapsible Group Item #2
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-lara" aria-expanded="false" aria-controls="collapse-lara" data-estado="lara">
+                        Lara
                       </button>
                     </h2>
                   </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionMapa">
+                  <div id="collapse-lara" class="collapse" aria-labelledby="card-lara" data-parent="#accordionMapa">
                     <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      <ul>
+
+                      </ul>
                     </div>
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header" id="headingThree">
+                  <div class="card-header" id="card-caracas">
                     <h2 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Collapsible Group Item #3
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-caracas" aria-expanded="false" aria-controls="collapse-caracas" data-estado="caracas">
+                        Caracas
                       </button>
                     </h2>
                   </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionMapa">
+                  <div id="collapse-caracas" class="collapse" aria-labelledby="card-caracas" data-parent="#accordionMapa">
                     <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      <ul>
+
+                      </ul>
                     </div>
                   </div>
                 </div>
-              </div>
+
+                {{-- <div class="card">
+                    <div class="card-header" id="card-estadoaca">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-estadoaca" aria-expanded="false" aria-controls="collapse-estadoaca">
+                          Collapsible Group Item #3
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-estadoaca" class="collapse" aria-labelledby="card-estadoaca" data-parent="#accordionMapa">
+                      <div class="card-body">
+                        <ul></ul>
+                      </div>
+                    </div>
+                  </div>
+              </div> --}}
+            </div>
         </div>
         <div class="col-md-6 col-12" id="mapa-container">
             {{-- MAPA DE VENEZUELA TE AMO VENEZUELA --}}
@@ -257,6 +277,7 @@
 
             const svgUrl = {!! json_encode(asset('img/vzla.svg')) !!}
             const mapaContainer = document.getElementById('mapa-container')
+            const botones = document.querySelectorAll('[data-estado]')
 
             let request = await fetch(svgUrl)
             let svgText = await request.text()
@@ -264,6 +285,22 @@
             const parser = new DOMParser();
             const svgHtml = parser.parseFromString(svgText, "text/html");
             mapaContainer.appendChild(svgHtml.body.querySelector('svg'))
+
+            let activeElement = [...document.querySelectorAll('.collapse')].filter(el=>el.classList.contains('show'))[0]
+
+            let activeState = activeElement.parentElement.querySelector('button').dataset.estado
+
+            document.getElementById(activeState).classList.add('active-state')
+
+            botones.forEach(btn => btn.addEventListener('click',function(){
+
+                let estado = document.getElementById(this.dataset.estado);
+
+                document.querySelectorAll('.active-state').forEach(el=>el.classList.remove('active-state'))
+
+                estado.classList.add('active-state')
+
+            }))
 
 
         })
