@@ -1,7 +1,35 @@
 .carousel-gallery {
+    height: 250px;
+    .carousel__cell {
 
-    height: 100vh;
+        width: 50%; /* half-width */
+        height: 100%;
+        transform:translateX(-50%);
+        background-color:green;
+        display: flex;
+
+        .text {
+
+            color: white;
+
+        }
+
+
+        &:nth-child(odd) {
+
+            align-items: flex-end;
+            background-color: var(--primary);
+        }
+
+        &:nth-child(even) {
+
+            align-items: flex-start;
+            background-color: var(--azul);
+
+        }
+    }
 }
+
 
 .slogan-container {
 
