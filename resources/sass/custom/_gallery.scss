@@ -6,6 +6,7 @@
         height: 100%;
         transform:translateX(-50%);
         background-color:green;
+        background-size: cover;
         display: flex;
 
         .text {
@@ -26,6 +27,14 @@
             align-items: flex-start;
             background-color: var(--azul);
 
+        }
+
+        @for $i from 1 through 10 {
+
+            &:nth-child(#{$i}) {
+                background-image: url('../img/galeria/paso-'+$i+'.png');
+
+            }
         }
     }
 }

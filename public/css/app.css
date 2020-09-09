@@ -580,7 +580,71 @@ header:after {
 }
 
 .carousel-gallery {
-  height: 100vh;
+  height: 250px;
+}
+
+.carousel-gallery .carousel__cell {
+  width: 50%;
+  /* half-width */
+  height: 100%;
+  transform: translateX(-50%);
+  background-color: green;
+  background-size: cover;
+  display: flex;
+}
+
+.carousel-gallery .carousel__cell .text {
+  color: white;
+}
+
+.carousel-gallery .carousel__cell:nth-child(odd) {
+  align-items: flex-end;
+  background-color: var(--primary);
+}
+
+.carousel-gallery .carousel__cell:nth-child(even) {
+  align-items: flex-start;
+  background-color: var(--azul);
+}
+
+.carousel-gallery .carousel__cell:nth-child(1) {
+  background-image: url(/images/paso-1.png?dc946d1bf4df3d73332fb4e7f4ff1ee5);
+}
+
+.carousel-gallery .carousel__cell:nth-child(2) {
+  background-image: url(/images/paso-2.png?7724e00cfa162d5c76aee867f561c00c);
+}
+
+.carousel-gallery .carousel__cell:nth-child(3) {
+  background-image: url(/images/paso-3.png?5001b67e24ccc4017b14406a11cd6109);
+}
+
+.carousel-gallery .carousel__cell:nth-child(4) {
+  background-image: url(/images/paso-4.png?2900bc96f4323b929137af92d9b3ad48);
+}
+
+.carousel-gallery .carousel__cell:nth-child(5) {
+  background-image: url(/images/paso-5.png?08930ad13e538b2d52bbb1f095b63f46);
+}
+
+.carousel-gallery .carousel__cell:nth-child(6) {
+  background-image: url(/images/paso-6.png?c2b4c9b2d3195387d0991756b4b8b7d8);
+}
+
+.carousel-gallery .carousel__cell:nth-child(7) {
+  background-image: url(/images/paso-7.png?ba5146ec1bf89523515879571a1044de);
+}
+
+.carousel-gallery .carousel__cell:nth-child(8) {
+  background-image: url(/images/paso-8.png?7914b87bee81f191ad0728fd598e2ed0);
+}
+
+.carousel-gallery .carousel__cell:nth-child(9) {
+  background-image: url(/images/paso-9.png?e1313f7ea214271457f52c4c494ad8e4);
+}
+
+.carousel-gallery .carousel__cell:nth-child(10) {
+  background-image: url(/images/paso-10.png?902ea75d23334e994d34bcd371466d07);
 }
 
 .slogan-container {
