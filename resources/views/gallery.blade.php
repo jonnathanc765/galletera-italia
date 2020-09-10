@@ -9,8 +9,9 @@
 @section('content')
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 p-0">
+        <div class="col-12 p-0 position-relative overflow-hidden">
             <div class="carousel-gallery">
+
                 <div class="carousel__cell">
                     <div class="text">
                         <p class="h3 text-center">PASO 1</p>
@@ -82,6 +83,14 @@
                     </div>
                 </div>
             </div>
+            <div class="carousel-gallery__buttons">
+                    <button class="btn carousel-gallery__buttons-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.29 48.29"><defs></defs><title>Boton galleta</title><g><g><path d="M24.14,0A24.15,24.15,0,1,1,0,24.14,24.17,24.17,0,0,1,24.14,0Zm0,46.29A22.15,22.15,0,1,0,2,24.14,22.18,22.18,0,0,0,24.14,46.29Z"/><circle cx="36.59" cy="28.03" r="1.35"/><circle cx="27.01" cy="37.6" r="1.35"/><circle cx="14.74" cy="37.6" r="1.35"/><circle cx="10.69" cy="24.14" r="1.35"/><circle cx="24.14" cy="24.14" r="1.35"/><circle cx="35.24" cy="13.11" r="1.35"/><circle cx="24.14" cy="11.08" r="1.35"/><circle cx="14.74" cy="14.46" r="1.35"/></g></g></svg>
+                    </button>
+                    <button class="btn carousel-gallery__buttons-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.29 48.29"><defs></defs><title>Boton galleta</title><g><g><path d="M24.14,0A24.15,24.15,0,1,1,0,24.14,24.17,24.17,0,0,1,24.14,0Zm0,46.29A22.15,22.15,0,1,0,2,24.14,22.18,22.18,0,0,0,24.14,46.29Z"/><circle cx="36.59" cy="28.03" r="1.35"/><circle cx="27.01" cy="37.6" r="1.35"/><circle cx="14.74" cy="37.6" r="1.35"/><circle cx="10.69" cy="24.14" r="1.35"/><circle cx="24.14" cy="24.14" r="1.35"/><circle cx="35.24" cy="13.11" r="1.35"/><circle cx="24.14" cy="11.08" r="1.35"/><circle cx="14.74" cy="14.46" r="1.35"/></g></g></svg>
+                    </button>
+                </div>
         </div>
     </div>
     <div class="row slogan-container">

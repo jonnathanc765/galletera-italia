@@ -1,5 +1,52 @@
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
 .carousel-gallery {
     height: 450px;
+
+    &__buttons{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        pointer-events: none;
+
+        button {
+            pointer-events: initial;
+            background-color: var(--secondary);
+
+            &:first-of-type {
+                border-radius: 0 50% 50% 0;
+            }
+
+            &:last-of-type {
+                border-radius: 50% 0 0 50%;
+            }
+
+            &:hover {
+
+                svg {
+                    animation-duration: 0.5s;
+                }
+            }
+
+            svg {
+                width: 55px;
+                height: 65px;
+                fill: white;
+                animation: spin infinite linear;
+                animation-duration: 5s;
+            }
+        }
+    }
     .carousel__cell {
 
         width: 50%; /* half-width */
@@ -71,7 +118,7 @@
 
         @for $i from 1 through 10 {
 
-            &:nth-child(#{$i}) {
+            &:nth-of-type(#{$i}) {
                 background-image: url('../img/galeria/paso-'+$i+'.png');
 
             }
