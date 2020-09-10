@@ -15,10 +15,10 @@ let flkty = new Flickity( '.carousel-gallery', {
 
   nextBtn.addEventListener('click',function(){
 
+      flkty.previous()
+    })
+
+    prevBtn.addEventListener('click',function(){
         flkty.next()
-  })
 
-  prevBtn.addEventListener('click',function(){
-
-    flkty.previous()
 })
