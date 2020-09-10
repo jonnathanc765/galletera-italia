@@ -460,6 +460,28 @@ header:after {
   margin-top: -6em;
   padding: 6em 8em !important;
   background-color: var(--beige);
+  position: relative;
+}
+
+.about__timeline--main-column::after,
+.about__timeline--main-column::before {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 100%;
+  background-repeat: repeat-y;
+  position: absolute;
+  top: 0;
+}
+
+.about__timeline--main-column::before {
+  left: -9px;
+  background-image: url(/images/border-amarillo.svg?7c193387c3845580e758c631afc219a3);
+}
+
+.about__timeline--main-column::after {
+  right: -9px;
+  background-image: url(/images/border-amarillo-2.svg?efcdf6d064b09956fcf58d9f9312e858);
 }
 
 .about__info-mision,
@@ -669,6 +691,7 @@ header:after {
 .carousel-gallery .carousel__cell:nth-child(odd) {
   align-items: flex-end;
   background-color: var(--primary);
+  background-repeat: "repeat-x";
 }
 
 .carousel-gallery .carousel__cell:nth-child(odd) .text {
@@ -1042,7 +1065,7 @@ footer {
 footer:before {
   content: "";
   background-image: url(/images/borde-azul-oscuro-punteado.svg?faa0c16ef7912c5649a46389ea286c29);
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-size: cover;
   position: absolute;
   display: block;

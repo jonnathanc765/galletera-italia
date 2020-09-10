@@ -9,6 +9,29 @@
             margin-top: -6em;
             padding: 6em 8em!important;
             background-color: var(--beige);
+            position:relative;
+
+            &::after,&::before{
+                content: "";
+                display:block;
+                width: 9px;
+                height: 100%;
+                background-repeat: repeat-y;
+                position: absolute;
+                top: 0;
+
+            }
+
+            &::before{
+                left: -9px;
+                background-image: url('../img/border-amarillo.svg');
+            }
+
+            &::after{
+                right: -9px;
+                background-image: url('../img/border-amarillo-2.svg');
+
+            }
         }
     }
 
