@@ -164,6 +164,10 @@ header {
           filter: drop-shadow(0 1px 2px black);
 }
 
+header nav ul {
+  padding-right: 10%;
+}
+
 @media screen and (min-width: 992px) {
   header nav ul {
     justify-content: space-around;
@@ -296,8 +300,6 @@ header:after {
 .hero-container__main img {
   display: block;
   margin: auto;
-  height: 30em;
-  width: 60em;
   margin-top: -9em;
   -o-object-fit: contain;
      object-fit: contain;
@@ -406,7 +408,6 @@ header:after {
 }
 
 .cards-wrapper .cards-container__card:nth-child(2) {
-  background-position: -2px -70px;
   background-image: url(/images/productos.png?554da74f8c2b474232e60b938a7a74a4);
 }
 

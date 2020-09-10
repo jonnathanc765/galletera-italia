@@ -44,8 +44,8 @@
         img {
             display: block;
             margin: auto;
-            height: 30em;
-            width: 60em;
+            // height: 30em;
+            // width: 60em;
             margin-top: -9em;
             object-fit: contain;
             position: relative;
@@ -165,7 +165,7 @@
 
             &:nth-child(2) {
 
-                background-position:  -2px -70px;
+                // background-position:  -2px -70px;
                 background-image: url('../img/productos.png');
             }
 
