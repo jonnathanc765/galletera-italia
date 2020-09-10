@@ -32,11 +32,11 @@
                 <li class="nav-item {{request()->is('contacto') ? 'active-page' : ''}}">
                     <a class="nav-link" href="{{route('contact')}}">Contacto</a>
                 </li>
-                <li class="nav-item form">
+                {{-- <li class="nav-item form">
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     </form>
-                </li>
+                </li> --}}
 
             </ul>
 
