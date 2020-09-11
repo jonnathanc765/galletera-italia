@@ -15,81 +15,90 @@
 @section('content')
 
 <div class="container-fluid">
-    <div class="row first-row form-container">
-        <div class="col-md-3 col-12">
-            <p>Lorem ipsum dolor sit amet, con-sectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
-            <address><p class="font-weight-bold mb-1">Ubicación:</p><p>Av. 02 Sur, Parque IndustrialCOSDZIEBA. Barinas, Venezuela.</p></address>
-            <p class="font-weight-bold mb-1">Contacto: <span class="d-block font-weight-normal">info@galleteraitalia.com0273-5420707 / 5420461 / 5420392</span></p>
-            <p class="font-weight-bold mt-3">Redes sociales: 3 iconos sociales aca</p>
-        </div>
-        <div class="col-md-6 col-12 offset-3 form-container__form">
+    <div class="row first-row form-wrapper">
+        <div class="col-12 ">
+            <div class="row form-container">
 
-            <div class="form">
-                <form action="{{ route('mails.store') }}" method="POST" id="form">
-                    {{ csrf_field() }}
-                    <div class="inputs">
-                        <div class="form-group">
-                            <input type="text" value="{{ old('name') }}" class="form-control @error('name')is-invalid @enderror" id="name" placeholder="Nombre"name="name">
-                            @error('name')
-                            <div class="invalid-feedback">
-                                {{ $message }}
-                            </div>
-                            @enderror
-                        </div>
-                        {{-- <div class="form-group">
-                            <input type="text" value="{{ old('company') }}" class="form-control @error('company')is-invalid @enderror" id="company" placeholder="Razón social (Campo obligatorio *)" name="company">
-                            @error('company')
-                            <div class="invalid-feedback">
-                                {{ $message }}
-                            </div>
-                            @enderror
-                        </div> --}}
-                        <div class="form-group">
-                            <input type="text" value="{{ old('email') }}" class="form-control @error('email')is-invalid @enderror" id="email" placeholder="Correo" name="email">
-                            @error('email')
-                            <div class="invalid-feedback">
-                                {{ $message }}
-                            </div>
-                            @enderror
-                        </div>
+                <div class="col-md-3 col-12">
+                    <p>Lorem ipsum dolor sit amet, con-sectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+                    <address><p class="font-weight-bold mb-1">Ubicación:</p><p>Av. 02 Sur, Parque IndustrialCOSDZIEBA. Barinas, Venezuela.</p></address>
+                    <p class="font-weight-bold mb-1">Contacto: <span class="d-block font-weight-normal">info@galleteraitalia.com0273-5420707 / 5420461 / 5420392</span></p>
+                    <p class="font-weight-bold mt-3">Redes sociales: 3 iconos sociales aca</p>
+                </div>
+                <div class="col-md-6 col-12 offset-3 form-container__form">
 
-                        <div class="form-group">
-                            <input type="text" value="{{ old('phone') }}" class="form-control @error('phone')is-invalid @enderror" id="phone" placeholder="Teléfono" name="phone">
-                            @error('phone')
-                            <div class="invalid-feedback">
-                                {{ $message }}
+                    <div class="form">
+                        <form action="{{ route('mails.store') }}" method="POST" id="form">
+                            {{ csrf_field() }}
+                            <div class="inputs">
+                                <div class="form-group">
+                                    <input type="text" value="{{ old('name') }}" class="form-control @error('name')is-invalid @enderror" id="name" placeholder="Nombre"name="name">
+                                    @error('name')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                                {{-- <div class="form-group">
+                                    <input type="text" value="{{ old('company') }}" class="form-control @error('company')is-invalid @enderror" id="company" placeholder="Razón social (Campo obligatorio *)" name="company">
+                                    @error('company')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div> --}}
+                                <div class="form-group">
+                                    <input type="text" value="{{ old('email') }}" class="form-control @error('email')is-invalid @enderror" id="email" placeholder="Correo" name="email">
+                                    @error('email')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" value="{{ old('phone') }}" class="form-control @error('phone')is-invalid @enderror" id="phone" placeholder="Teléfono" name="phone">
+                                    @error('phone')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+
+                                {{-- <div class="form-group">
+                                    <input type="text" value="{{ old('city') }}" class="form-control @error('city')is-invalid @enderror" id="city" placeholder="Ciudad" name="city">
+                                    @error('city')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div> --}}
+                                <div class="form-group">
+                                    <textarea  id="" class="form-control">¿En qué podemos ayudarte?
+                                    </textarea>
+                                </div>
+
+
                             </div>
-                            @enderror
-                        </div>
-
-                        {{-- <div class="form-group">
-                            <input type="text" value="{{ old('city') }}" class="form-control @error('city')is-invalid @enderror" id="city" placeholder="Ciudad" name="city">
-                            @error('city')
-                            <div class="invalid-feedback">
-                                {{ $message }}
+                            {{-- <div class="d-flex justify-content-center">
+                                <h3 id="send-button" class="shadow send-button">
+                                    <a href="#">
+                                        Envíame la <br> propuesta
+                                    </a>
+                                </h3>
                             </div>
-                            @enderror
-                        </div> --}}
-                        <div class="form-group">
-                            <textarea  id="" class="form-control">¿En qué podemos ayudarte?
-                            </textarea>
-                        </div>
-
-
+                            <p class="text-center">* PARA POSTULARTE DEBES TENER <strong>EMPRESA REGISTRADA</strong></p> --}}
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
                     </div>
-                    {{-- <div class="d-flex justify-content-center">
-                        <h3 id="send-button" class="shadow send-button">
-                            <a href="#">
-                                Envíame la <br> propuesta
-                            </a>
-                        </h3>
-                    </div>
-                    <p class="text-center">* PARA POSTULARTE DEBES TENER <strong>EMPRESA REGISTRADA</strong></p> --}}
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+
+                </div>
             </div>
 
         </div>
+    </div>
+    <div class="row divisor">
+        {{-- yea  fuck pseudoelement esto es mas facil de responsivear--}}
     </div>
     <div class="row mapa-container">
         <div class="col-12 mb-3">
@@ -270,6 +279,8 @@
             </div>
         </div>
         <div class="col-md-6 col-12" id="mapa-container">
+            <img src="{{asset('img/marcador.svg')}}" id="marker-fa" alt="">
+
             <div class="leyenda">
                 <ul>
                     <li>Ubicador</li>
@@ -282,6 +293,7 @@
 </div>
 
 
+{{-- <div id="marker-fa"></div> --}}
 @endsection
 
 @section('scripts')
@@ -292,6 +304,8 @@
             const svgUrl = {!! json_encode(asset('img/vzla.svg')) !!}
             const mapaContainer = document.getElementById('mapa-container')
             const botones = document.querySelectorAll('[data-estado]')
+            const marker = document.getElementById('marker-fa')
+
 
             let request = await fetch(svgUrl)
             let svgText = await request.text()
@@ -304,7 +318,24 @@
 
             let activeState = activeElement.parentElement.querySelector('button').dataset.estado
 
-            document.getElementById(activeState).classList.add('active-state')
+            const activeStateSvg = document.getElementById(activeState)
+
+            activeStateSvg.classList.add('active-state')
+            // activeStateSvg.appendChild(marker)
+            // let cords = activeStateSvg.getBoundingClientRect()
+            // // (cords.height/2)
+            // let halfActiveY = cords.top - mapaContainer.getBoundingClientRect().top
+            //     // cantidad porcentual con respecto al padre
+            // let halfActiveX = mapaContainer.getBoundingClientRect().bottom - cords.bottom
+
+
+            // // let halfActiveY =  (cords.height/2)
+            // let percentageY = ((halfActiveY)*100)/mapaContainer.getBoundingClientRect().height
+            // let percentageX = ((halfActiveX)*100)/mapaContainer.getBoundingClientRect().width
+
+            // marker.style.top = `${percentageY}%`
+            // marker.style.left = `${percentageX}%`
+
 
             botones.forEach(btn => btn.addEventListener('click',function(){
 
@@ -313,6 +344,25 @@
                 document.querySelectorAll('.active-state').forEach(el=>el.classList.remove('active-state'))
 
                 estado.classList.add('active-state')
+
+                let cords = estado.getBoundingClientRect()
+            // (cords.height/2)
+                // let halfActiveY = cords.top - mapaContainer.getBoundingClientRect().top
+                //     // cantidad porcentual con respecto al padre
+                // let halfActiveX = mapaContainer.getBoundingClientRect().bottom - cords.bottom
+
+
+                // let halfActiveY =  (cords.height/2)
+                // let percentageY = ((halfActiveY)*100)/mapaContainer.getBoundingClientRect().height
+                // let percentageX = ((halfActiveX)*100)/mapaContainer.getBoundingClientRect().width
+
+                // marker.style.top = `${percentageY}%`
+                // marker.style.left = `${percentageX}%`
+
+                // activeState.appendChild(marker)
+                // marker.style.top = `${cords.height/2}px`
+                // marker.style.left = `${cords.width/2}px`
+
 
             }))
 
