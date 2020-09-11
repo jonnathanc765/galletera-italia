@@ -18,7 +18,7 @@
                         <small class="d-block h5">Galleta dulce tipo María sabor a vainilla
                             Peso neto: 200 gr.
                             </small>
-                        <button class="btn btn-primary mb-1">Obtener ahora</button>
+                        <button class="btn mb-1">Obtener ahora</button>
                     </div>
                 </div>
                 <div class="carousel__cell" data-maria="chocolate">
