@@ -8,7 +8,7 @@
 }
 
 .carousel-gallery {
-    height: 450px;
+    height: 600px;
 
     &__buttons{
         position: absolute;
@@ -22,6 +22,7 @@
         button {
             pointer-events: initial;
             background-color: var(--secondary);
+            transition: transform 0.3s ease-in-out;
 
             &:first-of-type {
                 border-radius: 0 50% 50% 0;
@@ -33,18 +34,24 @@
 
             &:hover {
 
+                transform: scale(1.2);
                 svg {
                     animation-duration: 3s;
+
                 }
             }
 
             svg {
                 width: 55px;
-                height: 65px;
+                height: 45px;
                 fill: white;
                 animation: spin infinite linear;
                 animation-duration: 10s;
-                transition: animation-duration 0.3s linear;
+                transition: animation-duration 0.3s linear, transform 0.3s ease-in-out;
+
+                &:hover{
+                    // height: 65px;
+                }
             }
         }
     }

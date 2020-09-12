@@ -673,7 +673,7 @@ header:after {
 }
 
 .carousel-gallery {
-  height: 450px;
+  height: 600px;
 }
 
 .carousel-gallery__buttons {
@@ -689,6 +689,7 @@ header:after {
 .carousel-gallery__buttons button {
   pointer-events: initial;
   background-color: var(--secondary);
+  transition: transform 0.3s ease-in-out;
 }
 
 .carousel-gallery__buttons button:first-of-type {
@@ -699,6 +700,10 @@ header:after {
   border-radius: 50% 0 0 50%;
 }
 
+.carousel-gallery__buttons button:hover {
+  transform: scale(1.2);
+}
+
 .carousel-gallery__buttons button:hover svg {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
@@ -706,15 +711,15 @@ header:after {
 
 .carousel-gallery__buttons button svg {
   width: 55px;
-  height: 65px;
+  height: 45px;
   fill: white;
   -webkit-animation: spin infinite linear;
           animation: spin infinite linear;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
-  transition: -webkit-animation-duration 0.3s linear;
-  transition: animation-duration 0.3s linear;
-  transition: animation-duration 0.3s linear, -webkit-animation-duration 0.3s linear;
+  transition: transform 0.3s ease-in-out, -webkit-animation-duration 0.3s linear;
+  transition: animation-duration 0.3s linear, transform 0.3s ease-in-out;
+  transition: animation-duration 0.3s linear, transform 0.3s ease-in-out, -webkit-animation-duration 0.3s linear;
 }
 
 .carousel-gallery .carousel__cell {
