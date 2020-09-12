@@ -965,6 +965,7 @@ header:after {
 .form-wrapper {
   margin-bottom: -6em;
   background-color: var(--azul-claro);
+  padding-top: 10em;
 }
 
 .form-wrapper > div {
