@@ -87,7 +87,23 @@
             background-size: cover;
             background-position: center;
             padding: 0 !important;
+            overflow: hidden;
+
+            &:hover {
+                img {
+                    transform: scale(1.5);
+                }
+            }
+
             // background-image: url('../img/NOSOTROS.png');
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                transition: transform 0.3s ease-in-out;
+            }
 
             p {
                 // height: 25%;
@@ -109,7 +125,7 @@
                 }
 
                 &:hover {
-                    flex-grow: 0.75;
+                    // flex-grow: 0.75;
                 }
             }
 
@@ -153,9 +169,13 @@
 
             &:first-of-type{
                 border-radius: 35px 0 0 35px;
+                img{
+                    border-radius: 35px 0 0 35px;
+
+                }
                 // background-position: bottom left;
                 // background-image: url('../img/fabrica.jpg');
-                background-image: url('../img/fabroca.png');
+                // background-image: url('../img/fabroca.png');
 
                 p {
                     border-radius: 0 0 0 35px;
@@ -166,19 +186,26 @@
             &:nth-child(2) {
 
                 // background-position:  -2px -70px;
-                background-image: url('../img/productos.png');
+                // background-image: url('../img/productos.png');
             }
 
             &:nth-child(3) {
-                background-image: url('../img/galeria.png');
+                img {
+                    bottom: 20%;
+                }
+                // background-image: url('../img/galeria.png');
             }
 
             &:last-of-type {
 
                 // background-position: left center;
-                background-image: url('../img/gorra.png');
+                // background-image: url('../img/gorra.png');
 
                 border-radius: 0 35px 35px 0;
+                img{
+                    border-radius: 0 35px 35px 0;
+
+                }
 
                 p {
                     border-radius: 0 35px 0 0;
@@ -193,6 +220,9 @@
     background-color: var(--azul-claro);
     background-image: url('../img/bg-puntos-azules.png');
     padding-top: 10em;
+    font-family: 'Spartan', sans-serif;
+    min-height: 820px;
+
 
     &__text {
 
@@ -211,8 +241,8 @@
 
 
     img {
-        position: relative;
-        left: 37px;
+        position: absolute;
+        right: 0;
         top: -16%;
         z-index: 5;
     }
