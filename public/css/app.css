@@ -524,7 +524,6 @@ header:after {
   background-size: contain;
   background-repeat: no-repeat;
   color: var(--primary);
-  background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 85%, rgba(255, 255, 255, 0) 100%), var(--image);
   padding: 45px 0 45px 45px;
   background-position: right;
 }
@@ -547,10 +546,21 @@ header:after {
 .about__info-mision {
   padding-left: 15%;
   --image: url(/images/mision.png?ccbb7d39cb76f1768777c83ddd737fc4);
+  background-size: cover, 40% 150%;
+  background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 60%, rgba(255, 255, 255, 0) 100%), var(--image);
 }
 
 .about__info-valores {
   --image: url(/images/valores.png?efd77edfaa75259bb3d821fbc7200e80);
+  background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 62%, rgba(255, 255, 255, 0) 100%), var(--image);
+}
+
+.about__info-valores ul {
+  padding: 0;
+}
+
+.about__info-valores > div {
+  margin-bottom: 2em;
 }
 
 .carousel {
