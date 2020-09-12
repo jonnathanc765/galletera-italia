@@ -11,9 +11,12 @@
     <div class="row first-row hero-container">
         <div class="col-12 hero-container__main">
             <h1>El placer de un <span>dulce momento</span></h1>
-            <img class="img-galleta img-fluid" src="{{ asset('img/main-galleta.png') }}" alt="tag">
-            <img  src="{{ asset('img/maria_italia.png') }}"alt="" class="img-fluid position-absolute img-galleta">
-            <img  src="{{ asset('img/tentazione1.png') }}"alt="" class="img-fluid position-absolute img-galleta">
+            <div class="carousel-wrapper">
+
+                <img class="img-galleta img-fluid" src="{{ asset('img/main-galleta.png') }}" alt="tag">
+                <img  src="{{ asset('img/maria_italia.png') }}"alt="" class="img-fluid img-galleta">
+                <img  src="{{ asset('img/tentazione1.png') }}"alt="" class="img-fluid img-galleta">
+            </div>
             <button class="btn btn-secondary">Conoce nuestros productos</button>
         </div>
     </div>
