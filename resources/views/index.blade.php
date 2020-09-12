@@ -11,17 +11,19 @@
     <div class="row first-row hero-container">
         <div class="col-12 hero-container__main">
             <h1>El placer de un <span>dulce momento</span></h1>
-            <img class="img-fluid" src="{{ asset('img/main-galleta.png') }}" alt="tag">
+            <img class="img-galleta img-fluid" src="{{ asset('img/main-galleta.png') }}" alt="tag">
+            <img  src="{{ asset('img/maria_italia.png') }}"alt="" class="img-fluid position-absolute img-galleta">
+            <img  src="{{ asset('img/tentazione1.png') }}"alt="" class="img-fluid position-absolute img-galleta">
             <button class="btn btn-secondary">Conoce nuestros productos</button>
         </div>
     </div>
     <div class="row cards-wrapper">
 
         <div class="row cards-container">
-            <div class="cards-container__card offset-2 col-2"><p>Nosotros</p></div>
-            <div class="cards-container__card col-2"><p>Productos</p></div>
-            <div class="cards-container__card col-2"><p>Galeria</p></div>
-            <div class="cards-container__card col-2"><p>Contacto</p></div>
+            <div class="cards-container__card offset-2 col-2"><img src="{{asset('img/fabroca.png')}}" alt=""><p>Nosotros</p></div>
+            <div class="cards-container__card col-2"><img src="{{asset('img/productos.png')}}" alt=""><p>Productos</p></div>
+            <div class="cards-container__card col-2"><img src="{{asset('img/galeria.png')}}" alt=""><p>Galeria</p></div>
+            <div class="cards-container__card col-2"><img src="{{asset('img/gorra.png')}}" alt=""><p>Contacto</p></div>
         </div>
     </div>
     <div class="row us-container">
@@ -44,4 +46,40 @@
         </div>
     </div>
 </div>
+@endsection
+
+
+@section('scripts')
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+    let imagenes = document.querySelectorAll('.img-galleta');
+
+
+    let i=0;
+    function transition() {
+
+        imagenes.forEach((img,index) => {
+            if (index === i) {
+                img.style.opacity = 1;
+                img.style.filter = 'blur(0px)'
+
+            } else {
+
+                img.style.opacity = 0;
+                img.style.filter = 'blur(15px)';
+            }
+        })
+
+        i === imagenes.length - 1 ? i = 0 : i++
+        console.log(i)
+    }
+
+    setInterval(transition,4000);
+
+
+
+
+
+});
+</script>
 @endsection

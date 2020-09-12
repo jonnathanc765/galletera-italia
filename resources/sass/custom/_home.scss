@@ -50,6 +50,14 @@
             object-fit: contain;
             position: relative;
             z-index: 10;
+            filter: blur(15px);
+            transition: opacity ease-out .3s,filter ease-out .2s .15s;
+
+            &.position-absolute {
+
+                top: 20vh;
+                left: 18vw;
+            }
         }
 
         button {
