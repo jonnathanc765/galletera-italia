@@ -97,10 +97,8 @@
 
         </div>
     </div>
-    <div class="row divisor">
-        {{-- yea  fuck pseudoelement esto es mas facil de responsivear--}}
-    </div>
-    <div class="row mapa-container">
+
+    <div class="row mapa-container" id="mapa-wrapper">
         <div class="col-12 mb-3">
             <div class="row">
                 <div class="col-12">
@@ -279,7 +277,7 @@
             </div>
         </div>
         <div class="col-md-6 col-12" id="mapa-container">
-            <img src="{{asset('img/marcador.svg')}}" id="marker-fa" alt="">
+            {{-- <img src="{{asset('img/marcador.svg')}}" class="position-absolute" id="marker" alt="" height="25px" width="25px"> --}}
 
             <div class="leyenda">
                 <ul>
@@ -290,7 +288,9 @@
             </div>
         </div>
     </div>
+
 </div>
+
 
 
 {{-- <div id="marker-fa"></div> --}}
@@ -303,8 +303,9 @@
 
             const svgUrl = {!! json_encode(asset('img/vzla.svg')) !!}
             const mapaContainer = document.getElementById('mapa-container')
+            const mapaWrapper = document.getElementById('mapa-wrapper')
             const botones = document.querySelectorAll('[data-estado]')
-            const marker = document.getElementById('marker-fa')
+            const marker = document.getElementById('marker')
 
 
             let request = await fetch(svgUrl)
@@ -321,20 +322,19 @@
             const activeStateSvg = document.getElementById(activeState)
 
             activeStateSvg.classList.add('active-state')
-            // activeStateSvg.appendChild(marker)
-            // let cords = activeStateSvg.getBoundingClientRect()
-            // // (cords.height/2)
-            // let halfActiveY = cords.top - mapaContainer.getBoundingClientRect().top
-            //     // cantidad porcentual con respecto al padre
-            // let halfActiveX = mapaContainer.getBoundingClientRect().bottom - cords.bottom
 
 
-            // // let halfActiveY =  (cords.height/2)
+            // let halfActiveY =  activeStateSvg.getBoundingClientRect().top - mapaContainer.getBoundingClientRect().top
+            // // halfActiveY = halfActiveY < 0 ? halfActiveY * -1 : halfActiveY
+            // let halfActiveX = activeStateSvg.getBoundingClientRect().left - mapaContainer.getBoundingClientRect().left
+            // // halfActiveX = halfActiveX < 0 ? halfActiveX * -1 : halfActiveX
+
+
             // let percentageY = ((halfActiveY)*100)/mapaContainer.getBoundingClientRect().height
             // let percentageX = ((halfActiveX)*100)/mapaContainer.getBoundingClientRect().width
 
-            // marker.style.top = `${percentageY}%`
-            // marker.style.left = `${percentageX}%`
+            // marker.style.top = `${halfActiveY}px`
+            // marker.style.left = `${halfActiveX}px`
 
 
             botones.forEach(btn => btn.addEventListener('click',function(){
@@ -345,24 +345,17 @@
 
                 estado.classList.add('active-state')
 
-                let cords = estado.getBoundingClientRect()
-            // (cords.height/2)
-                // let halfActiveY = cords.top - mapaContainer.getBoundingClientRect().top
-                //     // cantidad porcentual con respecto al padre
-                // let halfActiveX = mapaContainer.getBoundingClientRect().bottom - cords.bottom
+
+            //     let halfActiveY =  estado.getBoundingClientRect().top - mapaContainer.getBoundingClientRect().top
+            // // halfActiveY = halfActiveY < 0 ? halfActiveY * -1 : halfActiveY
+            //     let halfActiveX = estado.getBoundingClientRect().left - mapaContainer.getBoundingClientRect().left
 
 
-                // let halfActiveY =  (cords.height/2)
-                // let percentageY = ((halfActiveY)*100)/mapaContainer.getBoundingClientRect().height
-                // let percentageX = ((halfActiveX)*100)/mapaContainer.getBoundingClientRect().width
+            //     let percentageY = ((halfActiveY)*100)/ document.querySelector('body').getBoundingClientRect().top
+            //     let percentageX = ((halfActiveX)*100)/ document.querySelector('body').getBoundingClientRect().left
 
-                // marker.style.top = `${percentageY}%`
-                // marker.style.left = `${percentageX}%`
-
-                // activeState.appendChild(marker)
-                // marker.style.top = `${cords.height/2}px`
-                // marker.style.left = `${cords.width/2}px`
-
+            //     marker.style.top = `${halfActiveY}px`
+            //     marker.style.left = `${halfActiveY}px`
 
             }))
 
