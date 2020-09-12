@@ -269,11 +269,17 @@ header:after {
   position: relative;
   color: var(--rojo);
   z-index: 10;
-  font-size: 4.5em;
+  font-size: calc(1.525rem + 3.3vw);
   font-weight: bolder;
   font-family: "Spartan", sans-serif;
   margin-top: -6vh;
   margin-bottom: 4vh;
+}
+
+@media (min-width: 1200px) {
+  .hero-container__main h1 {
+    font-size: 4rem;
+  }
 }
 
 .hero-container__main h1 span {
@@ -300,15 +306,40 @@ header:after {
 .hero-container__main .carousel-wrapper {
   display: block;
   margin: auto;
-  height: 25em;
+  height: 10em;
+  margin-top: -2em;
+  /* width: 100%; */
+  margin-bottom: 4em;
   position: relative;
-  margin-top: -9em;
   z-index: 10;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-container__main .carousel-wrapper {
+    height: 25em;
+    margin-top: -9em;
+  }
+
+  .hero-container__main .carousel-wrapper img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 535px) and (max-width: 767px) {
+  .hero-container__main .carousel-wrapper {
+    height: 20em;
+  }
+
+  .hero-container__main .carousel-wrapper img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .hero-container__main .carousel-wrapper img {
-  -o-object-fit: contain;
-     object-fit: contain;
   -webkit-filter: blur(15px);
           filter: blur(15px);
   transition: opacity ease-out 0.3s, -webkit-filter ease-out 0.2s 0.15s;
