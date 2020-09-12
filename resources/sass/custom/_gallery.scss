@@ -34,7 +34,7 @@
             &:hover {
 
                 svg {
-                    animation-duration: 0.5s;
+                    animation-duration: 3s;
                 }
             }
 
@@ -43,7 +43,8 @@
                 height: 65px;
                 fill: white;
                 animation: spin infinite linear;
-                animation-duration: 5s;
+                animation-duration: 10s;
+                transition: animation-duration 0.3s linear;
             }
         }
     }
@@ -64,6 +65,8 @@
 
             &::before {
 
+                mask-repeat: no-repeat;
+                mask-size: cover;
                 display: block;
                 width: 100%;
                 height: 3em;
@@ -87,7 +90,8 @@
                 &::before{
 
                     content: "";
-                    mask: url('../img/borde-azul-oscuro-bottom.svg');
+                    mask-image: url('../img/borde-azul-oscuro-bottom.svg');
+
                     top: -24%;
                     background-color: var(--primary);
                 }
@@ -107,7 +111,7 @@
                 &::before{
 
                     content: "";
-                    mask: url('../img/border-redondo-azul.svg');
+                    mask-image: url('../img/border-redondo-azul.svg');
                     background-color: var(--azul);
                     top: 100%;
                 }
@@ -267,7 +271,7 @@
         bottom: 28%;
         left: 5em;
         width: 180px;
-        transform: translateX(var(--posX));
+        transform: translateX(calc(var(--posX) + 15vw));
         transition: transform 0.3s ease;
     }
 }

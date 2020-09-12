@@ -112,6 +112,7 @@
 
                 &.active-state {
 
+
                     position:relative;
                     button {
 
@@ -186,6 +187,8 @@
             }
 
             &.active-state {
+                filter: drop-shadow(-7px 11px 4px black);
+                animation: shadow 0.5s forwards ease-in-out;
 
                 path {
                     fill: var(--secondary)
@@ -243,3 +246,15 @@
         }
     }
 }
+
+
+@keyframes shadow {
+    0% {
+        filter: drop-shadow(-7px 11px 4px black);
+
+    }
+    100% {
+        filter: drop-shadow(-15px 11px 4px black);
+
+    }
+  }
