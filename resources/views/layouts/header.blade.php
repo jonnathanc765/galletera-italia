@@ -5,10 +5,11 @@
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
             aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            {{-- <span class="navbar-toggler-icon"></span> --}}
+            <i class="fas fa-bars"></i>
         </button>
         <a class="navbar-brand d-block d-md-none" href="#">
-            <img src="{{ asset('img/galleteraitalialogo.png') }}" height="30" width="30" alt="tag">
+            <img class="img-fluid" src="{{ asset('img/galleteraitalialogo.png') }}" height="80" width="80" alt="tag">
         </a>
 
         <div class="collapse navbar-collapse" id="main-nav">
