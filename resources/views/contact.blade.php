@@ -25,7 +25,7 @@
                     <p class="font-weight-bold mb-1">Contacto: <span class="d-block font-weight-normal">info@galleteraitalia.com0273-5420707 / 5420461 / 5420392</span></p>
                     <p class="font-weight-bold mt-3">Redes sociales: 3 iconos sociales aca</p>
                 </div>
-                <div class="col-md-6 col-12 offset-3 form-container__form">
+                <div class="col-md-6 col-12 offset-lg-3 offset-0 form-container__form">
 
                     <div class="form">
                         <form action="{{ route('mails.store') }}" method="POST" id="form">
@@ -281,7 +281,7 @@
 
             <div class="leyenda">
                 <ul>
-                    <li>Ubicador</li>
+                    {{-- <li>Ubicador</li> --}}
                     <li>Estado Seleccionado</li>
                     <li>Resto del Mapa</li>
                 </ul>

@@ -1155,6 +1155,21 @@ header:after {
   order: 1;
 }
 
+@media screen and (min-width: 1500px) {
+  .form-wrapper {
+    margin-bottom: -9em;
+  }
+
+  .form-wrapper::after {
+    height: 27em;
+  }
+
+  .form-wrapper::before {
+    height: 14em;
+    bottom: -28em;
+  }
+}
+
 .form-wrapper::after {
   content: "";
   -webkit-mask: url(/images/forma-azul-clara-bottom.svg?7968ad94a572b1f1a48d0fc798681404);
@@ -1164,11 +1179,15 @@ header:after {
   -webkit-mask-size: cover;
           mask-size: cover;
   width: 100%;
-  height: 12em;
   background-color: var(--azul-claro);
   order: 3;
-  order: 3;
   z-index: 10;
+}
+
+@media screen and (max-width: 1499px) {
+  .form-wrapper::after {
+    height: 12em;
+  }
 }
 
 .form-wrapper::before {
@@ -1180,20 +1199,30 @@ header:after {
   -webkit-mask-size: cover;
           mask-size: cover;
   width: 100%;
-  height: 7em;
   background: var(--primary);
   order: 2;
-  bottom: -13em;
   z-index: 15;
   position: relative;
 }
 
+@media screen and (max-width: 1499px) {
+  .form-wrapper::before {
+    height: 7em;
+    bottom: -13em;
+  }
+}
+
 .form-container {
   color: var(--primary);
-  padding-left: 90px;
-  padding-right: 90px;
   font-family: "Spartan", sans-serif;
   margin-bottom: -5em;
+}
+
+@media screen and (min-width: 576px) {
+  .form-container {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
 }
 
 .form-container__form form {
@@ -1241,10 +1270,25 @@ header:after {
 }
 
 .mapa-container {
-  padding-left: 90px;
-  padding-right: 90px;
   padding-top: 15vh;
   background-color: var(--beige);
+}
+
+@media screen and (min-width: 576px) {
+  .mapa-container {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mapa-container {
+    padding-bottom: 2.25em;
+  }
+
+  .mapa-container .accordion {
+    margin-bottom: 3.5em;
+  }
 }
 
 .mapa-container .accordion .card {
@@ -1336,6 +1380,12 @@ header:after {
   bottom: 20%;
 }
 
+@media screen and (max-width: 992px) {
+  #mapa-container ul {
+    left: -9%;
+  }
+}
+
 #mapa-container ul li {
   font-family: "Spartan", sans-serif;
   font-weight: bold;
@@ -1351,10 +1401,6 @@ header:after {
 }
 
 #mapa-container ul li:first-of-type::before {
-  background-color: var(--primary);
-}
-
-#mapa-container ul li:nth-child(2)::before {
   background-color: var(--secondary);
 }
 
