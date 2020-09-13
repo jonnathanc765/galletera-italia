@@ -422,6 +422,10 @@ header:after {
   }
 }
 
+.cards-wrapper .cards-container__card:hover {
+  text-decoration: none;
+}
+
 .cards-wrapper .cards-container__card:hover img {
   transform: scale(1.5);
 }

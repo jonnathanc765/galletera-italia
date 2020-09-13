@@ -163,6 +163,7 @@
             overflow: hidden;
 
             &:hover {
+                text-decoration: none;
                 img {
                     transform: scale(1.5);
                 }
