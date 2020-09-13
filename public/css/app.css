@@ -587,9 +587,20 @@ header:after {
 
 .about__timeline--main-column {
   margin-top: -6em;
-  padding: 6em 8em !important;
   background-color: var(--beige);
   position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .about__timeline--main-column {
+    padding: 6em 8em !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about__timeline--main-column {
+    padding-top: 2.25em;
+  }
 }
 
 .about__timeline--main-column::after,
@@ -601,6 +612,13 @@ header:after {
   background-repeat: repeat-y;
   position: absolute;
   top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .about__timeline--main-column::after,
+  .about__timeline--main-column::before {
+    display: none;
+  }
 }
 
 .about__timeline--main-column::before {
@@ -617,24 +635,55 @@ header:after {
   font-family: "Spartan", sans-serif;
 }
 
+@media screen and (max-width: 992px) {
+  .about__info-mision,
+  .about__info-valores,
+  .about__info-vision {
+    padding: 1.25em;
+  }
+
+  .about__info-mision p:not(.h2),
+  .about__info-valores p:not(.h2),
+  .about__info-vision p:not(.h2) {
+    text-align: left;
+  }
+
+  .about__info-mision .h2,
+  .about__info-valores .h2,
+  .about__info-vision .h2 {
+    text-align: center;
+  }
+}
+
 .about__info-mision,
 .about__info-valores {
   background-size: contain;
   background-repeat: no-repeat;
   color: var(--primary);
-  padding: 45px 0 45px 45px;
   background-position: right;
+}
+
+@media screen and (min-width: 992px) {
+  .about__info-mision,
+  .about__info-valores {
+    padding: 45px 0 45px 45px;
+  }
 }
 
 .about__info-vision {
   background-size: cover, 36%;
   background-repeat: no-repeat;
   color: white;
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, var(--rojo) 25%, var(--rojo) 100%), url(/images/vision.png?2d28c784d01f4b78f8d74a7bf4c67778);
+  background-image: linear-gradient(var(--rojo) 100%, var(--rojo) 100%), url(/images/vision.png?2d28c784d01f4b78f8d74a7bf4c67778);
   background-position: left;
-  padding: 45px 45px 45px 0;
   justify-content: flex-end;
-  padding-right: 15%;
+}
+
+@media screen and (min-width: 992px) {
+  .about__info-vision {
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, var(--rojo) 25%, var(--rojo) 100%), url(/images/vision.png?2d28c784d01f4b78f8d74a7bf4c67778);
+    padding: 45px 15% 45px 0;
+  }
 }
 
 .about__info-vision p {
@@ -642,15 +691,27 @@ header:after {
 }
 
 .about__info-mision {
-  padding-left: 15%;
   --image: url(/images/mision.png?ccbb7d39cb76f1768777c83ddd737fc4);
   background-size: cover, 40% 150%;
-  background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 60%, rgba(255, 255, 255, 0) 100%), var(--image);
+  background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 100%, rgba(255, 255, 255, 0) 100%), var(--image);
+}
+
+@media screen and (min-width: 992px) {
+  .about__info-mision {
+    padding-left: 15%;
+    background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 60%, rgba(255, 255, 255, 0) 100%), var(--image);
+  }
 }
 
 .about__info-valores {
   --image: url(/images/valores.png?efd77edfaa75259bb3d821fbc7200e80);
-  background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 62%, rgba(255, 255, 255, 0) 100%), var(--image);
+  background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 100%, rgba(255, 255, 255, 0) 100%), var(--image);
+}
+
+@media screen and (min-width: 992px) {
+  .about__info-valores {
+    background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 62%, rgba(255, 255, 255, 0) 100%), var(--image);
+  }
 }
 
 .about__info-valores ul {
