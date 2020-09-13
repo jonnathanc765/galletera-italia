@@ -20,10 +20,14 @@
             <div class="row form-container">
 
                 <div class="col-md-3 col-12">
-                    <p>Lorem ipsum dolor sit amet, con-sectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
-                    <address><p class="font-weight-bold mb-1">Ubicación:</p><p>Av. 02 Sur, Parque IndustrialCOSDZIEBA. Barinas, Venezuela.</p></address>
+                    <p>Contáctanos y sé parte de nuestra cartera de clientes.</p>
+                    <address><p class="font-weight-bold mb-1">Ubicación:</p><p>Av. 02 Sur, Parque Industrial COSDZIEBA. Barinas, Venezuela.</p></address>
                     <p class="font-weight-bold mb-1">Contacto: <span class="d-block font-weight-normal">info@galleteraitalia.com0273-5420707 / 5420461 / 5420392</span></p>
-                    <p class="font-weight-bold mt-3">Redes sociales: 3 iconos sociales aca</p>
+                    <p class="font-weight-bold mt-3 social-media">
+                        <a target="_blank" href="https://www.instagram.com/galletera.italia/"> <i class="fab fa-linkedin-in"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/GalleteraItalia"> <i class="fab fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/galletera-italia/"> <i class="fab fa-instagram"></i></a>
+                    </p>
                 </div>
                 <div class="col-md-6 col-12 offset-lg-3 offset-0 form-container__form">
 

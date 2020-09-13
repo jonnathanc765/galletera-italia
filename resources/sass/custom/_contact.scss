@@ -67,6 +67,30 @@
     font-family: 'Spartan', sans-serif;
     margin-bottom: -5em;
 
+    .social-media {
+
+        display: flex;
+        justify-content: space-evenly;
+
+        a{
+
+            color: var(--azul-claro);
+            background: var(--primary);
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            padding: 10px;
+            margin-right: 5px;
+        }
+
+        svg {
+        }
+    }
+
     @media screen and (min-width:576px) {
         padding-left: 90px;
         padding-right: 90px;
