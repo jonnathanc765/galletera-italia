@@ -111,32 +111,35 @@
 
     document.addEventListener("DOMContentLoaded", function () {
 
-        const animalito = document.getElementById('animalito')
-        const container = document.querySelector('.slogan-container')
+        if (window.matchMedia('(min-width: 992px)').matches) {
 
-        const io = new IntersectionObserver(entries => {
+            const animalito = document.getElementById('animalito')
+            const container = document.querySelector('.slogan-container')
 
-
-            // Element enters the viewport
-            if (entries[0].intersectionRatio !== 0) {
-
-                // How much of the element is visible
-
-                animalito.style.setProperty('--posX', `${entries[0].boundingClientRect.top * -1}px`)
-
-                // Element leaves the viewport
-            }
-
-        }, {
-            // Call the observer, when the element enters the viewport,
-            // when 25%, 50%, 75% and the whole element are visible
-            // rootMargin: '0px 0px -20px 0px',
-            threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
-        });
+            const io = new IntersectionObserver(entries => {
 
 
-        // Start observing .box
-        io.observe(container);
+                // Element enters the viewport
+                if (entries[0].intersectionRatio !== 0) {
+
+                    // How much of the element is visible
+
+                    animalito.style.setProperty('--posX', `${entries[0].boundingClientRect.top * -1}px`)
+
+                    // Element leaves the viewport
+                }
+
+            }, {
+                // Call the observer, when the element enters the viewport,
+                // when 25%, 50%, 75% and the whole element are visible
+                // rootMargin: '0px 0px -20px 0px',
+                threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
+            });
+
+            // Start observing .box
+            io.observe(container);
+        }
+
     })
 
 </script>
