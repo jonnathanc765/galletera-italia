@@ -1453,6 +1453,12 @@ footer:before {
   left: 0;
 }
 
+@media screen and (max-width: 992px) {
+  footer:before {
+    top: -13%;
+  }
+}
+
 footer .social-media svg {
   color: var(--primary);
   background: var(--secondary);
@@ -1461,6 +1467,13 @@ footer .social-media svg {
   border-radius: 50%;
   padding: 10px;
   margin-right: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  footer .social-media svg {
+    height: 40px;
+    width: 40px !important;
+  }
 }
 
 /*!

@@ -17,6 +17,13 @@ footer {
         height: 70px;
         top: -32%;
         left: 0;
+
+        @media screen and (max-width:992px) {
+
+            top: -13%
+        }
+
+
     }
 
     .social-media {
@@ -29,6 +36,12 @@ footer {
             border-radius: 50%;
             padding: 10px;
             margin-right: 5px;
+
+            @media screen and (max-width:576px) {
+
+                height: 40px;
+                width: 40px!important;
+            }
         }
     }
 
