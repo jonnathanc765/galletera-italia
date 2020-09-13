@@ -30,9 +30,9 @@
 
                         <p>Redes sociales</p>
                         <p class="social-media">
-                            <i class="fab fa-linkedin-in"></i>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-instagram"></i>
+                            <a target="_blank" href="https://www.instagram.com/galletera.italia/"> <i class="fab fa-linkedin-in"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/GalleteraItalia"> <i class="fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/company/galletera-italia/"> <i class="fab fa-instagram"></i></a>
                         </p>
                     </div>
                 </div>
