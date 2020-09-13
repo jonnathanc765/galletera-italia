@@ -6,7 +6,14 @@
     background-image: url('../img/bg-puntos-blancos.png');
 
     &__main {
-        padding-bottom: 45vh;
+
+        @include padding-bottom(5em);
+        // padding-bottom: ;
+        @media screen and (min-width:992px) {
+            padding-bottom: 45vh;
+
+        }
+
 
         h1 {
             position: relative;
@@ -109,20 +116,44 @@
 }
 
 .cards-wrapper {
-    padding-bottom: 22vh;
+
+    @media screen and (min-width:992px) {
+        padding-bottom: 22vh;
+
+    }
     background-color: white;
     position: relative;
     z-index: 10;
 
     .cards-container {
 
-        position: absolute;
         width: 100%;
-        bottom: -6em;
         background-image: url('../img/bg-puntos-rojos.png');
 
+        @media screen and (min-width:992px) {
+
+            bottom: -6em;
+            position: absolute;
+        }
+
+        @media screen and (max-width:992px) {
+            height: 500px;
+            margin: 0;
+
+            &__card {
+                height: 50%;
+
+
+            }
+        }
+
         &__card {
-            height: 75vh;
+
+            @media screen and (min-width:992px) {
+                height: 75vh;
+
+            }
+
             display:flex;
             flex-direction: column;
             background-repeat: no-repeat;
@@ -155,7 +186,8 @@
                 // height: 25%;
                 font-family: 'Spartan', sans-serif;
                 flex-grow: 0.25;
-                font-size: 2.5em;
+                // font-size: 2.5em;
+                @include font-size(2.5em);
                 margin-bottom: 0;
                 display: flex;
                 justify-content: center;
@@ -220,6 +252,7 @@
                     border-radius: 35px 0 0 35px;
 
                 }
+
                 // background-position: bottom left;
                 // background-image: url('../img/fabrica.jpg');
                 // background-image: url('../img/fabroca.png');
@@ -228,10 +261,26 @@
                     border-radius: 0 0 0 35px;
                 }
 
+
+                @media screen and (max-width:992px) {
+
+                    border-radius: 35px 0 0 0;
+
+                    p {
+                        border-radius: 0;
+                    }
+
+                }
+
             }
 
             &:nth-child(2) {
 
+                @media screen and (max-width:992px) {
+
+                    border-radius: 0 35px 0 0;
+
+                }
                 // background-position:  -2px -70px;
                 // background-image: url('../img/productos.png');
             }
@@ -239,6 +288,13 @@
             &:nth-child(3) {
                 img {
                     bottom: 20%;
+                }
+
+                @media screen and (max-width:992px) {
+
+                    border-radius:  0 0 0 35px;
+
+
                 }
                 // background-image: url('../img/galeria.png');
             }
@@ -257,6 +313,12 @@
                 p {
                     border-radius: 0 35px 0 0;
                 }
+
+                @media screen and (max-width:992px) {
+
+                    border-radius: 0 0 35px 0;
+
+                }
             }
         }
     }
@@ -266,14 +328,28 @@
 
     background-color: var(--azul-claro);
     background-image: url('../img/bg-puntos-azules.png');
-    padding-top: 10em;
     font-family: 'Spartan', sans-serif;
-    min-height: 820px;
+    padding-top: 4em;
+    padding-bottom: 4em;
+
+    @media screen and (min-width:992px) {
+
+        padding-top: 10em;
+
+        min-height: 820px;
+
+        &__text {
+
+            padding-top: 8em;
+
+        }
+
+    }
 
 
     &__text {
 
-        padding-top: 8em;
+        // @include padding-top(8em);
 
         .display-3 {
             font-weight: bold;
@@ -292,5 +368,11 @@
         right: 0;
         top: -16%;
         z-index: 5;
+
+        // @media screen and (max-width:992px) {
+
+        //     display: none;
+
+        // }
     }
 }

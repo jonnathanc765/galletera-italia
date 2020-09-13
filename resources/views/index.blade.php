@@ -23,10 +23,10 @@
     <div class="row cards-wrapper">
 
         <div class="row cards-container">
-            <div class="cards-container__card offset-2 col-2"><img src="{{asset('img/fabroca.png')}}" alt=""><p>Nosotros</p></div>
-            <div class="cards-container__card col-2"><img src="{{asset('img/productos.png')}}" alt=""><p>Productos</p></div>
-            <div class="cards-container__card col-2"><img src="{{asset('img/galeria.png')}}" alt=""><p>Galeria</p></div>
-            <div class="cards-container__card col-2"><img src="{{asset('img/gorra.png')}}" alt=""><p>Contacto</p></div>
+            <div class="cards-container__card col-6 col-lg-2 offset-lg-2"><img src="{{asset('img/fabroca.png')}}" alt=""><p>Nosotros</p></div>
+            <div class="cards-container__card col-6 col-lg-2"><img src="{{asset('img/productos.png')}}" alt=""><p>Productos</p></div>
+            <div class="cards-container__card col-6 col-lg-2"><img src="{{asset('img/galeria.png')}}" alt=""><p>Galeria</p></div>
+            <div class="cards-container__card col-6 col-lg-2"><img src="{{asset('img/gorra.png')}}" alt=""><p>Contacto</p></div>
         </div>
     </div>
     <div class="row us-container">
@@ -43,7 +43,7 @@
                 chocolate.</p>
                 <button class="btn btn-primary">Conocenos</button>
         </div>
-        <div class="col-12 col-lg-6 position-relative">
+        <div class="col-12 col-lg-6 position-relative d-none d-lg-block">
             <img class="img-fluid" src="{{ asset('img/galleta-shape.png') }}"  alt="galleta">
 
         </div>

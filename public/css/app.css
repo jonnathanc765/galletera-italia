@@ -262,7 +262,13 @@ header:after {
 }
 
 .hero-container__main {
-  padding-bottom: 45vh;
+  padding-bottom: 5em;
+}
+
+@media screen and (min-width: 992px) {
+  .hero-container__main {
+    padding-bottom: 45vh;
+  }
 }
 
 .hero-container__main h1 {
@@ -361,21 +367,41 @@ header:after {
 }
 
 .cards-wrapper {
-  padding-bottom: 22vh;
   background-color: white;
   position: relative;
   z-index: 10;
 }
 
+@media screen and (min-width: 992px) {
+  .cards-wrapper {
+    padding-bottom: 22vh;
+  }
+}
+
 .cards-wrapper .cards-container {
-  position: absolute;
   width: 100%;
-  bottom: -6em;
   background-image: url(/images/bg-puntos-rojos.png?660aead1ecd36cc194f305bf72b9db37);
 }
 
+@media screen and (min-width: 992px) {
+  .cards-wrapper .cards-container {
+    bottom: -6em;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cards-wrapper .cards-container {
+    height: 500px;
+    margin: 0;
+  }
+
+  .cards-wrapper .cards-container__card {
+    height: 50%;
+  }
+}
+
 .cards-wrapper .cards-container__card {
-  height: 75vh;
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
@@ -383,6 +409,12 @@ header:after {
   background-position: center;
   padding: 0 !important;
   overflow: hidden;
+}
+
+@media screen and (min-width: 992px) {
+  .cards-wrapper .cards-container__card {
+    height: 75vh;
+  }
 }
 
 .cards-wrapper .cards-container__card:hover img {
@@ -468,8 +500,30 @@ header:after {
   border-radius: 0 0 0 35px;
 }
 
+@media screen and (max-width: 992px) {
+  .cards-wrapper .cards-container__card:first-of-type {
+    border-radius: 35px 0 0 0;
+  }
+
+  .cards-wrapper .cards-container__card:first-of-type p {
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cards-wrapper .cards-container__card:nth-child(2) {
+    border-radius: 0 35px 0 0;
+  }
+}
+
 .cards-wrapper .cards-container__card:nth-child(3) img {
   bottom: 20%;
+}
+
+@media screen and (max-width: 992px) {
+  .cards-wrapper .cards-container__card:nth-child(3) {
+    border-radius: 0 0 0 35px;
+  }
 }
 
 .cards-wrapper .cards-container__card:last-of-type {
@@ -484,16 +538,29 @@ header:after {
   border-radius: 0 35px 0 0;
 }
 
+@media screen and (max-width: 992px) {
+  .cards-wrapper .cards-container__card:last-of-type {
+    border-radius: 0 0 35px 0;
+  }
+}
+
 .us-container {
   background-color: var(--azul-claro);
   background-image: url(/images/bg-puntos-azules.png?7cf50e8008c1639c978cc157bcb568ab);
-  padding-top: 10em;
   font-family: "Spartan", sans-serif;
-  min-height: 820px;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
-.us-container__text {
-  padding-top: 8em;
+@media screen and (min-width: 992px) {
+  .us-container {
+    padding-top: 10em;
+    min-height: 820px;
+  }
+
+  .us-container__text {
+    padding-top: 8em;
+  }
 }
 
 .us-container__text .display-3 {
