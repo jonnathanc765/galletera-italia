@@ -18,6 +18,18 @@ html {
     padding-top: 15vh;
 }
 
+.wrapper-big{
+
+    // @media screen and (min-width:1200px){
+
+        max-width: 1140px;
+        margin-right: auto;
+        margin-left: auto;
+        // margin: auto;
+    // }
+
+}
+
 @import 'custom/header';
 @import 'custom/home';
 @import 'custom/about';
