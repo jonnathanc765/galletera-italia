@@ -18,6 +18,12 @@
         background-position: center;
         background-size: cover;
 
+        @media screen and (max-width:992px) {
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+
 
 
         &.is-active{
@@ -70,7 +76,13 @@
         &-content {
 
 
+
             width: 50%;
+            @media screen and (min-width:992px) {
+
+
+            }
+
             small {
 
                 font-weight: bold;
@@ -92,4 +104,8 @@
 
         }
     }
+}
+
+button.flickity-button{
+    box-shadow: 7px 7px 9px 3px black;
 }

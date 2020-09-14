@@ -231,7 +231,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header" id="card-lara>
+                  <div class="card-header" id="card-lara">
                     <h2 class="mb-0">
                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-lara" aria-expanded="false" aria-controls="collapse-lara" data-estado="lara">
                         Lara
@@ -247,7 +247,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header" id="card-caracas>
+                  <div class="card-header" id="card-caracas">
                     <h2 class="mb-0">
                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-caracas" aria-expanded="false" aria-controls="collapse-caracas" data-estado="caracas">
                         Caracas

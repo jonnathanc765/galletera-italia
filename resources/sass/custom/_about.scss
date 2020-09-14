@@ -4,11 +4,32 @@
     &__timeline{
         background-color: var(--rojo);
         background-image: url('../img/bg-puntos-blancos.png');
+        position: relative;
+
+        &:before{
+
+            content: "";
+            display: block;
+            position: absolute;
+            background: var(--beige);
+            height: 100px;
+            border: red;
+            width: 51%;
+            z-index: 5;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+
+            @media screen and (max-width:992px) {
+                width: 100%;
+            }
+        }
 
         &--main-column {
             margin-top: -6em;
             background-color: var(--beige);
             position:relative;
+            z-index: 10;
 
             @media screen and (min-width:992px) {
                 padding: 6em 8em!important;
@@ -51,6 +72,10 @@
         // background-color: var(--azul);
         font-family: 'Spartan', sans-serif;
 
+        .h2 {
+            font-weight: bold;
+        }
+
         @media screen and (max-width:992px) {
 
             &-mision, &-valores, &-vision {
@@ -74,7 +99,9 @@
 
         &-mision, &-valores {
             // background-size: cover,36%;
-            background-size: contain;
+            // background-size: contain;
+            background-size: cover,40% ;
+
             background-repeat: no-repeat;
             color: var(--primary);
             // background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 85%, rgba(255,255,255,0) 100%), var(--image);
@@ -111,27 +138,33 @@
         &-mision {
 
             --image: url('../img/mision.png');
-            background-size: cover,40% 150%;
-            background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 100%, rgba(255, 255, 255, 0) 100%), var(--image);
+            background-image: linear-gradient(90deg, var(--gris) 0%, var(--gris) 100%, rgba(255, 255, 255, 0) 100%), var(--image);
 
             @media screen and (min-width:992px) {
                 padding-left: 15%;
-                background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 60%, rgba(255, 255, 255, 0) 100%), var(--image);
+                background-image: linear-gradient(90deg, var(--gris) 0%, var(--gris) 60%, rgba(255, 255, 255, 0) 100%), var(--image);
 
             }
         }
         &-valores {
             --image: url('../img/valores.png');
-            background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 100%, rgba(255, 255, 255, 0) 100%), var(--image);
+            background-image: linear-gradient(90deg, var(--gris) 0%, var(--gris) 100%, rgba(255, 255, 255, 0) 100%), var(--image);
 
             @media screen and (min-width:992px) {
 
-                background-image: linear-gradient(90deg, var(--azul-claro) 0%, var(--azul-claro) 62%, rgba(255, 255, 255, 0) 100%), var(--image);
+                background-image: linear-gradient(90deg, var(--gris) 0%, var(--gris) 62%, rgba(255, 255, 255, 0) 100%), var(--image);
 
             }
 
             ul {
                 padding: 0;
+
+                li {
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
             }
 
             & > div {

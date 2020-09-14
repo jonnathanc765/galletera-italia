@@ -17,6 +17,7 @@ header {
             ul {
                 padding-right: 10%;
 
+
                 @media screen and (min-width: 992px) {
                     justify-content: space-around;
                     align-items: flex-start;
@@ -32,6 +33,10 @@ header {
                         &:hover {
                             color: var(--secondary)
                         }
+                    }
+
+                    @media screen and (max-width:991px) {
+                        text-align: center;
                     }
 
                     &.logo {

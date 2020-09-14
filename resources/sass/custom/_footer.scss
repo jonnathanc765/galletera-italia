@@ -28,6 +28,18 @@ footer {
 
     .social-media {
 
+        a {
+
+            &:hover {
+
+                svg {
+                    transform: scale(1.2);
+
+                }
+            }
+
+        }
+
         svg {
             color: var(--primary);
             background: var(--secondary);
@@ -36,6 +48,8 @@ footer {
             border-radius: 50%;
             padding: 10px;
             margin-right: 5px;
+            transition: transform 0.3s ease-in-out;
+
 
             @media screen and (max-width:576px) {
 

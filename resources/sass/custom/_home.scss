@@ -86,7 +86,8 @@
 
             img {
                 // object-fit: contain;
-                filter: blur(15px);
+                // filter: blur(15px);
+                opacity:0;
                 transition: opacity ease-out .3s,filter ease-out .2s .15s;
                 position: absolute;
                 left: 50%;
@@ -186,9 +187,10 @@
             p {
                 // height: 25%;
                 font-family: 'Spartan', sans-serif;
+                font-weight: 700;
                 flex-grow: 0.25;
                 // font-size: 2.5em;
-                @include font-size(2.5em);
+                @include font-size(1.5em);
                 margin-bottom: 0;
                 display: flex;
                 justify-content: center;
@@ -242,15 +244,14 @@
                         background-color: var(--secondary);
                         clip-path: polygon(50% 100%, 0 0, 100% 0);
                         right: 0;
-                        bottom: -34px;
+                        bottom: -32px;
                     }
                 }
             }
 
             &:first-of-type{
-                border-radius: 35px 0 0 35px;
                 img{
-                    border-radius: 35px 0 0 35px;
+                    // border-radius: 35px 0 0 35px;
 
                 }
 
@@ -262,10 +263,14 @@
                     border-radius: 0 0 0 35px;
                 }
 
+                @media screen and (min-width:992px) {
+                    border-radius: 35px 0 0 35px;
+
+                }
 
                 @media screen and (max-width:992px) {
 
-                    border-radius: 35px 0 0 0;
+                    // border-radius: 35px 0 0 0;
 
                     p {
                         border-radius: 0;
@@ -279,7 +284,7 @@
 
                 @media screen and (max-width:992px) {
 
-                    border-radius: 0 35px 0 0;
+                    // border-radius: 0 35px 0 0;
 
                 }
                 // background-position:  -2px -70px;
@@ -293,7 +298,7 @@
 
                 @media screen and (max-width:992px) {
 
-                    border-radius:  0 0 0 35px;
+                    // border-radius:  0 0 0 35px;
 
 
                 }
@@ -305,19 +310,19 @@
                 // background-position: left center;
                 // background-image: url('../img/gorra.png');
 
-                border-radius: 0 35px 35px 0;
-                img{
-                    border-radius: 0 35px 35px 0;
+                // img{
+                    //     border-radius: 0 35px 35px 0;
 
-                }
+                    // }
 
-                p {
-                    border-radius: 0 35px 0 0;
-                }
 
-                @media screen and (max-width:992px) {
+                @media screen and (min-width:992px) {
+                        border-radius: 0 35px 35px 0;
 
-                    border-radius: 0 0 35px 0;
+                    // p {
+                    //     border-radius: 0 35px 0 0;
+                    // }
+                    // border-radius: 0 0 35px 0;
 
                 }
             }

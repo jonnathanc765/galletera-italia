@@ -138,7 +138,9 @@
 .mapa-container {
 
     padding-top: 15vh;
+    padding-bottom: 4em;
     background-color: var(--beige);
+    background-image: url('../img/bg-puntos-blancos-2.png');
 
     @media screen and (min-width:576px) {
 
@@ -149,7 +151,7 @@
 
     @media screen and (max-width:992px) {
 
-        padding-bottom: 2.25em;
+        padding-bottom: 23vh;
 
         .accordion {
             margin-bottom: 3.5em;
@@ -171,14 +173,43 @@
                 border-bottom: 1px solid black;
                 padding-left: 0;
                 margin-bottom: 0!important;
+                text-transform: uppercase;
+
+                h2 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 20px;
+
+                    &::after{
+
+                        content: "";
+                        right: 0;
+                        width: 50px;
+                        background-color: var(--secondary);
+                        height: 15px;
+                        border-radius: 15px;
+                        background-image: url('../img/dropdown.svg');
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+
+                }
 
                 &.active-state {
+
+                    h2 {
+                        &::after {
+                            background-color: var(--primary);
+                        }
+                    }
 
 
                     position:relative;
                     button {
 
-                        font-weight: bold;
+                        font-weight: 700;
                     }
 
 
@@ -186,7 +217,7 @@
 
                 button {
                     padding-left: 0;
-                    font-weight: 300;
+                    font-weight: 400;
 
                     &:hover,&.focus,&:focus {
 
@@ -195,15 +226,25 @@
                 }
             }
 
+            &-body {
+                padding-left: 0;
+            }
+
             ul {
                 list-style: none;
                 padding-left: 0;
 
                 li {
+                    font-weight: 400;
+                    font-size: 13px;
+                    margin-bottom: 3em;
+                    p{
+                        margin-bottom: 0.25em;
+                    }
                     .distribuidor {
 
                         &-name {
-                            font-weight: bold;
+                            font-weight: 700;
                             font-size: 1.25em;
                         }
                     }
@@ -214,6 +255,7 @@
 
 
     .h1 {
+        font-weight: 700;
         color: var(--secondary);
         small {
 
