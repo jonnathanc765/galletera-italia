@@ -1,5 +1,7 @@
 import sal from 'sal.js'
 
 document.addEventListener('DOMContentLoaded',function(){
-    sal()
+    sal({
+        threshold: 0.3,
+    })
 })

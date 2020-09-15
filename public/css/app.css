@@ -545,6 +545,7 @@ header:after {
   font-family: "Spartan", sans-serif;
   padding-top: 4em;
   padding-bottom: 4em;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 992px) {
