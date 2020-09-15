@@ -143,12 +143,14 @@
 
             &__card {
                 height: 50%;
-
-
+                
+                
             }
         }
-
+        
         &__card {
+            
+            box-shadow: 7px 6px 14px 5px black;
 
             @media screen and (min-width:992px) {
                 height: 75vh;
