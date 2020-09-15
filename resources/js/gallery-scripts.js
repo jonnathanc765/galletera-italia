@@ -4,27 +4,19 @@ smoothscroll.polyfill();
 
     document.addEventListener("DOMContentLoaded", function () {
 
-        let cuandoMover = 0
-        let breakMin=0
-        let breakMax=0
-        let wantBreak = false
         let compensacion = 0
 
-        if (window.matchMedia('(max-width: 768px)').matches) {
-            breakMin=0
-            breakMax=0
-            wantBreak = false
-            cuandoMover = 0.6
+        if (window.matchMedia('(max-width: 576px)').matches) {
 
-            compensacion = '60vw'
+            compensacion = 0.35
         }
-        if (window.matchMedia('(min-width: 992px)').matches) {
-            breakMin=-300
-            breakMax=20
-            cuandoMover = 0.86
-            wantBreak = true
+        else if (window.matchMedia('(min-width: 768px) and (max-width: 991px)').matches) {
 
-            compensacion = '30vw'
+            compensacion = 0.45
+        }
+        else if (window.matchMedia('(min-width: 992px)').matches) {
+
+            compensacion = 0.7
         }
 
             const animalito = document.getElementById('animalito')
@@ -41,14 +33,12 @@ smoothscroll.polyfill();
                 // Element enters the viewport
                 if (entries[0].intersectionRatio !== 0) {
 
+                    if (entries[0].boundingClientRect.top < 0) return
+                    // si ya se empieza a dejar de verse por arriba, dejar de mover el muñeco
 
-                    let value = entries[0].boundingClientRect.top * -1
-
-                    if ((value < breakMin || value > breakMax) && wantBreak) return
-
-                    if (entries[0].intersectionRatio >= cuandoMover) value = `${value}px + ${compensacion}`
-                    else value = `${value}px`
-
+                    let value = `${(entries[0].intersectionRatio * entries[0].boundingClientRect.width ) - (entries[0].boundingClientRect.width *compensacion)}px`
+                    // cuanto se ve * el ancho, ya que cuanto se ve sale en decimales de 0 a 1 es como un porcentaje
+                    // menos, el ancho * un decimal de compensacion,
 
                     animalito.style.setProperty('--posX', `${value}`)
 
