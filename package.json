@@ -36,6 +36,7 @@
         "flickity": "^2.2.1",
         "jszip": "^3.2.2",
         "pdfmake": "^0.1.58",
-        "rfs": "^9.0.3"
+        "rfs": "^9.0.3",
+        "smoothscroll-polyfill": "^0.4.4"
     }
 }
