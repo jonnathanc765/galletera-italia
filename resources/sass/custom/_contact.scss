@@ -195,6 +195,10 @@
                         background-position: center;
                         background-size: contain;
                         background-repeat: no-repeat;
+                        position: absolute;
+                        right: 5%;
+                        pointer-events: none;
+
                     }
 
                 }
@@ -203,7 +207,7 @@
 
                     h2 {
                         &::after {
-                            background-color: var(--primary);
+                            background-color: var(--azul);
                         }
                     }
 
@@ -220,6 +224,8 @@
                 button {
                     padding-left: 0;
                     font-weight: 400;
+                    width: 100%;
+                    text-align: left;
 
                     &:hover,&.focus,&:focus {
 
