@@ -125,10 +125,3 @@
 </div>
 @endsection
 
-@section('scripts')
-
-<script src="{{ asset('js/about-scripts.js') }}"></script>
-
-
-@endsection
-

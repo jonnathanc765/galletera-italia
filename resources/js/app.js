@@ -7,6 +7,7 @@
 require('./bootstrap');
 
 require('./fontawesome');
+require('./sal')
 // window.Vue = require('vue');
 
 /**

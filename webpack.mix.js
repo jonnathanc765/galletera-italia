@@ -16,7 +16,6 @@ mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/carousel-products.js','public/js')
     .js('resources/js/carousel-gallery.js','public/js')
     .js('resources/js/gallery-scripts.js','public/js')
-    .js('resources/js/about-scripts.js','public/js')
     
 
 
