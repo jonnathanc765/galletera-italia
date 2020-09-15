@@ -23,10 +23,10 @@
     <div class="row cards-wrapper">
 
         <div class="row cards-container">
-            <a class="cards-container__card col-6 col-lg-2 offset-lg-2" href="{{route('about')}}"><img src="{{asset('img/fabroca.png')}}" alt=""><p>Nosotros</p></a>
-            <a class="cards-container__card col-6 col-lg-2" href="{{route('products')}}"><img src="{{asset('img/productos.png')}}" alt=""><p>Productos</p></a>
-            <a class="cards-container__card col-6 col-lg-2"  href="{{route('gallery')}}"><img src="{{asset('img/galeria.png')}}" alt=""><p>Galeria</p></a>
-            <a class="cards-container__card col-6 col-lg-2" href="{{route('contact')}}"><img src="{{asset('img/gorra.png')}}" alt=""><p>Contacto</p></a>
+            <a data-sal="slide-left" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-back" class="cards-container__card col-6 col-lg-2 offset-lg-2" href="{{route('about')}}"><img src="{{asset('img/fabroca.png')}}" alt=""><p>Nosotros</p></a>
+            <a data-sal="slide-left" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-back" class="cards-container__card col-6 col-lg-2" href="{{route('products')}}"><img src="{{asset('img/productos.png')}}" alt=""><p>Productos</p></a>
+            <a data-sal="slide-left" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-back" class="cards-container__card col-6 col-lg-2"  href="{{route('gallery')}}"><img src="{{asset('img/galeria.png')}}" alt=""><p>Galeria</p></a>
+            <a data-sal="slide-left" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-back" class="cards-container__card col-6 col-lg-2" href="{{route('contact')}}"><img src="{{asset('img/gorra.png')}}" alt=""><p>Contacto</p></a>
         </div>
     </div>
     <div class="row us-container">
