@@ -63,7 +63,8 @@
             <div class="row about__info-mision">
                 <div class="wrapper-big">
 
-                    <div class="col-12 col-lg-6">
+                    <div data-sal="slide-right"  data-sal-delay="500" data-sal-duration="700"
+                        data-sal-easing="ease-out-back" class="col-12 col-lg-6">
 
                         <p class="h2">Misión</p>
                         <p>Elaborar artículos de galletería dulces y salados a través de procesos de manufactura con personal altamente capacitado y maquinaria automatizada para comercializar en el mercado venezolano con ayuda de distribuidores y aliados comerciales para brindar así una grata experiencia al consumidor final con productos de alta calidad.</p>
@@ -75,7 +76,8 @@
             <div class="row about__info-vision">
                 <div class="wrapper-big">
 
-                    <div class="col-12">
+                    <div data-sal="slide-left" data-sal-delay="500" data-sal-duration="700"
+                        data-sal-easing="ease-out-back" class="col-12">
 
                         <p class="h2">
                             Visión
@@ -92,7 +94,8 @@
             <div class="row about__info-valores">
                 <div class="wrapper-big">
 
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6" data-sal="slide-right"  data-sal-delay="500" data-sal-duration="700"
+                        data-sal-easing="ease-out-back" >
 
                         <p class="h2">
                             Valores
@@ -121,3 +124,11 @@
     </div>
 </div>
 @endsection
+
+@section('scripts')
+
+<script src="{{ asset('js/about-scripts.js') }}"></script>
+
+
+@endsection
+
