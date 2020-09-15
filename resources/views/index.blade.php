@@ -30,7 +30,7 @@
         </div>
     </div>
     <div class="row us-container">
-        <div class="col-12 col-lg-6 us-container__text">
+        <div class="col-12 col-lg-6 us-container__text" data-sal="slide-left" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-back">
 
             <p class="display-3">Nosotros</p>
             <p>Galletera Italia, C.A es una empresa de origen venezolano
@@ -43,7 +43,7 @@
                 chocolate.</p>
                 <button class="btn btn-primary">Conocenos</button>
         </div>
-        <div class="col-12 col-lg-6 position-relative d-none d-lg-block">
+        <div class="col-12 col-lg-6 position-relative d-none d-lg-block" data-sal="slide-right" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-back">
             <img class="img-fluid" src="{{ asset('img/galleta-shape.png') }}"  alt="galleta">
 
         </div>
