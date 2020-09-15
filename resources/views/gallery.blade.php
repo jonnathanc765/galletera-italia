@@ -10,6 +10,9 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 p-0 position-relative overflow-hidden">
+
+            <button id="scroll-btn" class="btn"><span>+</span></button>
+
             <div class="carousel-gallery">
 
                 <div class="carousel__cell">
@@ -93,7 +96,6 @@
                 </div>
         </div>
     </div>
-    <button id="scroll-btn">scroll</button>
     <div class="row slogan-container" id="slogan-container">
         <div class="col-12 slogan__main">
             <p class="h1">Galletas <span>MARÍA</span></p>
