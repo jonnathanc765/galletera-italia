@@ -502,7 +502,7 @@ header:after {
 
 .cards-wrapper .cards-container__card:nth-child(even) p {
   background-color: var(--secondary);
-  color: black;
+  color: var(--secondary);
 }
 
 .cards-wrapper .cards-container__card:nth-child(even) p::after {
@@ -567,6 +567,13 @@ header:after {
 .us-container__text .btn {
   border-radius: 18px;
   padding: 3px 45px;
+}
+
+@media screen and (max-width: 992px) {
+  .us-container__text .btn {
+    display: block;
+    margin: auto;
+  }
 }
 
 .us-container img {
@@ -686,13 +693,6 @@ header:after {
   background-position: right;
 }
 
-@media screen and (min-width: 992px) {
-  .about__info-mision,
-  .about__info-valores {
-    padding: 45px 0 45px 45px;
-  }
-}
-
 .about__info-vision {
   background-size: cover, 36%;
   background-repeat: no-repeat;
@@ -704,8 +704,8 @@ header:after {
 
 @media screen and (min-width: 992px) {
   .about__info-vision {
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, var(--rojo) 35%, var(--rojo) 100%), url(/images/vision.png?1a85b14329f9ddb4b55689d38ad24aa9);
-    padding: 45px 14% 45px 9%;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, var(--rojo) 25%, var(--rojo) 100%), url(/images/vision.png?1a85b14329f9ddb4b55689d38ad24aa9);
+    padding: 95px 14% 95px 9%;
   }
 }
 
@@ -720,8 +720,8 @@ header:after {
 
 @media screen and (min-width: 992px) {
   .about__info-mision {
-    padding-left: 5%;
-    background-image: linear-gradient(90deg, var(--gris) 0%, var(--gris) 60%, rgba(255, 255, 255, 0) 100%), var(--image);
+    background-image: linear-gradient(90deg, var(--gris) 0%, var(--gris) 60%, rgba(255, 255, 255, 0) 70%), var(--image);
+    padding: 45px 14% 45px 5%;
   }
 }
 
@@ -733,7 +733,8 @@ header:after {
 
 @media screen and (min-width: 992px) {
   .about__info-valores {
-    background-image: linear-gradient(90deg, var(--gris) 0%, var(--gris) 62%, rgba(255, 255, 255, 0) 100%), var(--image);
+    background-image: linear-gradient(90deg, var(--gris) 0%, var(--gris) 62%, rgba(255, 255, 255, 0) 70%), var(--image);
+    padding: 45px 14% 45px 9%;
   }
 }
 
@@ -1088,6 +1089,7 @@ button.flickity-button {
   overflow: hidden;
   background-color: var(--azul);
   position: relative;
+  background-image: url(/images/bg-puntos-blancos-2.png?9743e671ba78938893a73534512fadb3);
 }
 
 .slogan-container::before,
@@ -1143,6 +1145,12 @@ button.flickity-button {
   margin-bottom: 1em;
 }
 
+@media screen and (max-width: 768px) {
+  .slogan-container .h1 {
+    font-size: 3em;
+  }
+}
+
 .slogan-container .h1 span {
   display: block;
   margin-top: 13px;
@@ -1154,7 +1162,7 @@ button.flickity-button {
   content: "";
   position: absolute;
   right: 21%;
-  top: -25%;
+  top: -26%;
   font-size: 1.25em;
   background: var(--secondary);
   width: 50px;
@@ -1197,12 +1205,25 @@ button.flickity-button {
 
 .slogan-container .h2 span {
   display: block;
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .slogan-container .h2 {
+    margin-top: 20px;
+  }
 }
 
 .slogan-container .btn {
   border-radius: 18px;
   padding: 4px 30px;
   margin-bottom: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .slogan-container .btn {
+    margin-bottom: 22%;
+  }
 }
 
 .slogan-container img.galletas {
@@ -1231,11 +1252,19 @@ button.flickity-button {
   -o-object-fit: contain;
      object-fit: contain;
   pointer-events: none;
+  z-index: 5;
 }
 
 @media screen and (max-width: 992px) {
   .slogan-container img.animalito {
     bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slogan-container img.animalito {
+    left: -10em;
+    bottom: 84px;
   }
 }
 
@@ -1380,6 +1409,8 @@ button.flickity-button {
   color: white;
   align-self: flex-end;
   border: 1px solid var(--azul);
+  font-weight: bold;
+  padding: 5px 30px;
 }
 
 .mapa-container {

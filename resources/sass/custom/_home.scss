@@ -239,7 +239,7 @@
                 p{
 
                     background-color: var(--secondary);
-                    color: black;
+                    color: var(--secondary);
 
                     &::after{
 
@@ -368,6 +368,11 @@
         .btn {
             border-radius: 18px;
             padding: 3px 45px;
+
+            @media screen and (max-width:992px){
+                display: block;
+                margin: auto;
+            }
         }
     }
 
