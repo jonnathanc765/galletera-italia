@@ -308,7 +308,7 @@
                 <div class="card">
                     <div class="card-header" id="card-anzoategui">
                       <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-anzoategui" aria-expanded="false" aria-controls="collapse-anzoategui">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-anzoategui" aria-expanded="false" aria-controls="collapse-anzoategui" data-estado="anzoategui">
                           Anzoategui
                         </button>
                       </h2>
@@ -335,7 +335,29 @@
                     </div>
                 </div>
 
-                {{-- <div class="card">
+                <div class="card">
+                    <div class="card-header" id="card-apure">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-apure" aria-expanded="false" aria-controls="collapse-apure" data-estado="apure">
+                          Apure
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-apure" class="collapse" aria-labelledby="card-apure" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J297701389 </p>
+                                <p class="distribuidor-name"> INVERSIONES PEPITAS DE ORO CA LEIDY MAR </p>
+                                <p class="distrubuidor-client">VARGAS MORENO</p>
+                                <address> AV INTERCOMUNAL SAN FERNANDOBIRUACA EDIF LOCAL PISO S/N GALPON NRO 3 SECTOR ELEVADO DE SANTA RIFINA BIRUACA APURE</address>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+              {{-- <div class="card">
                     <div class="card-header" id="card-estadoaca">
                       <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-estadoaca" aria-expanded="false" aria-controls="collapse-estadoaca">
@@ -348,8 +370,8 @@
                         <ul></ul>
                       </div>
                     </div>
-                  </div>
-              </div> --}}
+                </div> --}}
+
             </div>
         </div>
         <div class="col-md-6 col-12" id="mapa-container">
