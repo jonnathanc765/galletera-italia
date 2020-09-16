@@ -245,7 +245,7 @@
                     <div class="card-body">
                       <ul>
                             <li>
-                                <p class="distribuidor rif">J404354972</p>
+                                <p class="distribuidor-rif">J404354972</p>
                                 <p class="distribuidor-name"> INVERSIONES DAMICO MORENO, C.A </p>
                                 <p class="distribuidor-client">CARLOS MEDINA</p>
                                 <address>AV AVENIDA PEDRO LEON TORRES CON CRUCE 59 CC SOTAVENTO NIVEL 2 LOCAL 30 ZONA OBELISCO BARQUISIMETO LARA. ZONA POSTAL</address>
@@ -294,27 +294,46 @@
                   <div id="collapse-caracas" class="collapse" aria-labelledby="card-caracas" data-parent="#accordion-mapa">
                     <div class="card-body">
                       <ul>
-
+                        <li>
+                            <p class="distribuidor-rif">J403740313</p>
+                            <p class="distribuidor-name">ALIMENTOS LA MERIENDA DE CARACAS V.A., C.A.</p>
+                            <p class="distribuidor-client">ANTONIO DUGARTE</p>
+                            <address>AV JOSE ANGEL LAMAS EDIF Nº 6 PISO E1 LOCAL CENTRO INDUSTRIAL PALO GRANDES ZONA SAN MARTIN CARACAS DISTRITO CAPITAL ZONA POSTAL 1020</address>
+                            </li>
                       </ul>
                     </div>
                   </div>
                 </div>
 
-                {{-- <div class="card">
-                    <div class="card-header" id="card-estadoaca">
+                <div class="card">
+                    <div class="card-header" id="card-anzoategui">
                       <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-estadoaca" aria-expanded="false" aria-controls="collapse-estadoaca">
-                          Collapsible Group Item #3
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-anzoategui" aria-expanded="false" aria-controls="collapse-anzoategui">
+                          Anzoategui
                         </button>
                       </h2>
                     </div>
-                    <div id="collapse-estadoaca" class="collapse" aria-labelledby="card-estadoaca" data-parent="#accordion-mapa">
+                    <div id="collapse-anzoategui" class="collapse" aria-labelledby="card-anzoategui" data-parent="#accordion-mapa">
                       <div class="card-body">
-                        <ul></ul>
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif"> J309577590 </p>
+                                <p class="distribuidor-name"> COMERCIALIZADORA BREÑA BAJA, C.A.</p>
+                                <p class="distribuidor-client"> GRECIA RODRIGUEZ </p>
+                                <address>CALLE LOS TUBOS VIA LA AUTOPISTA BARCELONA EL TIGRE Y EL AEROPUERTO LOCAL CENTRO EMPRESARIAL "AEROCENTRO CENTRO EMPRESARIAL " NRO P-19 SECTOR LA REDOMA PARCELA NRO 19 ETAPA 1 BARCELONA ANZOATEGUI ZONA POSTAL 6001</address>
+                            </li>
+
+                            <li>
+                                <p class="distribuidor-rif"> J403975345 </p>
+                                <p class="distribuidor-name"> CANDY CITY PLACE, CA.</p>
+                                <p class="distribuidor-client"> CARLOS ALBERTO LAMAS JONES </p>
+                                <address>CALLE DEMOCRACIA CC PIO XII, PB, LOCAL No. 7, FRENTE TERMINAL DE PASAJEROS SECTOR CASCO CENTRAL </address>
+                            </li>
+
+                        </ul>
                       </div>
                     </div>
-                  </div>
-              </div> --}}
+                </div>
 
                 {{-- <div class="card">
                     <div class="card-header" id="card-estadoaca">
