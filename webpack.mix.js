@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+require('laravel-mix-purgecss');
 
 /*
  |--------------------------------------------------------------------------
@@ -17,6 +18,13 @@ mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/carousel-gallery.js','public/js')
     .js('resources/js/gallery-scripts.js','public/js')
 
+    .purgeCss({
+        enabled: mix.inProduction(),
+        folders: ['src','templates'],
+        extendsions: ['html','css','js','php'],
+        content: ['resources/**/*.php'],
+        whitelistPatterns: ['/show$/']
+    })
     .version()
     .sourceMaps()
     ;
