@@ -244,6 +244,40 @@
                   <div id="collapse-lara" class="collapse" aria-labelledby="card-lara" data-parent="#accordion-mapa">
                     <div class="card-body">
                       <ul>
+                            <li>
+                                <p class="distribuidor rif">J404354972</p>
+                                <p class="distribuidor-name"> INVERSIONES DAMICO MORENO, C.A </p>
+                                <p class="distribuidor-client">CARLOS MEDINA</p>
+                                <address>AV AVENIDA PEDRO LEON TORRES CON CRUCE 59 CC SOTAVENTO NIVEL 2 LOCAL 30 ZONA OBELISCO BARQUISIMETO LARA. ZONA POSTAL</address>
+                            </li>
+                            <li>
+                                <p class="distribuidor-rif">J404354727</p>
+                                <p class="distribuidor-name"> DISTRIBUIDORA DAMICO 2014 </p>
+                                <p class="distribuidor-client">MARIEELLY CURE</p>
+                                <address>AV PEDRO LEON TORRES CON CALLE 59 CC SOTAVENTO NIVEL 2 LOCAL 30 OFICINA 30 ZONA CENTRO BARQUISIMETO LARA ZONA POSTAL</address>
+                            </li>
+
+                            <li>
+                                <p class="distribuidor-rif">J317529669</p>
+                                <p class="distribuidor-name"> DON PEPE LARA DISTRIBUIDORA DE ALIMENTOS CA</p>
+                                <p class="distribuidor-client">JUAN AMARO</p>
+                                <address>AV. CARLOS GIFFONI CC GIL ROB NIVEL PB LOCAL 5 ZONA INDUSTRIAL III BARQUISIMETO LARA ZONA POSTAL</address>
+                            </li>
+
+                            <li>
+                                <p class="distribuidor-rif">J411792896</p>
+                                <p class="distribuidor-name"> DON PEPE MARKET WEST, CA</p>
+                                <p class="distribuidor-client">ALEXANDRA BALCARCEL</p>
+                                <address>AVENIDA PEDRO LEON TORRES CASA EDIFICIO HEIDIEN PLANTA BAJA NRO 19- 78 LOCAL 1 SECTOR CENTRO BARQUISIMETO LARA ZONA POSTAL CALLE 52 A ENTRE CARRERAS 19 Y</address>
+                            </li>
+
+
+                            <li>
+                                <p class="distribuidor-rif">J296883831</p>
+                                <p class="distribuidor-name"> INVERSIONES LA GUADALUPANA DE VZLA, C. A</p>
+                                <p class="distribuidor-client">JOSUE MORENO</p>
+                                <address>CTRA VIA CUARA ENTRE AV FLORENCIO JIMENEZ Y AVENIDA ROTARIA LOCAL GALPON GUADALUPANA NRO S/N SECTOR EL POBLADO QUIBOR</address>
+                            </li>
 
                       </ul>
                     </div>
@@ -265,6 +299,22 @@
                     </div>
                   </div>
                 </div>
+
+                {{-- <div class="card">
+                    <div class="card-header" id="card-estadoaca">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-estadoaca" aria-expanded="false" aria-controls="collapse-estadoaca">
+                          Collapsible Group Item #3
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-estadoaca" class="collapse" aria-labelledby="card-estadoaca" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul></ul>
+                      </div>
+                    </div>
+                  </div>
+              </div> --}}
 
                 {{-- <div class="card">
                     <div class="card-header" id="card-estadoaca">
