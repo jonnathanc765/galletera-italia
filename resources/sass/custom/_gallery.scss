@@ -21,6 +21,7 @@
     top: 85%;
     right: 0;
     z-index: 5;
+    border: 1px solid var(--secondary);
     transform: translateX(30%);
     transition: transform 0.3s ease-in-out;
 

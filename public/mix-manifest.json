@@ -1,7 +1,11 @@
 {
-    "/js/app.js": "/js/app.js?id=df4fbb1314f6520694d7",
-    "/css/app.css": "/css/app.css?id=c8af8b38e5b1a645f438",
-    "/js/carousel-gallery.js": "/js/carousel-gallery.js?id=de69c7290f2a9997165d",
-    "/js/carousel-products.js": "/js/carousel-products.js?id=e4df9511ddc9a7832223",
-    "/js/gallery-scripts.js": "/js/gallery-scripts.js?id=4bc44037304be30c4b2d"
+    "/js/app.js": "/js/app.js?id=4d671d236a5f40421411",
+    "/css/app.css": "/css/app.css?id=c4bc359138b42b4a8f1a",
+    "/js/app.js.map": "/js/app.js.map?id=619d56ad1d803e842f90",
+    "/js/carousel-gallery.js": "/js/carousel-gallery.js?id=7f3b0ea547371e626788",
+    "/js/carousel-gallery.js.map": "/js/carousel-gallery.js.map?id=9b4a9f5bcd3b62cfdea0",
+    "/js/carousel-products.js": "/js/carousel-products.js?id=3b04fdfcc6014f46e004",
+    "/js/carousel-products.js.map": "/js/carousel-products.js.map?id=87100373d8cd4f337612",
+    "/js/gallery-scripts.js": "/js/gallery-scripts.js?id=e3f47ef8b5068d7577f4",
+    "/js/gallery-scripts.js.map": "/js/gallery-scripts.js.map?id=082b2baa616e23503c04"
 }
