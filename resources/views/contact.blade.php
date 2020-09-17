@@ -674,6 +674,29 @@
                     </div>
                 </div>
 
+                <div class="card">
+                    <div class="card-header" id="card-nueva_esparta">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-nueva_esparta" aria-expanded="false" aria-controls="collapse-nueva_esparta" data-estado="nueva_esparta">
+                          Nueva Esparta
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-nueva_esparta" class="collapse" aria-labelledby="card-nueva_esparta" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J310102198</p>
+                                <p class="distribuidor-name">DIBIHO</p>
+                                <p class="distribuidor-client">ROSOLINO COSTANZO MASTROLEMBO</p>
+                                <address>CALLE CHARAIMA Y TAMANACO LOCAL GALPON S/N SECTOR CONEJEROS PORLAMAR NUEVA ESPARTA ZONA POSTAL 6301</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
                 {{-- <div class="card">
                     <div class="card-header" id="card-estadoaca">
                       <h2 class="mb-0">
