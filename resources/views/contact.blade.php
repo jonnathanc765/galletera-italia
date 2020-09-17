@@ -713,11 +713,44 @@
                                 <p class="distribuidor-name">DISTRIBUIDORA SUPER JETY V . C.A</p>
                                 <p class="distribuidor-client">TIBISAY GUEDEZ</p>
                                 <address>CARRETERA NACIONAL VIA AGUA BLANCA SECTOR MIRAFLORES LOCAL 1</address>
+                            </li>
 
+                            <li>
                                 <p class="distribuidor-rif">J297764763</p>
                                 <p class="distribuidor-name">GRANOS LA 7, C.A.</p>
                                 <p class="distribuidor-client">GLADYS CARRASCO</p>
                                 <address>CR. 04 ENTRE CALLES 19 Y 20 LOCAL 05 EDIF YAMIL. BARRIO LA PEÑITA GUANARE ESTADO PORTUGUESA</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-sucre">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-sucre" aria-expanded="false" aria-controls="collapse-sucre" data-estado="sucre">
+                          Sucre
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-sucre" class="collapse" aria-labelledby="card-sucre" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J296356939</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA CAROLINAS CONFITERIA CA</p>
+                                <p class="distribuidor-client">JOSE ANTONIO VILLARROEL</p>
+                                <address>AVENIDA PANAMERICANA CASA NUMERO 107, SECTOR PANAMERICANA. FRENTE AL BODEGON SAN FELIPE AL LADO DE LA IGLESIA BAUTISTA. A MEDIA CUADRA DE LA ENTRADA DE LA URBANIZACION BEBEDEROS.</address>
+                            </li>
+
+                            <li>
+
+                                <p class="distribuidor-rif">J310314969 </p>
+                                <p class="distribuidor-name">EUROPASTA </p>
+                                <p class="distribuidor-client">ELLYS DONATO </p>
+                                <address>CALLE AREO, PARCELAMIENTO MIRANDA, SECTOR F, C.C. CARIACO PB </address>
                             </li>
 
                         </ul>
