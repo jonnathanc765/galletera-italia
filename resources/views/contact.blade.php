@@ -797,6 +797,29 @@
                     </div>
                 </div>
 
+                <div class="card">
+                    <div class="card-header" id="card-trujillo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-trujillo" aria-expanded="false" aria-controls="collapse-trujillo" data-estado="trujillo">
+                          Trujillo
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-trujillo" class="collapse" aria-labelledby="card-trujillo" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif"> J411790869 </p>
+                                <p class="distribuidor-name">OCCI DISTRIBUCIONES C.A </p>
+                                <p class="distribuidor-client">ANDREA GORI </p>
+                                <address>AV. 9 LOCAL NRO 6 SECTOR EL BOLO PARROQUIA MERCEDEZ DIAZ MUNICIPIO VALERA DEL ESTADO TRUJILLO</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
                 {{-- <div class="card">
                     <div class="card-header" id="card-estadoaca">
                       <h2 class="mb-0">
