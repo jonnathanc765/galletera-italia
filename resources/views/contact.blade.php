@@ -545,6 +545,38 @@
                     </div>
                 </div>
 
+                <div class="card">
+                    <div class="card-header" id="card-merida">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-merida" aria-expanded="false" aria-controls="collapse-merida" data-estado="merida">
+                          Merida
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-merida" class="collapse" aria-labelledby="card-merida" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J304792590</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA JAMA CA</p>
+                                <p class="distribuidor-client">BETTY MARQUEZ </p>
+                                <address>PASAJE MARIA SIMONA CC SULTANA NIVEL PB LOACL 02 SECTOR BELEN</address>
+                            </li>
+
+                            <li>
+
+                                <p class="distribuidor-rif">J299619230</p>
+                                <p class="distribuidor-name">GIMAJO DISTRIBUCIONES CA</p>
+                                <p class="distribuidor-client">JESUS RONDON</p>
+                                <address>AV. LOS PROCERES CON CALLE SUETERES MERIDA, QUINTA MIS ABUELOS, NUMERO S/N URBANIZACION SAN JOSE, FRENTE AL LADO DE LA CASA BLANCA, PARROQUIA SPINETI DINI</address>
+
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
                 {{-- <div class="card">
                     <div class="card-header" id="card-estadoaca">
                       <h2 class="mb-0">
