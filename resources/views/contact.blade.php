@@ -446,6 +446,47 @@
                     </div>
                 </div>
 
+                <div class="card">
+                    <div class="card-header" id="card-coro">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-coro" aria-expanded="false" aria-controls="collapse-coro" data-estado="coro">
+                          Coro
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-coro" class="collapse" aria-labelledby="card-coro" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J297600868</p>
+                                <p class="distribuidor-name">COMERCIALIZADORA RASIL, C.A </p>
+                                <p class="distribuidor-client">MAASE EL MAAZ JASAK </p>
+                                <address>CALLE PURURECHE ENTRE CALLE CRISTAL Y CALLEJON CHEVROLET LOCAL S/N SECTOR CHIMPIRE, CORO EDO FALCON SANTA ANA DE CORO</address>
+
+                                <p class="distribuidor-rif">J407647601</p>
+                                <p class="distribuidor-name">G.B.M. DISTRIBUCIONES, C.A</p>
+                                <p class="distribuidor-client">ALEXANDRA DEL CARMEN BALCARGEL</p>
+                                <address>CALLE PRIMERA LOCAL NRO S/N SECTOR BOMBA H TUCACAS FALCON ZONA POSTAL 2054</address>
+
+
+
+                                <p class="distribuidor-rif">J307819162</p>
+                                <p class="distribuidor-name">BLADIMIR GUTIERREZ</p>
+                                <p class="distribuidor-client">DISACA FALCON,SUCURSAL </p>
+                                <address>CARRETERA VIA BUTARE ZONA INDUSTRIAL SECTOR SABANA LARGA</address>
+
+
+                                <p class="distribuidor-rif">J307819162</p>
+                                <p class="distribuidor-name">BLADIMIR GUTIERREZ</p>
+                                <p class="distribuidor-client">DISACA FALCON, CA </p>
+                                <address>CALLE GENERAL RIERA C/C BUENOS AIRES, LOCAL S/N SECTOR PUERTA MARAVEN, DETRAS DE FIRESTONE PUNTO FIJO. J</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
                 {{-- <div class="card">
                     <div class="card-header" id="card-estadoaca">
                       <h2 class="mb-0">
