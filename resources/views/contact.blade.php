@@ -843,20 +843,42 @@
                     </div>
                 </div>
 
-                {{-- <div class="card">
-                    <div class="card-header" id="card-estadoaca">
+                <div class="card">
+                    <div class="card-header" id="card-zulia">
                       <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-estadoaca" aria-expanded="false" aria-controls="collapse-estadoaca" data-estado="estadoaca">
-                          Collapsible Group Item #3
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-zulia" aria-expanded="false" aria-controls="collapse-zulia" data-estado="zulia">
+                          Zulia
                         </button>
                       </h2>
                     </div>
-                    <div id="collapse-estadoaca" class="collapse" aria-labelledby="card-estadoaca" data-parent="#accordion-mapa">
+                    <div id="collapse-zulia" class="collapse" aria-labelledby="card-zulia" data-parent="#accordion-mapa">
                       <div class="card-body">
-                        <ul></ul>
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J302012015 </p>
+                                <p class="distribuidor-name">DISTRIBUIDORA H HAMAD CA </p>
+                                <p class="distribuidor-client">HAMAD BAHSSAS HUZMAN </p>
+                                <address>CALLE 11 3A SECTOR LOS ROBLES ZONA IND. GALPONES 113-A-49, 113-53-1. 13-55 MARACAIBO</address>
+                            </li>
+
+                            <li>
+                                <p class="distribuidor-rif">J401814220</p>
+                                <p class="distribuidor-name">INVERSIONES Y SERVICIOS EN GENERAL PATIÑO C.A (INSGEPA C.A)</p>
+                                <p class="distribuidor-client">ROBERTO PATIÑO</p>
+                                <address>CALLE 08 #44 TERRENO LOCAL 42-490 BARRIO 5 DE JULIO 1 ERA ETAPA MARACAIBO ZULIA ZONA POSTAL 4001</address>
+                            </li>
+
+                            <li>
+                                <p class="distribuidor-rif">J314424319 </p>
+                                <p class="distribuidor-name">DISTRIBUIDORA MAAZ CA </p>
+                                <p class="distribuidor-client">JOSE RAMIREZ </p>
+                                <address>AV. 19 CON CALLE 84, SECTOR PARAISO, GALPON NRO 83-178 ANTIGUAS PAPALERAS DEL ZULIA DE LA JURIDICCION DE LA PARROQUIA CHIQUINQUIRA, MUNICIPIO MARACAIBO - EDO. ZULIA. PUNTO DE REFERENCIA AL LADO DE LA ESCUELA BASICA ADOLFO COLINA.</address>
+                            </li>
+
+                        </ul>
                       </div>
                     </div>
-                </div> --}}
+                </div>
 
             </div>
         </div>
