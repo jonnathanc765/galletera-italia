@@ -418,6 +418,34 @@
                     </div>
                 </div>
 
+                <div class="card">
+                    <div class="card-header" id="card-carabobo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-carabobo" aria-expanded="false" aria-controls="collapse-carabobo" data-estado="carabobo">
+                          Carabobo
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-carabobo" class="collapse" aria-labelledby="card-carabobo" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J315478455</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA BARMI</p>
+                                <p class="distribuidor-client">GODOY / DIANA DRAGANOC / ORLANDO PEREZ</p>
+                                <address>AV. PPAL. 14B-15B C.C. CITY CENTER PB LOCAL LB1 URB. PARQUE COMERCIO INDUSTRIAL CASTILLITO</address>
+
+                                <p class="distribuidor-rif">J31535052</p>
+                                <p class="distribuidor-name">COMERCIALIZADORA CENTRAL VALENCIA, C.A.</p>
+                                <p class="distribuidor-client">DINORA MONTERO</p>
+                                <address>A.V. JUAN ERNESTO BRANGER, GALPONES EN PARCELA 7-12, GALPON G-1, LOCAL NRO S/N SECTOR INDUSTRIAL MUNICIPAL SUR VALENCIA, CARABOBO, ZONA POSTAL 2001</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
                 {{-- <div class="card">
                     <div class="card-header" id="card-estadoaca">
                       <h2 class="mb-0">
