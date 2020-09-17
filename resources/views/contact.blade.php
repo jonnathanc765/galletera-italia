@@ -577,6 +577,73 @@
                     </div>
                 </div>
 
+                <div class="card">
+                    <div class="card-header" id="card-miranda">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-miranda" aria-expanded="false" aria-controls="collapse-miranda" data-estado="miranda">
+                          Miranda
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-miranda" class="collapse" aria-labelledby="card-miranda" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J311453989</p>
+                                <p class="distribuidor-name"> COMERCIAL EL CASTILLO DEL DULCE, C.A. </p>
+                                <p class="distribuidor-client"> CRUZ ABEL CONTRERAS</p>
+                                <address> CALLE BAPTISTA EDIFICIO SER-YOLO, CRUCE CON LOS NARDOS PISO 2, LOCAL 2, URBANIZACION LEBRUM, MUNICIPIO
+                                    SUCRE. CERCA DEL LICEO MARIANO PICON SALAS</address>
+
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J409463460</p>
+                                <p class="distribuidor-name"> COMERCIALIZADORA Y CONFITERIA ALEXANDER, C.A.</p>
+                                <p class="distribuidor-client"> ALEXANDER RODRIGUEZ HAROLD RUSH IV</p>
+                                <address> PLANTA BAJA DE LA QUINTA ILKY UBICADA EN LA AVENIDA LUIS ROCHE ENTRE LAS TRANSVERSALES 6 Y 7 DE LA URB
+                                    ALTAMIRA MUNICIPIO CHACAO DEL ESTADO MIRANDA</address>
+
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J294755470</p>
+                                <p class="distribuidor-name"> DISTRIBUIDORA BARBARICHAN, CA </p>
+                                <p class="distribuidor-client"> ORLANDO SIMON PEREZ AVILA</p>
+                                <address> CTRA NACIONAL DE GUATIRE LA ROSA CC DAYMAR ETAPA II NIVEL P1 LOCAL P1-19 SECTOR EL DESVIO GUATIRE MIRANDA
+                                </address>
+
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J403809852</p>
+                                <p class="distribuidor-name"> INVERSIONES CONFIT BRION, C.A. </p>
+                                <p class="distribuidor-client"> JUAN YABBOUR ARRAGE </p>
+                                <address> AV N2 EDIFICIO CONJUNTO TURISTICO BRION PISO 1 APTO D18</address>
+
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J002642521</p>
+                                <p class="distribuidor-name"> DISTRIBUIDORA CATEDRAL </p>
+                                <p class="distribuidor-client"> NILTO VIEIRA </p>
+                                <address> 3ERA TRANS.NTE BOLEITA SUR FTE. TALLERES DELIA CARACAS </address>
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J402812035 </p>
+                                <p class="distribuidor-name"> DISTRIBUIDORA DAMASCA 2013,C.A </p>
+                                <p class="distribuidor-client"> HUMBERTO DA SILVA </p>
+                                <address> AVENIDA LAS PALMAS FINAL CON CALLE EL RIO, LOCAL GALPON NRO. 8. BOLEITA SUR. URB. BOLEITA </address>
+
+
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
                 {{-- <div class="card">
                     <div class="card-header" id="card-estadoaca">
                       <h2 class="mb-0">
