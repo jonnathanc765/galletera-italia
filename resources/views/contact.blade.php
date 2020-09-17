@@ -373,13 +373,17 @@
                                 <p class="distribuidor-name">DISTRIBUIDORA DE GALLETAS C A </p>
                                 <p class="distribuidor-client">JOSE GARCES</p>
                                 <address>CENTRO EMPRESARIAL EL ROSARIO, CALLE ESTE 1 ASENTAMIENTO CAMPESINO LOTE 11-A. GALPONES DEL 1-15 Y 8-14 LA MORITA, MARACAY ESTADO ARAGUA.</address>
+                            </li>
 
+                            <li>
                                 <p class="distribuidor-rif"> J412636626</p>
                                 <p class="distribuidor-name">DISTRIBUIDORA LA MERIENDA DE ARAGUA C.A</p>
                                 <p class="distribuidor-client">JOHNNY ALVARADO</p>
                                 <address>CARRETERA NAC CAGUA VILLA DE CURA COMPLEJO INDUSTRIAL LAS VEGAS GALPON A4</address>
+                            </li>
 
 
+                            <li>
                                 <p class="distribuidor-rif"> J308831506</p>
                                 <p class="distribuidor-name">MAVIDECO MARACAY CA </p>
                                 <p class="distribuidor-client">VICENTE VARELA</p>
@@ -434,13 +438,14 @@
                                 <p class="distribuidor-name">DISTRIBUIDORA BARMI</p>
                                 <p class="distribuidor-client">GODOY / DIANA DRAGANOC / ORLANDO PEREZ</p>
                                 <address>AV. PPAL. 14B-15B C.C. CITY CENTER PB LOCAL LB1 URB. PARQUE COMERCIO INDUSTRIAL CASTILLITO</address>
+                            </li>
 
+                            <li>
                                 <p class="distribuidor-rif">J31535052</p>
                                 <p class="distribuidor-name">COMERCIALIZADORA CENTRAL VALENCIA, C.A.</p>
                                 <p class="distribuidor-client">DINORA MONTERO</p>
                                 <address>A.V. JUAN ERNESTO BRANGER, GALPONES EN PARCELA 7-12, GALPON G-1, LOCAL NRO S/N SECTOR INDUSTRIAL MUNICIPAL SUR VALENCIA, CARABOBO, ZONA POSTAL 2001</address>
                             </li>
-
                         </ul>
                       </div>
                     </div>
@@ -463,23 +468,76 @@
                                 <p class="distribuidor-client">MAASE EL MAAZ JASAK </p>
                                 <address>CALLE PURURECHE ENTRE CALLE CRISTAL Y CALLEJON CHEVROLET LOCAL S/N SECTOR CHIMPIRE, CORO EDO FALCON SANTA ANA DE CORO</address>
 
+                            <li>
+
                                 <p class="distribuidor-rif">J407647601</p>
                                 <p class="distribuidor-name">G.B.M. DISTRIBUCIONES, C.A</p>
                                 <p class="distribuidor-client">ALEXANDRA DEL CARMEN BALCARGEL</p>
                                 <address>CALLE PRIMERA LOCAL NRO S/N SECTOR BOMBA H TUCACAS FALCON ZONA POSTAL 2054</address>
 
 
-
+                            <li>
                                 <p class="distribuidor-rif">J307819162</p>
                                 <p class="distribuidor-name">BLADIMIR GUTIERREZ</p>
                                 <p class="distribuidor-client">DISACA FALCON,SUCURSAL </p>
                                 <address>CARRETERA VIA BUTARE ZONA INDUSTRIAL SECTOR SABANA LARGA</address>
 
-
+                            <li>
                                 <p class="distribuidor-rif">J307819162</p>
                                 <p class="distribuidor-name">BLADIMIR GUTIERREZ</p>
                                 <p class="distribuidor-client">DISACA FALCON, CA </p>
                                 <address>CALLE GENERAL RIERA C/C BUENOS AIRES, LOCAL S/N SECTOR PUERTA MARAVEN, DETRAS DE FIRESTONE PUNTO FIJO. J</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-guarico">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-guarico" aria-expanded="false" aria-controls="collapse-guarico" data-estado="guarico">
+                          Guarico
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-guarico" class="collapse" aria-labelledby="card-guarico" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J300856810</p>
+                                <p class="distribuidor-name">INVERSIONES TEROR C A </p>
+                                <p class="distribuidor-client">GONZALO DAVID HERNANDEZ TAVERA </p>
+                                <address> AV FELIPE ANTONIO ACOSTA CARLES LOCAL GALPON NRO S/N SECTOR ENTRADA ZONA INDUSTRIAL SAN JUAN DE LOS MORROS GUARICO ZONA POSTAL 2301</address>
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J406296937</p>
+                                <p class="distribuidor-name">AGRODISTRIBUIDORA DON MANUEL, C.A. </p>
+                                <p class="distribuidor-client">ALEJANDRO VARGAS</p>
+                                <address>CALLE PARAISO EDIF FRANCA PISO PB LOCAL 1 SECTOR CENTRO VALLE LA PASCUA, GUARICO CARRETERA NACIONAL SAN FERNANDO</address>
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J295658400</p>
+                                <p class="distribuidor-name">DISTRITALES CA JONATHAN ALEX HEVIA MONTOYA </p>
+                                <p class="distribuidor-client">0424-3055033 GUARICO </p>
+                                <address> LOCAL COMERCIAL GALPON 1 URB. CENTRO ADMINISTRATIVO CALABOZO ESTADO GUARICO</address>
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J410594080</p>
+                                <p class="distribuidor-name">LA REPRESA DISTRIBUCIONES (REDISCA) C.A.</p>
+                                <p class="distribuidor-client">GREGORY BLANCO </p>
+                                <address> CALLE CARRERA 1 CON CALLE 7-A LOCAL N/A NRO 08-12 SECTOR CASCO CENTRAL CALABOZO GUARICO ZONA POSTAL 2312</address>
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J302687721</p>
+                                <p class="distribuidor-name">COMERCIAL ROSCIO, CA</p>
+                                <p class="distribuidor-client">JUDI LEON </p>
+                                <address> CALLE BERMUDEZ LOCAL NRO 48 SECTOR CENTRO SAN JUAN DE LOS MORROS ESTADO GUARICO</address>
                             </li>
 
                         </ul>
