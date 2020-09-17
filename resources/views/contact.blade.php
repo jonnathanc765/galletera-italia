@@ -357,10 +357,71 @@
                     </div>
                 </div>
 
-              {{-- <div class="card">
+                <div class="card">
+                    <div class="card-header" id="card-aragua">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-aragua" aria-expanded="false" aria-controls="collapse-aragua" data-estado="aragua">
+                          Aragua
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-aragua" class="collapse" aria-labelledby="card-aragua" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif"> J075455525</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA DE GALLETAS C A </p>
+                                <p class="distribuidor-client">JOSE GARCES</p>
+                                <address>CENTRO EMPRESARIAL EL ROSARIO, CALLE ESTE 1 ASENTAMIENTO CAMPESINO LOTE 11-A. GALPONES DEL 1-15 Y 8-14 LA MORITA, MARACAY ESTADO ARAGUA.</address>
+
+                                <p class="distribuidor-rif"> J412636626</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA LA MERIENDA DE ARAGUA C.A</p>
+                                <p class="distribuidor-client">JOHNNY ALVARADO</p>
+                                <address>CARRETERA NAC CAGUA VILLA DE CURA COMPLEJO INDUSTRIAL LAS VEGAS GALPON A4</address>
+
+
+                                <p class="distribuidor-rif"> J308831506</p>
+                                <p class="distribuidor-name">MAVIDECO MARACAY CA </p>
+                                <p class="distribuidor-client">VICENTE VARELA</p>
+                                <address>AV. INTERCOMUNAL TURMERO,MARACAY,SECTOR LA PROVIDENCIA PARCELA N.33</address>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-bolivar">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-bolivar" aria-expanded="false" aria-controls="collapse-bolivar" data-estado="bolivar">
+                          Bolivar
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-bolivar" class="collapse" aria-labelledby="card-bolivar" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J409266850</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA F S, C.A</p>
+                                <p class="distribuidor-client">STEFANNYE ALIENDRES</p>
+                                <address>ZONA INDUSTRIAL LOS PINOS TRANSVERSAL 2 , CALLE PRINCIPAL , MANZANA 12, GALPON NRO 08</address>
+
+                                <p class="distribuidor-rif">J315689464</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA ALIMAR</p>
+                                <p class="distribuidor-client">ROSOLINO  COSTANZO MASTROLEMBO</p>
+                                <address>AVENIDA NEVERI, EDIFICIO SAME, ZONA INDUSTRIAL UNARE II, PUERTO O</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                {{-- <div class="card">
                     <div class="card-header" id="card-estadoaca">
                       <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-estadoaca" aria-expanded="false" aria-controls="collapse-estadoaca">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-estadoaca" aria-expanded="false" aria-controls="collapse-estadoaca" data-estado="estadoaca">
                           Collapsible Group Item #3
                         </button>
                       </h2>
