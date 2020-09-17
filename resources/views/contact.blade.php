@@ -820,6 +820,29 @@
                     </div>
                 </div>
 
+                <div class="card">
+                    <div class="card-header" id="card-vargas">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-vargas" aria-expanded="false" aria-controls="collapse-vargas" data-estado="vargas">
+                          Vargas
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-vargas" class="collapse" aria-labelledby="card-vargas" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J407185055</p>
+                                <p class="distribuidor-name">INVERSIONES COSTAVEN, C.A.</p>
+                                <p class="distribuidor-name">DANNYS DIAZ</p>
+                                <address>AV. BOULEVARD NAIGUATA QTA BLOQUE NRO 24 URB CARIBE CARABALLEDA VARGAS Z</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
                 {{-- <div class="card">
                     <div class="card-header" id="card-estadoaca">
                       <h2 class="mb-0">
