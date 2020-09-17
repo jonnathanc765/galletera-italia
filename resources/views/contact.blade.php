@@ -758,6 +758,45 @@
                     </div>
                 </div>
 
+                <div class="card">
+                    <div class="card-header" id="card-tachira">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-tachira" aria-expanded="false" aria-controls="collapse-tachira" data-estado="tachira">
+                          Tachira
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-tachira" class="collapse" aria-labelledby="card-tachira" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J312451491</p>
+                                <p class="distribuidor-name">HAS REPRESENTACIONES CA</p>
+                                <p class="distribuidor-client">HAROLD ALEXANDER</p>
+                                <address>CRA 7 CON AV PARQUE EXPOSICION AL LADO DEL INSTITUTO UNIVERSITARIO LOCAL GALPON NRO 16 SECTOR LA CONCORDIA SAN CRISTOBAL</address>
+                            </li>
+
+                            <li>
+
+                                <p class="distribuidor-rif">J411695190 </p>
+                                <p class="distribuidor-name">CONFITES DE VENEZUELA CA </p>
+                                <p class="distribuidor-client">ANTONIO CASTANEDA </p>
+                                <address>CALLE PRINCIPAL VEGA DE AZA LOCAL NRO 0-06 SECTOR MURACHI VEGA DE AZA TACHIRA ZONA POSTAL 5001</address>
+                            </li>
+
+                            <li>
+
+                                <p class="distribuidor-rif">J412155067</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA LA OCCIDENTAL, CA </p>
+                                <p class="distribuidor-client">ALBA PERNIA</p>
+                                <address>AV DEMOCRATA, CONJUNTO PRIVADO SOTAVENTO CASA NRO 42 SECTOR SAN CRISTOBAL SAN CRISTOBAL TACHIRA ZONA POSTAL 5001</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
                 {{-- <div class="card">
                     <div class="card-header" id="card-estadoaca">
                       <h2 class="mb-0">
