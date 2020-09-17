@@ -697,6 +697,34 @@
                     </div>
                 </div>
 
+                <div class="card">
+                    <div class="card-header" id="card-portuguesa">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-portuguesa" aria-expanded="false" aria-controls="collapse-portuguesa" data-estado="portuguesa">
+                          Portuguesa
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-portuguesa" class="collapse" aria-labelledby="card-portuguesa" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J298325275</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA SUPER JETY V . C.A</p>
+                                <p class="distribuidor-client">TIBISAY GUEDEZ</p>
+                                <address>CARRETERA NACIONAL VIA AGUA BLANCA SECTOR MIRAFLORES LOCAL 1</address>
+
+                                <p class="distribuidor-rif">J297764763</p>
+                                <p class="distribuidor-name">GRANOS LA 7, C.A.</p>
+                                <p class="distribuidor-client">GLADYS CARRASCO</p>
+                                <address>CR. 04 ENTRE CALLES 19 Y 20 LOCAL 05 EDIF YAMIL. BARRIO LA PEÑITA GUANARE ESTADO PORTUGUESA</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
                 {{-- <div class="card">
                     <div class="card-header" id="card-estadoaca">
                       <h2 class="mb-0">
