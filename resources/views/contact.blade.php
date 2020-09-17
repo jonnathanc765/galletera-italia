@@ -644,6 +644,36 @@
                     </div>
                 </div>
 
+                <div class="card">
+                    <div class="card-header" id="card-monagas">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-monagas" aria-expanded="false" aria-controls="collapse-monagas" data-estado="monagas">
+                          Monagas
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-monagas" class="collapse" aria-labelledby="card-monagas" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif"> J303949827 </p>
+                                <p class="distribuidor-name">INVERSIONES ROLDAN CA </p>
+                                <p class="distribuidor-client"> OSCAR CELESTINO ROLDAN DAGGER</p>
+                                <address>CALLE 7A CASA NRO 44 SECTOR LA MANGA SUBIENDO EL PICACHO</address>
+                            </li>
+
+                            <li>
+                                <p class="distribuidor-rif"> J310615012 </p>
+                                <p class="distribuidor-name">GOMET S DISTRIBUCION CA </p>
+                                <p class="distribuidor-client"> LUIS MARQUES</p>
+                                <address>AVENIDA BELLA VISTA CONJUNTO EMPRESARIAL MANROB SECTOR BELLA VISTA, MATURIN</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
                 {{-- <div class="card">
                     <div class="card-header" id="card-estadoaca">
                       <h2 class="mb-0">
