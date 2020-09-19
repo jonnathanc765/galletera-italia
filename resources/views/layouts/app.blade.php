@@ -28,11 +28,6 @@
 
 </head>
 <body>
-    <style>
-
-        {{ file_get_contents(asset('css/index_critical.min.css'))}}
-    </style>
-
     @include('layouts.header')
 
     @yield('content')
