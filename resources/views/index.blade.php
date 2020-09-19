@@ -21,7 +21,9 @@
                 <img  src="{{ asset('img/maria_italia.png') }}"alt="" class="img-fluid img-galleta">
                 <img  src="{{ asset('img/tentazione1.png') }}"alt="" class="img-fluid img-galleta">
             </div>
-            <button class="btn btn-secondary">Conoce nuestros productos</button>
+            {{-- {{-- <button class="btn btn-secondary">Conoce nuestros productos</button> --}}
+            <a href="{{route('products')}}" class="btn btn-secondary">Conoce nuestros productos</a>
+
         </div>
     </div>
     <div class="row cards-wrapper">
