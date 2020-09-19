@@ -28,23 +28,23 @@ mix.js('resources/js/app.js', 'public/js')
         whitelistPatterns: ['/show$/']
     })
 
-    .criticalCss({
-        enabled: mix.inProduction(),
-        paths: {
-            base: 'http://galletera-italia.test',
-            templates: './public/css/',
-            suffix: '_critical.min'
-        },
-        urls: [{
-            url: '/',
-            template: 'index'
-        }, ],
-        options: {
-            minify: true,
-            penthouse: {
-                timeout: 60000
-            }
-        },
-    })
+    // .criticalCss({
+    //     enabled: mix.inProduction(),
+    //     paths: {
+    //         base: 'http://galletera-italia.test',
+    //         templates: './public/css/',
+    //         suffix: '_critical.min'
+    //     },
+    //     urls: [{
+    //         url: '/',
+    //         template: 'index'
+    //     }, ],
+    //     options: {
+    //         minify: true,
+    //         penthouse: {
+    //             timeout: 60000
+    //         }
+    //     },
+    // })
     .version()
     .sourceMaps();
