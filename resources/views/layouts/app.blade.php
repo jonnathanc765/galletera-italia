@@ -17,10 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="preload" href="{{ mix('css/app.css')  }}" as="styles">
-    {{-- {{ critical('css/app.css', true) }} --}}
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="preload" as="font" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;400;700&display=swap" rel="preload" as="font" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" as="font" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;400;700&display=swap" as="font" crossorigin>
     <meta name="theme-color" content="#00013a">
     <link rel="shortcut icon" href="{{ asset('images/isotipo-logo.png') }}">
 
@@ -29,6 +27,10 @@
 
 </head>
 <body>
+    <style>
+
+        {{ file_get_contents(asset('css/index_critical.min.css'))}}
+    </style>
 
     @include('layouts.header')
 
@@ -38,6 +40,8 @@
 
     @include('layouts.footer')
 
+
+    <link rel="stylesheet" href="{{ asset('css/app.css')  }}" >
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded',function(){
