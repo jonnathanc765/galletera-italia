@@ -281,6 +281,12 @@
     position: relative;
     align-self: flex-start;
     position: relative;
+
+    @media screen and (min-width:992px) {
+        position: sticky;
+        top: 2em;
+    }
+
     #marker-fa {
         position: absolute;
         // left: 50%;

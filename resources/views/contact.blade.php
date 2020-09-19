@@ -244,6 +244,40 @@
                   <div id="collapse-lara" class="collapse" aria-labelledby="card-lara" data-parent="#accordion-mapa">
                     <div class="card-body">
                       <ul>
+                            <li>
+                                <p class="distribuidor-rif">J404354972</p>
+                                <p class="distribuidor-name"> INVERSIONES DAMICO MORENO, C.A </p>
+                                <p class="distribuidor-client">CARLOS MEDINA</p>
+                                <address>AV AVENIDA PEDRO LEON TORRES CON CRUCE 59 CC SOTAVENTO NIVEL 2 LOCAL 30 ZONA OBELISCO BARQUISIMETO LARA. ZONA POSTAL</address>
+                            </li>
+                            <li>
+                                <p class="distribuidor-rif">J404354727</p>
+                                <p class="distribuidor-name"> DISTRIBUIDORA DAMICO 2014 </p>
+                                <p class="distribuidor-client">MARIEELLY CURE</p>
+                                <address>AV PEDRO LEON TORRES CON CALLE 59 CC SOTAVENTO NIVEL 2 LOCAL 30 OFICINA 30 ZONA CENTRO BARQUISIMETO LARA ZONA POSTAL</address>
+                            </li>
+
+                            <li>
+                                <p class="distribuidor-rif">J317529669</p>
+                                <p class="distribuidor-name"> DON PEPE LARA DISTRIBUIDORA DE ALIMENTOS CA</p>
+                                <p class="distribuidor-client">JUAN AMARO</p>
+                                <address>AV. CARLOS GIFFONI CC GIL ROB NIVEL PB LOCAL 5 ZONA INDUSTRIAL III BARQUISIMETO LARA ZONA POSTAL</address>
+                            </li>
+
+                            <li>
+                                <p class="distribuidor-rif">J411792896</p>
+                                <p class="distribuidor-name"> DON PEPE MARKET WEST, CA</p>
+                                <p class="distribuidor-client">ALEXANDRA BALCARCEL</p>
+                                <address>AVENIDA PEDRO LEON TORRES CASA EDIFICIO HEIDIEN PLANTA BAJA NRO 19- 78 LOCAL 1 SECTOR CENTRO BARQUISIMETO LARA ZONA POSTAL CALLE 52 A ENTRE CARRERAS 19 Y</address>
+                            </li>
+
+
+                            <li>
+                                <p class="distribuidor-rif">J296883831</p>
+                                <p class="distribuidor-name"> INVERSIONES LA GUADALUPANA DE VZLA, C. A</p>
+                                <p class="distribuidor-client">JOSUE MORENO</p>
+                                <address>CTRA VIA CUARA ENTRE AV FLORENCIO JIMENEZ Y AVENIDA ROTARIA LOCAL GALPON GUADALUPANA NRO S/N SECTOR EL POBLADO QUIBOR</address>
+                            </li>
 
                       </ul>
                     </div>
@@ -260,27 +294,592 @@
                   <div id="collapse-caracas" class="collapse" aria-labelledby="card-caracas" data-parent="#accordion-mapa">
                     <div class="card-body">
                       <ul>
-
+                        <li>
+                            <p class="distribuidor-rif">J403740313</p>
+                            <p class="distribuidor-name">ALIMENTOS LA MERIENDA DE CARACAS V.A., C.A.</p>
+                            <p class="distribuidor-client">ANTONIO DUGARTE</p>
+                            <address>AV JOSE ANGEL LAMAS EDIF Nº 6 PISO E1 LOCAL CENTRO INDUSTRIAL PALO GRANDES ZONA SAN MARTIN CARACAS DISTRITO CAPITAL ZONA POSTAL 1020</address>
+                            </li>
                       </ul>
                     </div>
                   </div>
                 </div>
 
-                {{-- <div class="card">
-                    <div class="card-header" id="card-estadoaca">
+                <div class="card">
+                    <div class="card-header" id="card-anzoategui">
                       <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-estadoaca" aria-expanded="false" aria-controls="collapse-estadoaca">
-                          Collapsible Group Item #3
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-anzoategui" aria-expanded="false" aria-controls="collapse-anzoategui" data-estado="anzoategui">
+                          Anzoategui
                         </button>
                       </h2>
                     </div>
-                    <div id="collapse-estadoaca" class="collapse" aria-labelledby="card-estadoaca" data-parent="#accordion-mapa">
+                    <div id="collapse-anzoategui" class="collapse" aria-labelledby="card-anzoategui" data-parent="#accordion-mapa">
                       <div class="card-body">
-                        <ul></ul>
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif"> J309577590 </p>
+                                <p class="distribuidor-name"> COMERCIALIZADORA BREÑA BAJA, C.A.</p>
+                                <p class="distribuidor-client"> GRECIA RODRIGUEZ </p>
+                                <address>CALLE LOS TUBOS VIA LA AUTOPISTA BARCELONA EL TIGRE Y EL AEROPUERTO LOCAL CENTRO EMPRESARIAL "AEROCENTRO CENTRO EMPRESARIAL " NRO P-19 SECTOR LA REDOMA PARCELA NRO 19 ETAPA 1 BARCELONA ANZOATEGUI ZONA POSTAL 6001</address>
+                            </li>
+
+                            <li>
+                                <p class="distribuidor-rif"> J403975345 </p>
+                                <p class="distribuidor-name"> CANDY CITY PLACE, CA.</p>
+                                <p class="distribuidor-client"> CARLOS ALBERTO LAMAS JONES </p>
+                                <address>CALLE DEMOCRACIA CC PIO XII, PB, LOCAL No. 7, FRENTE TERMINAL DE PASAJEROS SECTOR CASCO CENTRAL </address>
+                            </li>
+
+                        </ul>
                       </div>
                     </div>
-                  </div>
-              </div> --}}
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-apure">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-apure" aria-expanded="false" aria-controls="collapse-apure" data-estado="apure">
+                          Apure
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-apure" class="collapse" aria-labelledby="card-apure" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J297701389 </p>
+                                <p class="distribuidor-name"> INVERSIONES PEPITAS DE ORO CA LEIDY MAR </p>
+                                <p class="distrubuidor-client">VARGAS MORENO</p>
+                                <address> AV INTERCOMUNAL SAN FERNANDOBIRUACA EDIF LOCAL PISO S/N GALPON NRO 3 SECTOR ELEVADO DE SANTA RIFINA BIRUACA APURE</address>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-aragua">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-aragua" aria-expanded="false" aria-controls="collapse-aragua" data-estado="aragua">
+                          Aragua
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-aragua" class="collapse" aria-labelledby="card-aragua" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif"> J075455525</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA DE GALLETAS C A </p>
+                                <p class="distribuidor-client">JOSE GARCES</p>
+                                <address>CENTRO EMPRESARIAL EL ROSARIO, CALLE ESTE 1 ASENTAMIENTO CAMPESINO LOTE 11-A. GALPONES DEL 1-15 Y 8-14 LA MORITA, MARACAY ESTADO ARAGUA.</address>
+                            </li>
+
+                            <li>
+                                <p class="distribuidor-rif"> J412636626</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA LA MERIENDA DE ARAGUA C.A</p>
+                                <p class="distribuidor-client">JOHNNY ALVARADO</p>
+                                <address>CARRETERA NAC CAGUA VILLA DE CURA COMPLEJO INDUSTRIAL LAS VEGAS GALPON A4</address>
+                            </li>
+
+
+                            <li>
+                                <p class="distribuidor-rif"> J308831506</p>
+                                <p class="distribuidor-name">MAVIDECO MARACAY CA </p>
+                                <p class="distribuidor-client">VICENTE VARELA</p>
+                                <address>AV. INTERCOMUNAL TURMERO,MARACAY,SECTOR LA PROVIDENCIA PARCELA N.33</address>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-bolivar">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-bolivar" aria-expanded="false" aria-controls="collapse-bolivar" data-estado="bolivar">
+                          Bolivar
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-bolivar" class="collapse" aria-labelledby="card-bolivar" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J409266850</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA F S, C.A</p>
+                                <p class="distribuidor-client">STEFANNYE ALIENDRES</p>
+                                <address>ZONA INDUSTRIAL LOS PINOS TRANSVERSAL 2 , CALLE PRINCIPAL , MANZANA 12, GALPON NRO 08</address>
+
+                                <p class="distribuidor-rif">J315689464</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA ALIMAR</p>
+                                <p class="distribuidor-client">ROSOLINO  COSTANZO MASTROLEMBO</p>
+                                <address>AVENIDA NEVERI, EDIFICIO SAME, ZONA INDUSTRIAL UNARE II, PUERTO O</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-carabobo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-carabobo" aria-expanded="false" aria-controls="collapse-carabobo" data-estado="carabobo">
+                          Carabobo
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-carabobo" class="collapse" aria-labelledby="card-carabobo" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J315478455</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA BARMI</p>
+                                <p class="distribuidor-client">GODOY / DIANA DRAGANOC / ORLANDO PEREZ</p>
+                                <address>AV. PPAL. 14B-15B C.C. CITY CENTER PB LOCAL LB1 URB. PARQUE COMERCIO INDUSTRIAL CASTILLITO</address>
+                            </li>
+
+                            <li>
+                                <p class="distribuidor-rif">J31535052</p>
+                                <p class="distribuidor-name">COMERCIALIZADORA CENTRAL VALENCIA, C.A.</p>
+                                <p class="distribuidor-client">DINORA MONTERO</p>
+                                <address>A.V. JUAN ERNESTO BRANGER, GALPONES EN PARCELA 7-12, GALPON G-1, LOCAL NRO S/N SECTOR INDUSTRIAL MUNICIPAL SUR VALENCIA, CARABOBO, ZONA POSTAL 2001</address>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-coro">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-coro" aria-expanded="false" aria-controls="collapse-coro" data-estado="coro">
+                          Coro
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-coro" class="collapse" aria-labelledby="card-coro" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J297600868</p>
+                                <p class="distribuidor-name">COMERCIALIZADORA RASIL, C.A </p>
+                                <p class="distribuidor-client">MAASE EL MAAZ JASAK </p>
+                                <address>CALLE PURURECHE ENTRE CALLE CRISTAL Y CALLEJON CHEVROLET LOCAL S/N SECTOR CHIMPIRE, CORO EDO FALCON SANTA ANA DE CORO</address>
+
+                            <li>
+
+                                <p class="distribuidor-rif">J407647601</p>
+                                <p class="distribuidor-name">G.B.M. DISTRIBUCIONES, C.A</p>
+                                <p class="distribuidor-client">ALEXANDRA DEL CARMEN BALCARGEL</p>
+                                <address>CALLE PRIMERA LOCAL NRO S/N SECTOR BOMBA H TUCACAS FALCON ZONA POSTAL 2054</address>
+
+
+                            <li>
+                                <p class="distribuidor-rif">J307819162</p>
+                                <p class="distribuidor-name">BLADIMIR GUTIERREZ</p>
+                                <p class="distribuidor-client">DISACA FALCON,SUCURSAL </p>
+                                <address>CARRETERA VIA BUTARE ZONA INDUSTRIAL SECTOR SABANA LARGA</address>
+
+                            <li>
+                                <p class="distribuidor-rif">J307819162</p>
+                                <p class="distribuidor-name">BLADIMIR GUTIERREZ</p>
+                                <p class="distribuidor-client">DISACA FALCON, CA </p>
+                                <address>CALLE GENERAL RIERA C/C BUENOS AIRES, LOCAL S/N SECTOR PUERTA MARAVEN, DETRAS DE FIRESTONE PUNTO FIJO. J</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-guarico">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-guarico" aria-expanded="false" aria-controls="collapse-guarico" data-estado="guarico">
+                          Guarico
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-guarico" class="collapse" aria-labelledby="card-guarico" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J300856810</p>
+                                <p class="distribuidor-name">INVERSIONES TEROR C A </p>
+                                <p class="distribuidor-client">GONZALO DAVID HERNANDEZ TAVERA </p>
+                                <address> AV FELIPE ANTONIO ACOSTA CARLES LOCAL GALPON NRO S/N SECTOR ENTRADA ZONA INDUSTRIAL SAN JUAN DE LOS MORROS GUARICO ZONA POSTAL 2301</address>
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J406296937</p>
+                                <p class="distribuidor-name">AGRODISTRIBUIDORA DON MANUEL, C.A. </p>
+                                <p class="distribuidor-client">ALEJANDRO VARGAS</p>
+                                <address>CALLE PARAISO EDIF FRANCA PISO PB LOCAL 1 SECTOR CENTRO VALLE LA PASCUA, GUARICO CARRETERA NACIONAL SAN FERNANDO</address>
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J295658400</p>
+                                <p class="distribuidor-name">DISTRITALES CA JONATHAN ALEX HEVIA MONTOYA </p>
+                                <p class="distribuidor-client">0424-3055033 GUARICO </p>
+                                <address> LOCAL COMERCIAL GALPON 1 URB. CENTRO ADMINISTRATIVO CALABOZO ESTADO GUARICO</address>
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J410594080</p>
+                                <p class="distribuidor-name">LA REPRESA DISTRIBUCIONES (REDISCA) C.A.</p>
+                                <p class="distribuidor-client">GREGORY BLANCO </p>
+                                <address> CALLE CARRERA 1 CON CALLE 7-A LOCAL N/A NRO 08-12 SECTOR CASCO CENTRAL CALABOZO GUARICO ZONA POSTAL 2312</address>
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J302687721</p>
+                                <p class="distribuidor-name">COMERCIAL ROSCIO, CA</p>
+                                <p class="distribuidor-client">JUDI LEON </p>
+                                <address> CALLE BERMUDEZ LOCAL NRO 48 SECTOR CENTRO SAN JUAN DE LOS MORROS ESTADO GUARICO</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-merida">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-merida" aria-expanded="false" aria-controls="collapse-merida" data-estado="merida">
+                          Merida
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-merida" class="collapse" aria-labelledby="card-merida" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J304792590</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA JAMA CA</p>
+                                <p class="distribuidor-client">BETTY MARQUEZ </p>
+                                <address>PASAJE MARIA SIMONA CC SULTANA NIVEL PB LOACL 02 SECTOR BELEN</address>
+                            </li>
+
+                            <li>
+
+                                <p class="distribuidor-rif">J299619230</p>
+                                <p class="distribuidor-name">GIMAJO DISTRIBUCIONES CA</p>
+                                <p class="distribuidor-client">JESUS RONDON</p>
+                                <address>AV. LOS PROCERES CON CALLE SUETERES MERIDA, QUINTA MIS ABUELOS, NUMERO S/N URBANIZACION SAN JOSE, FRENTE AL LADO DE LA CASA BLANCA, PARROQUIA SPINETI DINI</address>
+
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-miranda">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-miranda" aria-expanded="false" aria-controls="collapse-miranda" data-estado="miranda">
+                          Miranda
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-miranda" class="collapse" aria-labelledby="card-miranda" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J311453989</p>
+                                <p class="distribuidor-name"> COMERCIAL EL CASTILLO DEL DULCE, C.A. </p>
+                                <p class="distribuidor-client"> CRUZ ABEL CONTRERAS</p>
+                                <address> CALLE BAPTISTA EDIFICIO SER-YOLO, CRUCE CON LOS NARDOS PISO 2, LOCAL 2, URBANIZACION LEBRUM, MUNICIPIO
+                                    SUCRE. CERCA DEL LICEO MARIANO PICON SALAS</address>
+
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J409463460</p>
+                                <p class="distribuidor-name"> COMERCIALIZADORA Y CONFITERIA ALEXANDER, C.A.</p>
+                                <p class="distribuidor-client"> ALEXANDER RODRIGUEZ HAROLD RUSH IV</p>
+                                <address> PLANTA BAJA DE LA QUINTA ILKY UBICADA EN LA AVENIDA LUIS ROCHE ENTRE LAS TRANSVERSALES 6 Y 7 DE LA URB
+                                    ALTAMIRA MUNICIPIO CHACAO DEL ESTADO MIRANDA</address>
+
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J294755470</p>
+                                <p class="distribuidor-name"> DISTRIBUIDORA BARBARICHAN, CA </p>
+                                <p class="distribuidor-client"> ORLANDO SIMON PEREZ AVILA</p>
+                                <address> CTRA NACIONAL DE GUATIRE LA ROSA CC DAYMAR ETAPA II NIVEL P1 LOCAL P1-19 SECTOR EL DESVIO GUATIRE MIRANDA
+                                </address>
+
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J403809852</p>
+                                <p class="distribuidor-name"> INVERSIONES CONFIT BRION, C.A. </p>
+                                <p class="distribuidor-client"> JUAN YABBOUR ARRAGE </p>
+                                <address> AV N2 EDIFICIO CONJUNTO TURISTICO BRION PISO 1 APTO D18</address>
+
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J002642521</p>
+                                <p class="distribuidor-name"> DISTRIBUIDORA CATEDRAL </p>
+                                <p class="distribuidor-client"> NILTO VIEIRA </p>
+                                <address> 3ERA TRANS.NTE BOLEITA SUR FTE. TALLERES DELIA CARACAS </address>
+                            </li>
+                            <li>
+
+                                <p class="distribuidor-rif">J402812035 </p>
+                                <p class="distribuidor-name"> DISTRIBUIDORA DAMASCA 2013,C.A </p>
+                                <p class="distribuidor-client"> HUMBERTO DA SILVA </p>
+                                <address> AVENIDA LAS PALMAS FINAL CON CALLE EL RIO, LOCAL GALPON NRO. 8. BOLEITA SUR. URB. BOLEITA </address>
+
+
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-monagas">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-monagas" aria-expanded="false" aria-controls="collapse-monagas" data-estado="monagas">
+                          Monagas
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-monagas" class="collapse" aria-labelledby="card-monagas" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif"> J303949827 </p>
+                                <p class="distribuidor-name">INVERSIONES ROLDAN CA </p>
+                                <p class="distribuidor-client"> OSCAR CELESTINO ROLDAN DAGGER</p>
+                                <address>CALLE 7A CASA NRO 44 SECTOR LA MANGA SUBIENDO EL PICACHO</address>
+                            </li>
+
+                            <li>
+                                <p class="distribuidor-rif"> J310615012 </p>
+                                <p class="distribuidor-name">GOMET S DISTRIBUCION CA </p>
+                                <p class="distribuidor-client"> LUIS MARQUES</p>
+                                <address>AVENIDA BELLA VISTA CONJUNTO EMPRESARIAL MANROB SECTOR BELLA VISTA, MATURIN</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-nueva_esparta">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-nueva_esparta" aria-expanded="false" aria-controls="collapse-nueva_esparta" data-estado="nueva_esparta">
+                          Nueva Esparta
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-nueva_esparta" class="collapse" aria-labelledby="card-nueva_esparta" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J310102198</p>
+                                <p class="distribuidor-name">DIBIHO</p>
+                                <p class="distribuidor-client">ROSOLINO COSTANZO MASTROLEMBO</p>
+                                <address>CALLE CHARAIMA Y TAMANACO LOCAL GALPON S/N SECTOR CONEJEROS PORLAMAR NUEVA ESPARTA ZONA POSTAL 6301</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-portuguesa">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-portuguesa" aria-expanded="false" aria-controls="collapse-portuguesa" data-estado="portuguesa">
+                          Portuguesa
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-portuguesa" class="collapse" aria-labelledby="card-portuguesa" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J298325275</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA SUPER JETY V . C.A</p>
+                                <p class="distribuidor-client">TIBISAY GUEDEZ</p>
+                                <address>CARRETERA NACIONAL VIA AGUA BLANCA SECTOR MIRAFLORES LOCAL 1</address>
+                            </li>
+
+                            <li>
+                                <p class="distribuidor-rif">J297764763</p>
+                                <p class="distribuidor-name">GRANOS LA 7, C.A.</p>
+                                <p class="distribuidor-client">GLADYS CARRASCO</p>
+                                <address>CR. 04 ENTRE CALLES 19 Y 20 LOCAL 05 EDIF YAMIL. BARRIO LA PEÑITA GUANARE ESTADO PORTUGUESA</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-sucre">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-sucre" aria-expanded="false" aria-controls="collapse-sucre" data-estado="sucre">
+                          Sucre
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-sucre" class="collapse" aria-labelledby="card-sucre" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J296356939</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA CAROLINAS CONFITERIA CA</p>
+                                <p class="distribuidor-client">JOSE ANTONIO VILLARROEL</p>
+                                <address>AVENIDA PANAMERICANA CASA NUMERO 107, SECTOR PANAMERICANA. FRENTE AL BODEGON SAN FELIPE AL LADO DE LA IGLESIA BAUTISTA. A MEDIA CUADRA DE LA ENTRADA DE LA URBANIZACION BEBEDEROS.</address>
+                            </li>
+
+                            <li>
+
+                                <p class="distribuidor-rif">J310314969 </p>
+                                <p class="distribuidor-name">EUROPASTA </p>
+                                <p class="distribuidor-client">ELLYS DONATO </p>
+                                <address>CALLE AREO, PARCELAMIENTO MIRANDA, SECTOR F, C.C. CARIACO PB </address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-tachira">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-tachira" aria-expanded="false" aria-controls="collapse-tachira" data-estado="tachira">
+                          Tachira
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-tachira" class="collapse" aria-labelledby="card-tachira" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J312451491</p>
+                                <p class="distribuidor-name">HAS REPRESENTACIONES CA</p>
+                                <p class="distribuidor-client">HAROLD ALEXANDER</p>
+                                <address>CRA 7 CON AV PARQUE EXPOSICION AL LADO DEL INSTITUTO UNIVERSITARIO LOCAL GALPON NRO 16 SECTOR LA CONCORDIA SAN CRISTOBAL</address>
+                            </li>
+
+                            <li>
+
+                                <p class="distribuidor-rif">J411695190 </p>
+                                <p class="distribuidor-name">CONFITES DE VENEZUELA CA </p>
+                                <p class="distribuidor-client">ANTONIO CASTANEDA </p>
+                                <address>CALLE PRINCIPAL VEGA DE AZA LOCAL NRO 0-06 SECTOR MURACHI VEGA DE AZA TACHIRA ZONA POSTAL 5001</address>
+                            </li>
+
+                            <li>
+
+                                <p class="distribuidor-rif">J412155067</p>
+                                <p class="distribuidor-name">DISTRIBUIDORA LA OCCIDENTAL, CA </p>
+                                <p class="distribuidor-client">ALBA PERNIA</p>
+                                <address>AV DEMOCRATA, CONJUNTO PRIVADO SOTAVENTO CASA NRO 42 SECTOR SAN CRISTOBAL SAN CRISTOBAL TACHIRA ZONA POSTAL 5001</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-trujillo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-trujillo" aria-expanded="false" aria-controls="collapse-trujillo" data-estado="trujillo">
+                          Trujillo
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-trujillo" class="collapse" aria-labelledby="card-trujillo" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif"> J411790869 </p>
+                                <p class="distribuidor-name">OCCI DISTRIBUCIONES C.A </p>
+                                <p class="distribuidor-client">ANDREA GORI </p>
+                                <address>AV. 9 LOCAL NRO 6 SECTOR EL BOLO PARROQUIA MERCEDEZ DIAZ MUNICIPIO VALERA DEL ESTADO TRUJILLO</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-vargas">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-vargas" aria-expanded="false" aria-controls="collapse-vargas" data-estado="vargas">
+                          Vargas
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-vargas" class="collapse" aria-labelledby="card-vargas" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J407185055</p>
+                                <p class="distribuidor-name">INVERSIONES COSTAVEN, C.A.</p>
+                                <p class="distribuidor-name">DANNYS DIAZ</p>
+                                <address>AV. BOULEVARD NAIGUATA QTA BLOQUE NRO 24 URB CARIBE CARABALLEDA VARGAS Z</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="card-zulia">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-zulia" aria-expanded="false" aria-controls="collapse-zulia" data-estado="zulia">
+                          Zulia
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse-zulia" class="collapse" aria-labelledby="card-zulia" data-parent="#accordion-mapa">
+                      <div class="card-body">
+                        <ul>
+                            <li>
+                                <p class="distribuidor-rif">J302012015 </p>
+                                <p class="distribuidor-name">DISTRIBUIDORA H HAMAD CA </p>
+                                <p class="distribuidor-client">HAMAD BAHSSAS HUZMAN </p>
+                                <address>CALLE 11 3A SECTOR LOS ROBLES ZONA IND. GALPONES 113-A-49, 113-53-1. 13-55 MARACAIBO</address>
+                            </li>
+
+                            <li>
+                                <p class="distribuidor-rif">J401814220</p>
+                                <p class="distribuidor-name">INVERSIONES Y SERVICIOS EN GENERAL PATIÑO C.A (INSGEPA C.A)</p>
+                                <p class="distribuidor-client">ROBERTO PATIÑO</p>
+                                <address>CALLE 08 #44 TERRENO LOCAL 42-490 BARRIO 5 DE JULIO 1 ERA ETAPA MARACAIBO ZULIA ZONA POSTAL 4001</address>
+                            </li>
+
+                            <li>
+                                <p class="distribuidor-rif">J314424319 </p>
+                                <p class="distribuidor-name">DISTRIBUIDORA MAAZ CA </p>
+                                <p class="distribuidor-client">JOSE RAMIREZ </p>
+                                <address>AV. 19 CON CALLE 84, SECTOR PARAISO, GALPON NRO 83-178 ANTIGUAS PAPALERAS DEL ZULIA DE LA JURIDICCION DE LA PARROQUIA CHIQUINQUIRA, MUNICIPIO MARACAIBO - EDO. ZULIA. PUNTO DE REFERENCIA AL LADO DE LA ESCUELA BASICA ADOLFO COLINA.</address>
+                            </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="col-md-6 col-12" id="mapa-container">
