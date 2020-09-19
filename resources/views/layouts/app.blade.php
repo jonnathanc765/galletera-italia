@@ -17,6 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="preload" href="{{ asset('css/app.css')  }}" as="styles">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" as="font" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;400;700&display=swap" as="font" crossorigin>
     <meta name="theme-color" content="#00013a">
