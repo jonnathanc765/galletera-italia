@@ -20,13 +20,13 @@ mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/gallery-scripts.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
 
-    // .purgeCss({
-    //     enabled: mix.inProduction(),
-    //     folders: ['src','templates'],
-    //     extendsions: ['html','css','js','php'],
-    //     content: ['resources/**/*.php'],
-    //     whitelistPatterns: ['/show$/']
-    // })
+    .purgeCss({
+        enabled: mix.inProduction(),
+        folders: ['src','templates'],
+        extendsions: ['html','css','js','php'],
+        content: ['resources/**/*.php'],
+        whitelistPatterns: ['/show$/']
+    })
 
     .criticalCss({
         enabled: mix.inProduction(),
