@@ -1,5 +1,7 @@
 const mix = require('laravel-mix');
 require('laravel-mix-purgecss');
+require('laravel-mix-criticalcss');
+
 
 /*
  |--------------------------------------------------------------------------
@@ -13,18 +15,36 @@ require('laravel-mix-purgecss');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .js('resources/js/carousel-products.js', 'public/js')
+    .js('resources/js/carousel-gallery.js', 'public/js')
+    .js('resources/js/gallery-scripts.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
-    .js('resources/js/carousel-products.js','public/js')
-    .js('resources/js/carousel-gallery.js','public/js')
-    .js('resources/js/gallery-scripts.js','public/js')
 
-    .purgeCss({
+    // .purgeCss({
+    //     enabled: mix.inProduction(),
+    //     folders: ['src','templates'],
+    //     extendsions: ['html','css','js','php'],
+    //     content: ['resources/**/*.php'],
+    //     whitelistPatterns: ['/show$/']
+    // })
+
+    .criticalCss({
         enabled: mix.inProduction(),
-        folders: ['src','templates'],
-        extendsions: ['html','css','js','php'],
-        content: ['resources/**/*.php'],
-        whitelistPatterns: ['/show$/']
+        paths: {
+            base: 'http://galletera-italia.test',
+            templates: './public/css/',
+            suffix: '_critical.min'
+        },
+        urls: [{
+            url: '/',
+            template: 'index'
+        }, ],
+        options: {
+            minify: true,
+            penthouse: {
+                timeout: 60000
+            }
+        },
     })
     .version()
-    .sourceMaps()
-    ;
+    .sourceMaps();
