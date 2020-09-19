@@ -9,7 +9,7 @@
 @section('content')
 <style>
 
-    {{ file_get_contents(asset('css/index_critical.min.css'))}}
+    {{ file_get_contents(asset('css/index_critical.min.min.css'))}}
 </style>
 <div class="container-fluid">
     <div class="row first-row hero-container">
