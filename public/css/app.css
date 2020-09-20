@@ -1103,6 +1103,12 @@ button.flickity-button {
   background-position: 0% 9em;
 }
 
+@media screen and (max-width: 991px) {
+  .carousel-gallery .carousel__cell:nth-of-type(6) {
+    background-position: 0% 13em;
+  }
+}
+
 .carousel-gallery .carousel__cell:nth-of-type(1) {
   background-image: url(/images/paso-1.png?5870188acc68068d39e7a7df6e6cf060);
 }
