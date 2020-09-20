@@ -208,6 +208,16 @@
 
                 }
 
+                &::before {
+
+                    content: "";
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    height: 3em;
+                    width: 1em;
+                    position: absolute;
+                }
+
                 &:hover {
                     // flex-grow: 0.75;
                 }
@@ -229,6 +239,12 @@
                         left: 0;
                     }
 
+                    &::before {
+                        top: -80%;
+                        left: 0.99em;
+                    }
+
+
 
                 }
             }
@@ -248,6 +264,14 @@
                         right: 0;
                         bottom: -32px;
                     }
+
+                    &:before {
+
+                        top: 135%;
+                        right: 0.4em;
+
+
+                    }
                 }
             }
 
@@ -263,6 +287,10 @@
 
                 p {
                     border-radius: 0 0 0 35px;
+
+                    &::before {
+                        background-image: url('../img/puntos_1.png');
+                    }
                 }
 
                 @media screen and (min-width:992px) {
@@ -289,6 +317,13 @@
                     // border-radius: 0 35px 0 0;
 
                 }
+
+                p {
+                    &:before {
+
+                        background-image: url('../img/puntos_2.png')
+                    }
+                }
                 // background-position:  -2px -70px;
                 // background-image: url('../img/productos.png');
             }
@@ -303,6 +338,12 @@
                     // border-radius:  0 0 0 35px;
 
 
+                }
+
+                p {
+                    &::before {
+                        background-image: url('../img/puntos_3.png');
+                    }
                 }
                 // background-image: url('../img/galeria.png');
             }
@@ -321,10 +362,13 @@
                 @media screen and (min-width:992px) {
                         border-radius: 0 35px 35px 0;
 
-                    // p {
-                    //     border-radius: 0 35px 0 0;
-                    // }
-                    // border-radius: 0 0 35px 0;
+                    p {
+                        &::before {
+
+                            background-image: url('../img/puntos_4.png');
+
+                        }
+                    }
 
                 }
             }
