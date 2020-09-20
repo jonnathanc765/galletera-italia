@@ -1,3 +1,5 @@
+@import "~rfs/scss";
+
 .hero-container {
 
     text-align: center;
@@ -422,6 +424,10 @@
                 display: block;
                 margin: auto;
             }
+        }
+
+        p:not(.display-3) {
+            @include font-size(1.2em);
         }
     }
 

@@ -625,6 +625,10 @@ header:after {
   }
 }
 
+.us-container__text p:not(.display-3) {
+  font-size: 1.2em;
+}
+
 .us-container img {
   position: absolute;
   right: 0;
