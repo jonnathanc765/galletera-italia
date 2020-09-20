@@ -13,26 +13,8 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item @yield('nav.mails')">
-                <a class="nav-link" href="{{ route('mails.index') }}"><i class="fa fa-envelope-open mr-2" aria-hidden="true"></i> Contactos</a>
+                <a class="nav-link" href="{{ route('mails.index') }}">Contactos</a>
             </li>
-            {{-- dropdown --}}
-            {{-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li> --}}
-            {{-- Dropdown --}}
-
-            {{-- <li class="nav-item @yield('nav.dashboard')">
-                <a class="nav-link" href="{{ route('dashboard.index') }}" tabindex="-1"><i class="fa fa-bar-chart mr-2" aria-hidden="true"></i> Estadísticas</a>
-            </li> --}}
-
         </ul>
 
         <form action="{{ route('logout') }}" id="logout-form" method="POST">
