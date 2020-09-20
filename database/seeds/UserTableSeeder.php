@@ -15,7 +15,7 @@ class UserTableSeeder extends Seeder
 
         factory(App\User::class)->create([
             'name' => 'Admin',
-            'email' => 'admin@mitelecomve.com'
+            'email' => 'admin@galleteraitalia.com'
         ]);
     }
 }

@@ -30,47 +30,9 @@
                                     </div>
                                     <div
                                         style="font-family:Roboto-Regular,Helvetica,Arial,sans-serif;font-size:14px;color:rgba(0,0,0,0.87);line-height:20px;padding-top:20px;text-align:center;">
-                                        <p>
-                                            Felíz Día, <strong style="text-transform:capitalize;">{{ $data['name'] }}</strong>. Como acordamos, te enviamos aquí los detalles de la propuesta de negocios para “Campo nombre de empresa”.
-
-                                        </p>
-                                        <p>
-                                            <strong>
-                                                Te contamos los detalles:
-                                            </strong>
-                                        </p>
-                                        <p>
-                                            La propuesta de negocios la realiza la empresa de telecomunicaciones Inter, que está buscando negocios con visión de futuro como el tuyo, para integrarse a su nueva red de Agentes Autorizados en todo el país.
-                                        </p>
-                                        <p>
-                                            Como agente Autorizado podrás comercializar, instalar y brindar atención técnica de equipos y servicios de televisión, internet y telefonía en todo el territorio nacional.
-                                        </p>
-                                        <p>
-                                            <strong>
-                                                Además podrás:
-                                            </strong>
-                                        </p>
-                                        <ol>
-                                            <li>
-                                                Entrar a un negocio con alta demanda, baja inversión inicial y alta rentabilidad.
-                                            </li>
-                                            <li>
-                                                Recibir capacitación técnica y comercial gratuita, impartida por profesionales expertos en 30 ciudades del país.
-                                            </li>
-                                            <li>
-                                                Acceder a la base de datos de clientes potenciales de servicios esperando por tu atención.
-                                            </li>
-                                        </ol>
-                                        <p>
-                                            Esta iniciativa, es un paso de la empresa Inter para abordar la demanda de miles de hogares venezolanos de conexión, entretenimiento y servicio post venta, mediante el establecimiento de nexos productivos con emprendedores como tú.
-                                        </p>
-                                        <p>
-                                            Estos son los requisitos para postular tu negocio: <a href="https://drive.google.com/file/d/1Sa05o5litKeSD4L-KrzW5cAYAv91Ks03/view?usp=sharing">(Enlace)</a>, recibirás una llamada desde Inter para recibir mayor información sobre los siguientes pasos.
-                                        </p>
-
                                         <div
                                             style="margin: auto; word-break: break-all; overflow-wrap: break-word; word-wrap: break-word; width: 75%;">
-
+                                            Nos pondremos en contacto contigo lo mas pronto posible. Espera nuestra respuesta
                                         </div>
                                     </div>
                                 </div>

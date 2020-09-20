@@ -45,14 +45,7 @@
                                         </div>
                                         @enderror
                                     </div>
-                                    {{-- <div class="form-group">
-                                        <input type="text" value="{{ old('company') }}" class="form-control @error('company')is-invalid @enderror" id="company" placeholder="Razón social (Campo obligatorio *)" name="company">
-                                        @error('company')
-                                        <div class="invalid-feedback">
-                                            {{ $message }}
-                                        </div>
-                                        @enderror
-                                    </div> --}}
+
                                     <div class="form-group">
                                         <input type="text" value="{{ old('email') }}" class="form-control @error('email')is-invalid @enderror" id="email" placeholder="Correo" name="email">
                                         @error('email')
@@ -71,29 +64,17 @@
                                         @enderror
                                     </div>
 
-                                    {{-- <div class="form-group">
-                                        <input type="text" value="{{ old('city') }}" class="form-control @error('city')is-invalid @enderror" id="city" placeholder="Ciudad" name="city">
-                                        @error('city')
+                                    <div class="form-group">
+                                        <textarea id="message" name="message" class="form-control @error('message')is-invalid @enderror">{{ old('message') ?? '¿En qué podemos ayudarte?' }}</textarea>
+                                        @error('message')
                                         <div class="invalid-feedback">
                                             {{ $message }}
                                         </div>
                                         @enderror
-                                    </div> --}}
-                                    <div class="form-group">
-                                        <textarea  id="" class="form-control">¿En qué podemos ayudarte?
-                                        </textarea>
                                     </div>
 
+                                </div>
 
-                                </div>
-                                {{-- <div class="d-flex justify-content-center">
-                                    <h3 id="send-button" class="shadow send-button">
-                                        <a href="#">
-                                            Envíame la <br> propuesta
-                                        </a>
-                                    </h3>
-                                </div>
-                                <p class="text-center">* PARA POSTULARTE DEBES TENER <strong>EMPRESA REGISTRADA</strong></p> --}}
                                 <button type="submit" class="btn btn-primary">Enviar</button>
                             </form>
                         </div>

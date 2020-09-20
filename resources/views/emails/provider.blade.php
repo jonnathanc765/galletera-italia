@@ -38,9 +38,9 @@
                                         <p style="text-align: center">
                                         </p>
                                         <p>
-                                            Compañia: {{ $data['company'] }} <br>
-                                            Teléfono: {{ $data['phone'] }} <br>
                                             Correo: {{ $data['email'] }} <br>
+                                            Teléfono: {{ $data['phone'] }} <br>
+                                            Mensaje: {{ $data['message'] }} <br>
                                         </p>
 
                                         <div
