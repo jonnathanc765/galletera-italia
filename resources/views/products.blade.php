@@ -73,7 +73,7 @@
             <p class="mb-1"> <b> Vida útil:</b> 12 meses.</p>
         </div>
         <div class="modal-footer">
-          <a href=""{{route('contact')}}" class="btn btn-primary">Obtener al mayor</a>
+          <a href="{{route('contact')}}" class="btn btn-primary">Obtener al mayor</a>
         </div>
       </div>
     </div>
@@ -104,7 +104,7 @@
             <p class="mb-1"> <b> Vida útil:</b> 12 meses.</p>
         </div>
         <div class="modal-footer">
-          <a href=""{{route('contact')}}" class="btn btn-primary">Obtener al mayor</a>
+          <a href="{{route('contact')}}" class="btn btn-primary">Obtener al mayor</a>
         </div>
       </div>
     </div>
@@ -135,7 +135,7 @@
             <p class="mb-1"> <b> Vida útil:</b> 12 meses.</p>
         </div>
         <div class="modal-footer">
-          <a href=""{{route('contact')}}" class="btn btn-primary">Obtener al mayor</a>
+          <a href="{{route('contact')}}" class="btn btn-primary">Obtener al mayor</a>
         </div>
       </div>
     </div>
