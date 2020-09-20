@@ -16,10 +16,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{-- <link rel="preload" href="{{ asset('css/app.css')  }}" as="style" onload="this.rel='stylesheet'"> --}}
 
     <link rel="preload" href="{{ asset('css/app.css')  }}" as="style">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" as="font" crossorigin >
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;400;700&display=swap" as="font" crossorigin >
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" as="font" crossorigin onload="this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;400;700&display=swap" as="font" crossorigin onload="this.rel='stylesheet'">
     <meta name="theme-color" content="#00013a">
     <link rel="shortcut icon" href="{{ asset('images/isotipo-logo.png') }}">
 
@@ -38,8 +39,6 @@
 
 
     <link rel="stylesheet" href="{{ asset('css/app.css')  }}" >
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" >
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;400;700&display=swap" >
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded',function(){
