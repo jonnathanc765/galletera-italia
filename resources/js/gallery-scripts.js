@@ -2,8 +2,54 @@
 import smoothscroll from 'smoothscroll-polyfill';
 smoothscroll.polyfill();
 
+import Flickity from 'flickity';
+
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
+
+    const animalito = document.getElementById('animalito')
+    const container = document.querySelector('.slogan-container')
+    const btnScroll = document.getElementById('scroll-btn')
+
+
+    // galeria
+    let flkty = new Flickity( '.carousel-gallery', {
+        wrapAround: true,
+        pageDots: false,
+        prevNextButtons: false
+
+      });
+
+
+
+      const nextBtn = document.querySelector('.carousel-gallery__buttons-next')
+      const prevBtn = document.querySelector('.carousel-gallery__buttons-prev')
+
+      nextBtn.addEventListener('click',function(){
+
+          flkty.previous()
+        })
+
+        prevBtn.addEventListener('click',function(){
+            flkty.next()
+
+    })
+
+    // boton scroll to animacion
+    btnScroll.addEventListener('click', function () {
+
+        document.getElementById('slogan-container').scrollIntoView({
+            behavior: "smooth"
+        })
+    })
+
+
+
+    // animalito animacion
 
     let compensacion = 0
 
@@ -18,16 +64,9 @@ document.addEventListener("DOMContentLoaded", function () {
         compensacion = 0.7
     }
 
-    const animalito = document.getElementById('animalito')
-    const container = document.querySelector('.slogan-container')
-    const btnScroll = document.getElementById('scroll-btn')
 
-    btnScroll.addEventListener('click', function () {
 
-        document.getElementById('slogan-container').scrollIntoView({
-            behavior: "smooth"
-        })
-    })
+
 
     const io = new IntersectionObserver(entries => {
 
