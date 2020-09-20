@@ -102,16 +102,16 @@
                         </p>
                         <ul>
                             <li>
-                                <span class="d-block">Comunicación:</span> La clave para la realización de todas nuestras operaciones se deben a la buena comunicación que existe entre los distintos departamentos que conforman la empresa, así como también con nuestros proveedores y aliados comerciales. La comunicación es parte fundamental del desarrollo de cada una de las actividades para lograr los objetivos organizacionales.
+                                <span class="d-block">Comunicación</span> La clave para la realización de todas nuestras operaciones se deben a la buena comunicación que existe entre los distintos departamentos que conforman la empresa, así como también con nuestros proveedores y aliados comerciales. La comunicación es parte fundamental del desarrollo de cada una de las actividades para lograr los objetivos organizacionales.
                             </li>
                             <li>
-                                <span class="d-block">Respeto:</span> Para crear un ambiente laboral armónico y adecuado proporcionamos un trato de respeto entre los diferentes puestos de trabajos desde la alta gerencia hasta los puestos que conforman la base de la estructura organizacional.
+                                <span class="d-block">Respeto</span> Para crear un ambiente laboral armónico y adecuado proporcionamos un trato de respeto entre los diferentes puestos de trabajos desde la alta gerencia hasta los puestos que conforman la base de la estructura organizacional.
                             </li>
                             <li>
-                                <span class="d-block">Constancia:</span> En Galletera Italia, C.A. trabajamos con dedicación día a día brindando nuestro mejor esfuerzo para ofrecer productos de calidad que estén a su alcance siempre que sean necesarios.
+                                <span class="d-block">Constancia</span> En Galletera Italia, C.A. trabajamos con dedicación día a día brindando nuestro mejor esfuerzo para ofrecer productos de calidad que estén a su alcance siempre que sean necesarios.
                             </li>
                             <li>
-                                <span class="d-block">Familia:</span> Debido a que Galletera Italia, C.A proviene de una cultura familiar consolidamos este valor como parte de nosotros, siguiendo las costumbres que se han llevado desde el inicio de nuestras operaciones.
+                                <span class="d-block">Familia</span> Debido a que Galletera Italia, C.A proviene de una cultura familiar consolidamos este valor como parte de nosotros, siguiendo las costumbres que se han llevado desde el inicio de nuestras operaciones.
                             </li>
 
                         </ul>
