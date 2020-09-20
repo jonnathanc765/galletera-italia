@@ -511,6 +511,12 @@ header:after {
   left: 0.99em;
 }
 
+@media screen and (max-width: 992px) {
+  .cards-wrapper .cards-container__card:nth-child(odd) p::before {
+    top: -130%;
+  }
+}
+
 .cards-wrapper .cards-container__card:nth-child(even) {
   background-color: var(--secondary);
 }
@@ -531,6 +537,12 @@ header:after {
 .cards-wrapper .cards-container__card:nth-child(even) p:before {
   top: 135%;
   right: 0.4em;
+}
+
+@media screen and (max-width: 992px) {
+  .cards-wrapper .cards-container__card:nth-child(even) p:before {
+    top: 150%;
+  }
 }
 
 .cards-wrapper .cards-container__card:first-of-type p {
@@ -565,13 +577,13 @@ header:after {
   background-image: url(/images/puntos_3.png?fbedc7a7fd2431fbc5b8de0cdd8ca8d5);
 }
 
+.cards-wrapper .cards-container__card:last-of-type p::before {
+  background-image: url(/images/puntos_4.png?741b2c1d31bd237d470661700c1e8528);
+}
+
 @media screen and (min-width: 992px) {
   .cards-wrapper .cards-container__card:last-of-type {
     border-radius: 0 35px 35px 0;
-  }
-
-  .cards-wrapper .cards-container__card:last-of-type p::before {
-    background-image: url(/images/puntos_4.png?741b2c1d31bd237d470661700c1e8528);
   }
 }
 

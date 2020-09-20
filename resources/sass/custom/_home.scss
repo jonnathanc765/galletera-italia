@@ -242,6 +242,11 @@
                     &::before {
                         top: -80%;
                         left: 0.99em;
+
+                        @media screen and (max-width: 992px) {
+                            top: -130%;
+
+                        }
                     }
 
 
@@ -269,6 +274,11 @@
 
                         top: 135%;
                         right: 0.4em;
+
+                        @media screen and (max-width: 992px) {
+                            top: 150%;
+
+                        }
 
 
                     }
@@ -350,25 +360,19 @@
 
             &:last-of-type {
 
-                // background-position: left center;
-                // background-image: url('../img/gorra.png');
 
-                // img{
-                    //     border-radius: 0 35px 35px 0;
 
-                    // }
+                p {
+                    &::before {
 
+                        background-image: url('../img/puntos_4.png');
+
+                    }
+                }
 
                 @media screen and (min-width:992px) {
                         border-radius: 0 35px 35px 0;
 
-                    p {
-                        &::before {
-
-                            background-image: url('../img/puntos_4.png');
-
-                        }
-                    }
 
                 }
             }
