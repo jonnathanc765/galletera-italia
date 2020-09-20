@@ -452,14 +452,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-header" id="card-coro">
+                    <div class="card-header" id="card-falcon">
                       <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-coro" aria-expanded="false" aria-controls="collapse-coro" data-estado="coro">
-                          Coro
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-falcon" aria-expanded="false" aria-controls="collapse-falcon" data-estado="falcon">
+                          Falcon
                         </button>
                       </h2>
                     </div>
-                    <div id="collapse-coro" class="collapse" aria-labelledby="card-coro" data-parent="#accordion-mapa">
+                    <div id="collapse-falcon" class="collapse" aria-labelledby="card-falcon" data-parent="#accordion-mapa">
                       <div class="card-body">
                         <ul>
                             <li>
