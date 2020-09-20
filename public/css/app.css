@@ -604,6 +604,7 @@ header:after {
 
   .us-container__text {
     padding-top: 8em;
+    padding-left: 10em !important;
   }
 }
 
