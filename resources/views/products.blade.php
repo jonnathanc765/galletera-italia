@@ -49,6 +49,6 @@
 
 
 @section('scripts')
-<script src="{{ asset('js/carousel-products.js') }}"></script>
+<script src="{{ asset('js/carousel-products.js') }}" defer></script>
 
 @endsection

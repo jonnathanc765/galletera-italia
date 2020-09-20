@@ -110,8 +110,7 @@
 
 @section('scripts')
 
-<script src="{{ asset('js/gallery-scripts.js') }}"></script>
+<script src="{{ asset('js/gallery-scripts.js') }}" defer></script>
 
-<script src="{{ asset('js/carousel-gallery.js') }}"></script>
 
 @endsection

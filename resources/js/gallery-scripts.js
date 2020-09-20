@@ -1,12 +1,6 @@
 // safari no soporta scroll behavior smooth solo, necesita pollyfil
 import smoothscroll from 'smoothscroll-polyfill';
-smoothscroll.polyfill();
-
 import Flickity from 'flickity';
-
-
-
-
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -14,32 +8,31 @@ document.addEventListener("DOMContentLoaded", function () {
     const animalito = document.getElementById('animalito')
     const container = document.querySelector('.slogan-container')
     const btnScroll = document.getElementById('scroll-btn')
+    const nextBtn = document.querySelector('.carousel-gallery__buttons-next')
+    const prevBtn = document.querySelector('.carousel-gallery__buttons-prev')
 
 
     // galeria
-    let flkty = new Flickity( '.carousel-gallery', {
+    let flkty = new Flickity('.carousel-gallery', {
         wrapAround: true,
         pageDots: false,
         prevNextButtons: false
 
-      });
+    });
 
+    nextBtn.addEventListener('click', function () {
 
+        flkty.previous()
+    })
 
-      const nextBtn = document.querySelector('.carousel-gallery__buttons-next')
-      const prevBtn = document.querySelector('.carousel-gallery__buttons-prev')
-
-      nextBtn.addEventListener('click',function(){
-
-          flkty.previous()
-        })
-
-        prevBtn.addEventListener('click',function(){
-            flkty.next()
+    prevBtn.addEventListener('click', function () {
+        flkty.next()
 
     })
 
+
     // boton scroll to animacion
+    smoothscroll.polyfill();
     btnScroll.addEventListener('click', function () {
 
         document.getElementById('slogan-container').scrollIntoView({
@@ -63,10 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         compensacion = 0.7
     }
-
-
-
-
 
     const io = new IntersectionObserver(entries => {
 
