@@ -47,7 +47,7 @@
                 estrella desde los inicios de la empresa y María Tentazione desde
                 el año 2019 en sus dos presentaciones en sabor vainilla y sabor
                 chocolate.</p>
-                <button class="btn btn-primary">Conocenos</button>
+                <a href="{{route('about')}}" class="btn btn-primary">Conócenos</a>
         </div>
         <div class="col-12 col-lg-6 position-relative d-none d-lg-block" data-sal="slide-right" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-back">
             <img class="img-fluid" src="{{ asset('img/galleta-shape.png') }}"  alt="galleta">
