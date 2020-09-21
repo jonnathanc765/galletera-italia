@@ -65,7 +65,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <textarea id="message" name="message" class="form-control @error('message')is-invalid @enderror">{{ old('message') ?? '¿En qué podemos ayudarte?' }}</textarea>
+                                        <textarea id="message" name="message" class="form-control @error('message')is-invalid @enderror" placeholder="¿En qué podemos ayudarte?">{{ old('message') }}</textarea>
                                         @error('message')
                                         <div class="invalid-feedback">
                                             {{ $message }}
