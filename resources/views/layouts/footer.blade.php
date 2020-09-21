@@ -7,7 +7,7 @@
                     <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="col-10">
 
-                        <p>Ubicacion</p>
+                        <p>Ubicación</p>
                         <address>Av. 02 Sur, Parque IndustrialCOSDZIEBA. Barinas, Venezuela.</address>
                     </div>
                 </div>
