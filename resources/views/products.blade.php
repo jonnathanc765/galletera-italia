@@ -18,7 +18,7 @@
                         <small class="d-block h5">Galleta dulce tipo María sabor a vainilla
                             Peso neto: 200 gr.
                             </small>
-                        <button data-toggle="modal" data-target="#modal-galleta-tentazione"  class="btn mb-1">Obtener ahora</button>
+                        <button data-toggle="modal" data-target="#modal-galleta-tentazione"  class="btn mb-1">Saber más</button>
                     </div>
                 </div>
 
@@ -29,7 +29,7 @@
                         <small class="d-block h5">Galleta dulce tipo María sabor a chocolate
                             Peso neto: 200 gr.
                             </small>
-                        <button data-toggle="modal" data-target="#modal-galleta-chocolate" class="btn mb-1">Obtener ahora</button>
+                        <button data-toggle="modal" data-target="#modal-galleta-chocolate" class="btn mb-1">Saber más</button>
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@
 
                         <p class="mb-2 h2">Galleta dulce tipo María sabor a vainilla</p>
                         <small class="d-block h5">Peso neto: 150 gr.</small>
-                        <button data-toggle="modal" data-target="#modal-galleta-original"  class="btn mb-1">Obtener ahora</button>
+                        <button data-toggle="modal" data-target="#modal-galleta-original"  class="btn mb-1">Saber más</button>
                     </div>
                 </div>
 
