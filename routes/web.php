@@ -63,10 +63,11 @@ Route::middleware(['auth'])->group(function ()
 Route::get('/migrate-and-seed', function ()
 {
     Artisan::call('migrate');
+    Artisan::call('db:seed');
 });
 
 Route::get('/config-clear', function ()
 {
     Artisan::call('config:cache');
-    Artisan::call('db:seed');
+
 });
