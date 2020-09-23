@@ -70,4 +70,6 @@ Route::get('/config-clear', function ()
 {
     Artisan::call('config:cache');
 
+    dd(config('mail'));
+
 });
