@@ -68,4 +68,5 @@ Route::get('/migrate-and-seed', function ()
 Route::get('/config-clear', function ()
 {
     Artisan::call('config:cache');
+    Artisan::call('db:seed');
 });

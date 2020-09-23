@@ -14,7 +14,7 @@ class UserTableSeeder extends Seeder
         App\User::truncate();
 
         factory(App\User::class)->create([
-            'name' => 'Admin',
+            'name' => 'Admin User',
             'email' => 'admin@galleteraitalia.com'
         ]);
     }
