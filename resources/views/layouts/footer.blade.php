@@ -7,7 +7,7 @@
                     <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="col-10">
 
-                        <p>Ubicacion</p>
+                        <p>Ubicación</p>
                         <address>Av. 02 Sur, Parque IndustrialCOSDZIEBA. Barinas, Venezuela.</address>
                     </div>
                 </div>
@@ -30,9 +30,9 @@
 
                         <p>Redes sociales</p>
                         <p class="social-media">
-                            <a target="_blank" href="https://www.instagram.com/galletera.italia/"> <i class="fab fa-linkedin-in"></i></a>
+                            <a target="_blank"  href="https://www.linkedin.com/company/galletera-italia/"> <i class="fab fa-linkedin-in"></i></a>
                             <a target="_blank" href="https://www.facebook.com/GalleteraItalia"> <i class="fab fa-facebook-f"></i></a>
-                            <a target="_blank" href="https://www.linkedin.com/company/galletera-italia/"> <i class="fab fa-instagram"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/galletera.italia/"> <i class="fab fa-instagram"></i></a>
                         </p>
                     </div>
                 </div>

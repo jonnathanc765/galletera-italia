@@ -113,9 +113,10 @@
             background-color: var(--otro-azul-claro);
             border: none;
             font-weight: bold;
+            color: var(--primary)
         }
 
-        input::placeholder {
+        input::placeholder, textarea::placeholder {
             color: var(--primary)
         }
 
@@ -326,6 +327,7 @@
         list-style: none;
         position: absolute;
         bottom: 20%;
+        left: 0;
 
         @media screen and (max-width:992px){
             left: -9%;
