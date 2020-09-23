@@ -66,8 +66,8 @@ Route::middleware(['auth'])->group(function ()
 //     Artisan::call('db:seed');
 // });
 
-// Route::get('/config-clear', function ()
-// {
-//     Artisan::call('config:cache');
+Route::get('/config-clear', function ()
+{
+    Artisan::call('config:cache');
 
-// });
+});
