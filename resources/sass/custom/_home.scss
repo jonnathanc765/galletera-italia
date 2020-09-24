@@ -127,11 +127,13 @@
     background-color: white;
     position: relative;
     z-index: 10;
+    background-image: url('../img/bg-puntos-azules.png');
+
 
     .cards-container {
 
         width: 100%;
-        background-image: url('../img/bg-puntos-rojos.png');
+        // background-image: url('../img/bg-puntos-rojos.png');
 
         @media screen and (min-width:992px) {
 

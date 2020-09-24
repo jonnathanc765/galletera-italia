@@ -37,7 +37,7 @@
             <img data-sal="slide-left" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-in-out" src="{{ asset('img/nacimiento.png') }}" alt="Nacimiento de Galletera Italia" class="img-fluid d-block mx-auto mb-4">
 
             <p  data-sal="slide-left" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-in-out">
-                Debido a esta creciente demanda de galletas María y en vista de lanecesidad de estos hermanos de seguir diversicando las empresas, se creó entonces en el año 2015 una nueva fábrica que obtuvo por nombre GALLETERA ITALIA, C.A.  con la intensión de abastecer esta gran demanda de galletas María que solo una empresa no podía cubrir por si sola. Razón por la cuál INAICA decide atribuir a esta nueva empresa hermana su marca comercial, María Italia.
+                Debido a esta creciente demanda de galletas María y en vista de la necesidad de estos hermanos de seguir diversificando las empresas, se creó entonces en el año 2015 una nueva fábrica que obtuvo por nombre GALLETERA ITALIA, C.A.  con la intensión de abastecer esta gran demanda de galletas María que solo una empresa no podía cubrir por si sola. Razón por la cuál INAICA decide atribuir a esta nueva empresa hermana su marca comercial, María Italia.
             </p>
             <img data-sal="slide-left" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-in-out" src="{{ asset('img/pila-galletas.png') }}" alt="Nacimiento de Galletera Italia" class="img-fluid d-block mx-auto mb-4">
 

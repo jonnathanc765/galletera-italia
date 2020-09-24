@@ -5,13 +5,13 @@
     Presentacion
 @endsection
 
-@section('head')
-    <link rel="stylesheet" href="{{ asset('css/index_critical.min.min.css') }}">
-@endsection
+{{-- @section('head') --}}
+    {{-- <link rel="stylesheet" href="{{ asset('css/index_critical.min.min.css') }}"> --}}
+{{-- @endsection --}}
 
 @section('content')
 <style>
-    {{ file_get_contents(asset('css/index_critical.min.min.css'))}}
+    {{ file_get_contents(asset('css/index_critical.min.css'))}}
 </style>
 
 <div class="container-fluid">

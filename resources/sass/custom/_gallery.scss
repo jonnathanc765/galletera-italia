@@ -119,14 +119,17 @@
 
             &::before {
 
-                mask-repeat: no-repeat;
-                mask-size: cover;
+                background-repeat: no-repeat;
+                background-size: cover;
                 display: block;
                 width: 100%;
-                height: 3em;
                 position: absolute;
                 left: 0;
 
+            }
+
+            p:last-of-type {
+                line-height: 1.5em;
             }
 
         }
@@ -144,13 +147,14 @@
                 &::before{
 
                     content: "";
-                    mask-image: url('../img/borde-azul-oscuro-bottom.svg');
+                   background-image: url('../img/borde-azul-oscuro-bottom.svg');
+                    height: 3em;
 
-                    top: -24%;
-                    background-color: var(--primary);
+                    top: -2.5em;
+                    // background-color: var(--primary);
 
                     @media screen and (max-width:420px){
-                        top: -16%
+                        // top: -16%
                     }
                 }
 
@@ -169,11 +173,12 @@
                 &::before{
 
                     content: "";
-                    mask-image: url('../img/border-redondo-azul.svg');
-                    background-color: var(--azul);
-                    top: 100%;
+                    background-image: url('../img/border-redondo-azul.svg');
+                    // background-color: var(--azul);
+                    top: 99%;
+                    height: 4em;
 
-                    @media screen and (max-width:420px){
+                    @media screen and (max-width:576px){
                         top: 98%
                     }
                 }
@@ -188,7 +193,7 @@
             background-position: 0% 9em;
 
             @media screen and (max-width:991px) {
-                background-position: 0% 13em;
+                background-position: 0% 140px;
 
             }
         }
@@ -209,7 +214,7 @@
     overflow: hidden;
     background-color: var(--azul);
     position: relative;
-    background-image: url('../img/bg-puntos-blancos-2.png');
+    background-image: url('../img/bg-puntos-amarillos.png');
 
 
 
