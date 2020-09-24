@@ -6,9 +6,7 @@
 @endsection
 
 @section('head')
-    <style>
-        {{ file_get_contents(asset('css/index_critical.min.min.css'))}}
-    </style>
+    <link rel="stylesheet" href="{{ asset('css/index_critical.min.min.css') }}">
 @endsection
 
 @section('content')
