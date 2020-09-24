@@ -990,5 +990,12 @@
             'error');
     </script>
     @endif
+    @if (session()->has('success'))
+    <script src="{{ asset('js/sweetalert2@8.js') }}"></script>
+    <script>
+        Swal.fire('¡Todo salio bien!', "{{ session('success') }}",
+            'success');
+    </script>
+    @endif
 
 @endsection
