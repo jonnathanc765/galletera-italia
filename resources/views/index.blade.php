@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 {{-- Para la etiqueta title  --}}
-@section('title')
-    Presentacion
-@endsection
+{{-- @section('title')
+    Home
+@endsection --}}
 
 @section('head')
     <link rel="stylesheet" href="{{ asset('css/index_critical.min.min.css') }}">

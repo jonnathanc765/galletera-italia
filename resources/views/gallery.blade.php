@@ -2,7 +2,7 @@
 
 {{-- Para la etiqueta title  --}}
 @section('title')
-    Nosotros
+    - Galeria
 @endsection
 
 

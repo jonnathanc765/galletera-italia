@@ -2,7 +2,7 @@
 
 {{-- Para la etiqueta title  --}}
 @section('title')
-    Presentacion
+    - Contacto
 @endsection
 
 @section('head')

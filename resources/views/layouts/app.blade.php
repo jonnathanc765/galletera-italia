@@ -3,7 +3,7 @@
 <head>
 
 
-    <title>{{ config('app.name') }} - @yield('title')</title>
+    <title>{{ config('app.name') }} @yield('title')</title>
     <meta name="robots" content="index,follow" />
     <meta name="google" content="notranslate" />
     <meta name="title" content="{{ config('app.name') }} - @yield('title')" />
