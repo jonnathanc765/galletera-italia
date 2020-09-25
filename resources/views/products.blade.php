@@ -58,7 +58,7 @@
           </button>
         </div>
         <div class="modal-body">
-            <img class="img-fluid d-block mx-auto" height="350px" src="{{asset('img/modal-chocolate.png')}}" alt="Maria Tentazione Chocolate">
+            <img class="img-fluid d-block mx-auto" height="350px" src="{{asset('img/modal-chocolate.jpg')}}" alt="Maria Tentazione Chocolate">
             <p class="mb-1">Galleta dulce tipo María sabor a chocolate</p>
             <p class="mb-1"> <b> Peso neto:</b> 200 gr.</p>
             <p class="mb-1"> <b> Presentación:</b>
