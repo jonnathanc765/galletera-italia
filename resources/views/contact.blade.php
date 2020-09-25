@@ -18,7 +18,7 @@
     <div class="row first-row form-wrapper">
         <div class="wrapper-big">
 
-            <div class="col-12 ">
+            <div class="col-12">
                 <div class="row form-container">
 
                     <div class="col-md-3 col-12">
@@ -84,6 +84,7 @@
 
             </div>
         </div>
+        <img class="img-fluid" src="{{asset('img/textura.svg')}}" alt="">
     </div>
 
     <div class="row mapa-container" id="mapa-wrapper">

@@ -1,14 +1,39 @@
 .form-wrapper{
-    margin-bottom: -6em;
+    // margin-bottom: -7em;
     background-color: var(--azul-claro);
     padding-top: 10em;
+
+    @media screen and (max-width:992px) {
+        // margin-bottom: 3em;
+    }
 
     & > div {
         order: 1;
     }
 
+    & > img.img-fluid {
+        width: 100%;
+        order: 3;
+        margin-top: 3em;
+        mask-image: url('../img/textura.svg');
+        mask-size: contain;
+        position: relative;
+        bottom: -3em;
+
+        @media screen and (min-width:992px) and (max-width:1499px){
+            bottom: -7em;
+
+        }
+
+        @media screen and (min-width:1500px) {
+            bottom: -12em;
+
+        }
+
+    }
+
     @media screen and (min-width:1500px) {
-        margin-bottom: -9em;
+        // margin-bottom: -9em;
 
         &::after {
             height: 27em;
@@ -21,43 +46,6 @@
         }
     }
 
-
-
-    &::after {
-        content: "";
-        mask: url('../img/forma-azul-clara-bottom.svg');
-        mask-repeat: no-repeat;
-        mask-size: cover;
-        width: 100%;
-        background-color: var(--azul-claro);
-        order: 3;
-        z-index: 10;
-
-        @media screen and (max-width:1499px){
-            height: 12em;
-
-        }
-
-
-    }
-
-    &::before {
-        content: "";
-        mask: url('../img/linea-azul-textura.svg');
-        mask-repeat: no-repeat;
-        mask-size: cover;
-        width: 100%;
-        background: var(--primary);
-        order: 2;
-        z-index: 15;
-        position: relative;
-
-        @media screen and (max-width:1499px){
-            height: 7em;
-            bottom: -13em;
-
-        }
-    }
 
 
 }
@@ -142,7 +130,7 @@
 
 .mapa-container {
 
-    padding-top: 15vh;
+    padding-top: 21vh;
     padding-bottom: 4em;
     background-color: var(--beige);
     background-image: url('../img/bg-puntos-amarillos.png');
