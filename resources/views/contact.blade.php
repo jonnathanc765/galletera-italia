@@ -24,7 +24,7 @@
                     <div class="col-md-3 col-12">
                         <p>Contáctanos y sé parte de nuestra cartera de clientes.</p>
                         <address><p class="font-weight-bold mb-1">Ubicación:</p><p>Av. 02 Sur, Parque Industrial COSDZIEBA. Barinas, Venezuela.</p></address>
-                        <p class="font-weight-bold mb-1">Contacto: <span class="d-block font-weight-normal">info@galleteraitalia.com0273-5420707 / 5420461 / 5420392</span></p>
+                        <p class="font-weight-bold mb-1">Contacto: <span class="d-block font-weight-normal">info@galleteraitalia.com <br> 0273-5420707 / 5420461 / 5420392</span></p>
                         <p class="font-weight-bold mt-3 social-media">
                             <a target="_blank" href="https://www.linkedin.com/company/galletera-italia/"> <i class="fab fa-linkedin-in"></i></a>
                             <a target="_blank" href="https://www.facebook.com/GalleteraItalia"> <i class="fab fa-facebook-f"></i></a>

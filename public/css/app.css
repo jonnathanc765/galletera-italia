@@ -940,7 +940,7 @@ button.flickity-button {
   border-radius: 100px 0 0 100px;
   height: 50px;
   width: 90px;
-  padding: 0 0 0 1%;
+  padding: 0 0 0 2%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1069,7 +1069,7 @@ button.flickity-button {
 
 .carousel-gallery .carousel__cell:nth-child(odd) .text::before {
   content: "";
-  background-image: url(/images/borde-azul-oscuro-bottom.svg?bbf808333ee8562fcfac29a0e1438b75);
+  background-image: url(/images/borde-azul-oscuro-bottom.svg?fd8aa7ed30aeab71ed367e4ba3c5a0cf);
   height: 3em;
   top: -2.5em;
 }
@@ -1093,6 +1093,12 @@ button.flickity-button {
 @media screen and (max-width: 576px) {
   .carousel-gallery .carousel__cell:nth-child(even) .text::before {
     top: 98%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-gallery .carousel__cell:nth-child(even) .text::before {
+    height: 8vw;
   }
 }
 
