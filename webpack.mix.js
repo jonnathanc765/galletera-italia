@@ -41,7 +41,7 @@ mix.js('resources/js/app.js', 'public/js')
         options: {
             minify: true,
             penthouse: {
-                timeout: 60000
+                timeout: 600000
             }
         },
     })
