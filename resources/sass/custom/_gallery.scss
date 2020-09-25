@@ -173,8 +173,13 @@
                 &::before{
 
                     content: "";
-                    background-image: url('../img/border-redondo-azul.svg');
+
+                    // chrome android gay
+                    mask-image: url('../img/border-redondo-azul.svg');
+                    mask-size: cover;
+                    mask-repeat: no-repeat;
                     // background-color: var(--azul);
+                    background-image: url('../img/border-redondo-azul.svg');
                     top: 99%;
                     height: 4em;
 
