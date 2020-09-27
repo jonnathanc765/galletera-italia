@@ -37,7 +37,7 @@ class ContactController extends Controller
         }
 
         try {
-            Mail::to('jonnathan.c.765@gmail.com')->send(new ProviderMail($data));
+            Mail::to('info@galleteraitalia.com')->send(new ProviderMail($data));
         } catch (\Throwable $th) {
             return back()->withError('Ha ocurrido un error al enviar procesar tu registro, por favor intentalo de nuevo')->withInput($request->input());
         }
