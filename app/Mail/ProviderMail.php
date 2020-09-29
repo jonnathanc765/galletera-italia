@@ -32,6 +32,7 @@ class ProviderMail extends Mailable
     public function build()
     {
         return $this
+                    ->from('info@galleteraitalia.com')
                     ->subject('Contacto ' . config('app.name'))
                     ->view('emails.provider');
     }
