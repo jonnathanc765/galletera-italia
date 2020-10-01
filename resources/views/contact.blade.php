@@ -269,7 +269,7 @@
                   <div class="card-header" id="card-caracas">
                     <h2 class="mb-0">
                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-caracas" aria-expanded="false" aria-controls="collapse-caracas" data-estado="caracas">
-                        Caracas
+                        Distrito Capital
                       </button>
                     </h2>
                   </div>
@@ -291,7 +291,7 @@
                     <div class="card-header" id="card-anzoategui">
                       <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-anzoategui" aria-expanded="false" aria-controls="collapse-anzoategui" data-estado="anzoategui">
-                          Anzoategui
+                          Anzoátegui
                         </button>
                       </h2>
                     </div>
@@ -380,7 +380,7 @@
                     <div class="card-header" id="card-bolivar">
                       <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-bolivar" aria-expanded="false" aria-controls="collapse-bolivar" data-estado="bolivar">
-                          Bolivar
+                          Bolívar
                         </button>
                       </h2>
                     </div>
@@ -437,7 +437,7 @@
                     <div class="card-header" id="card-falcon">
                       <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-falcon" aria-expanded="false" aria-controls="collapse-falcon" data-estado="falcon">
-                          Falcon
+                          Falcón
                         </button>
                       </h2>
                     </div>
@@ -480,7 +480,7 @@
                     <div class="card-header" id="card-guarico">
                       <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-guarico" aria-expanded="false" aria-controls="collapse-guarico" data-estado="guarico">
-                          Guarico
+                          Guárico
                         </button>
                       </h2>
                     </div>
@@ -531,7 +531,7 @@
                     <div class="card-header" id="card-merida">
                       <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-merida" aria-expanded="false" aria-controls="collapse-merida" data-estado="merida">
-                          Merida
+                          Mérida
                         </button>
                       </h2>
                     </div>
@@ -744,7 +744,7 @@
                     <div class="card-header" id="card-tachira">
                       <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-tachira" aria-expanded="false" aria-controls="collapse-tachira" data-estado="tachira">
-                          Tachira
+                          Táchira
                         </button>
                       </h2>
                     </div>
