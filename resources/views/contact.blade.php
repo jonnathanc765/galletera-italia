@@ -165,11 +165,6 @@
                             <address>AV. ANDRES BELLOCC LOS CAOBISNIVEL PB LOCAL 10 URB ALTO CLIENTE BARINAS</address>
                         </li>
                         <li>
-                            <p class="distribuidor-rif">J-309099230</p>
-                            <p class="distribuidor-name">DISTRIBUIDORA DE ALIMENTOS GPL,C.A.</p>
-                            <p class="distribuidor-client">LA CHAQTERIAAV. ANDRES BELLOCC LOS CAOBISNIVEL PB LOCAL 10 URB ALTO BARINAS SUR.</p>
-                        <address></li></address>
-                        <li>
                             <p class="distribuidor-rif">J-310962944</p>
                             <p class="distribuidor-name">CONFICOMBO, C.A</p>
                             <p class="distribuidor-client">CONFICOMBO</p>

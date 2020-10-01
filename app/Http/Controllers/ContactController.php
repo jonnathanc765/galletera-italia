@@ -30,17 +30,17 @@ class ContactController extends Controller
         Contact::create($data);
 
 
-        // try {
+        try {
             Mail::to($to_email)->send(new ClientMail($data));
-        // } catch (\Throwable $th) {
-        //     return back()->withError('Ha ocurrido un error al enviar procesar tu registro, por favor intentalo de nuevo')->withInput($request->input());
-        // }
+        } catch (\Throwable $th) {
+            return back()->withError('Ha ocurrido un error al enviar procesar tu registro, por favor intentalo de nuevo')->withInput($request->input());
+        }
 
-        // try {
-            Mail::to('jonnathan.c.765@gmail.com')->send(new ProviderMail($data));
-        // } catch (\Throwable $th) {
-        //     return back()->withError('Ha ocurrido un error al enviar procesar tu registro, por favor intentalo de nuevo')->withInput($request->input());
-        // }
+        try {
+            Mail::to('info@galleteraitalia.com')->send(new ProviderMail($data));
+        } catch (\Throwable $th) {
+            return back()->withError('Ha ocurrido un error al enviar procesar tu registro, por favor intentalo de nuevo')->withInput($request->input());
+        }
 
 
         return back()->withSuccess('Tu solicitud ha sido procesada exitosamente, te atenderemos lo mas pronto posible');
