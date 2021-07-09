@@ -37,38 +37,56 @@
         }
 
         &[data-maria="chocolate"] {
-            background-color: var(--rojo);
             --image: url('../img/maria-chocolate.png');
+        }
+
+        &[data-maria="original"] {
+            --image: url('../img/maria-italia.png');
+        }
+
+        &[data-maria="vainilla"]{
+            --image: url('../img/maria-vainilla.png');
+        }
+
+        &[data-maria="tentazione-grande"]{
+            --image: url('../img/tentazione-molida.jpg');
+        }
+
+        &[data-maria="vallina-grande"]{
+            --image: url('../img/vanilla-molida.jpg');
+        }
+
+        &[data-maria="tentazione-pequena"]{
+            --image: url('../img/tentazione-pequena.jpg');
+        }
+
+        &[data-maria="vanilla-pequena"]{
+            --image: url('../img/vanilla-pequena.jpg');
+        }
+
+
+
+        &.blue-color{
+            background-color: var(--azul);
+            p {
+                color: var(--azul);
+            }
+
+
+            button {
+                background-color: var(--azul);
+            }
+
+        }
+
+        &.red-color{
+            background-color: var(--rojo);
             p {
                 color: var(--rojo);
             }
 
             button {
                 background-color: var(--rojo);
-            }
-        }
-
-        &[data-maria="original"] {
-            background-color: var(--azul);
-            --image: url('../img/maria-italia.png');
-            p {
-                color: var(--azul);
-            }
-
-            button {
-                background-color: var(--azul);
-            }
-        }
-
-        &[data-maria="vainilla"]{
-            background-color: var(--azul);
-            --image: url('../img/maria-vainilla.png');
-            p {
-                color: var(--azul);
-            }
-
-            button {
-                background-color: var(--azul);
             }
         }
 
