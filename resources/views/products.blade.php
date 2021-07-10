@@ -201,7 +201,7 @@
           </button>
         </div>
         <div class="modal-body">
-            <img class="img-fluid d-block mx-auto" height="350px" src="{{asset('img/vanilla-pequena.png')}}" alt="María Italia">
+            <img class="img-fluid d-block mx-auto" height="350px" src="{{asset('img/maria-vanilla-pequena.jpg')}}" alt="María Italia">
             <p class="mb-1">Galleta María Tentazione molida y triturada sabor a vainilla</p>
             <p class="mb-1"> <b> Peso neto:</b> 500 g</p>
             <p class="mb-1"> <b> Vida útil:</b> 12 meses.</p>
@@ -223,7 +223,7 @@
           </button>
         </div>
         <div class="modal-body">
-            <img class="img-fluid d-block mx-auto" height="350px" src="{{asset('img/tentazione-pequena.png')}}" alt="María Italia">
+            <img class="img-fluid d-block mx-auto" height="350px" src="{{asset('img/maria-tentazione-pequena.jpg')}}" alt="María Italia">
             <p class="mb-1">Galleta María Tentazione molida y triturada sabor a chocolate</p>
             <p class="mb-1"> <b> Peso neto:</b> 500 g</p>
             <p class="mb-1"> <b> Vida útil:</b> 12 meses.</p>
