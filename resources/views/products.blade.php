@@ -33,7 +33,7 @@
                     </div>
                 </div>
 
-                <div class="carousel__cell" data-maria="original">
+                <div class="carousel__cell blue-color" data-maria="original">
                     <div class="carousel__cell-content">
 
                         <p class="mb-2 h2">Galleta dulce tipo María sabor a vainilla</p>
