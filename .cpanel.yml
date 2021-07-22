@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/galleter/
+    - /bin/cp -r * $DEPLOYPATH #copy all from root
+   - /bin/cp -r $DEPLOYPATH/galletera-italia-web/public/* $DEPLOYPATH/public_html/
+    - /bin/cp $DEPLOYPATH/galletera-italia-web/public/js/*.js $DEPLOYPATH/public_html/js
+    - /bin/cp $DEPLOYPATH/galletera-italia-web/public/css/*.css $DEPLOYPATH/public_html/css
